@@ -6,10 +6,10 @@ from fastapi.templating import Jinja2Templates
 app = FastAPI()
 
 # Подключаем папку со статикой (css, js, картинки)
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Подключаем шаблоны
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory="templates")
 
 
 @app.get("/", response_class=HTMLResponse)
