@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0f172a;
+    color: white;
+    height: 100vh;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 220px;
+    background: #020617;
+    padding: 20px;
+    border-right: 1px solid #1e293b;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.tab {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tab.selected {
+    background: #1e293b;  /* более светлый или выделяющий фон */
+    color: #00ffcc;       /* цвет текста */
+    border: 1px solid #00ffcc; /* выделение границы */
+}
+
+.tab:hover {
+    background: #1e293b;
+}
+
+/* ===== Main Area ===== */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Top (Chart) ===== */
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;            /* отступ между картинками */
+    padding: 20px;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.zigzag {
+    width: 100%;           /* каждая картинка занимает 75% ширины контейнера */
+}
+
+.zigzag.left {
+    align-self: flex-start;  /* слева */
+}
+
+.zigzag.right {
+    align-self: flex-end;    /* справа */
+}
+
+.zigzag img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;      /* скругление углов */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* тень (опционально) */
+}
+
+/* ===== Bottom (Chat) ===== */
+.bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: #020617;
+}
+
+.chat {
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    background: #020617;
+    height: 950px;
+    font-size: 20px;
+}
+
+.message {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.ai {
+    color: white;
+}
+
+.thinking {
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.chat-input {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: white;
+}
+
+.chat-input button {
+    padding: 10px 16px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #020617;
+    font-weight: bold;
+}
