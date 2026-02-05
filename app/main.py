@@ -208,9 +208,6 @@ async def avatr(request: Request):
             "Общая конверсия": calls_mtd + forms_mtd
         })
 
-    print(f'traffic_current_graph_percent: {traffic_current_graph_percent} \n\n\n\n')
-    print(f'traffic_current_graph: {traffic_current_graph}')
-
     # 5) Трафик за ВСЕ время (как traffic_current_graph, только без фильтра по месяцу)
     traffic_all_graph = [
         {"date": d["date"], "label": await get_current_day(d["date"]), "v": int(d["totalUsers"])}
