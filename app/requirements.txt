@@ -4,3 +4,4 @@ jinja2
 google-analytics-data
 aiofiles
 dotenv
+numpy
