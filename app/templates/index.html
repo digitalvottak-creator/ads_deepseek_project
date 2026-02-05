@@ -615,6 +615,106 @@
   }
 }
 
+
+        /* ===== Tables under charts (Chart 4/5) ===== */
+.table-wrap{
+  margin-top: 12px;
+  border: 1px solid #eef1f5;
+  border-radius: 12px;
+  overflow: hidden; /* чтобы скругление работало */
+  background: #fff;
+}
+
+.data-table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  color: var(--text);
+}
+
+.data-table thead th{
+  text-align: left;
+  padding: 10px 12px;
+  background: #fafbfc;
+  border-bottom: 1px solid #eef1f5;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: .1px;
+}
+
+.data-table tbody td{
+  padding: 9px 12px;
+  border-bottom: 1px solid #f0f2f6;
+  font-variant-numeric: tabular-nums;
+}
+
+.data-table tbody tr:last-child td{
+  border-bottom: none;
+}
+
+/* Выравнивание чисел */
+.data-table .col-traffic,
+.data-table .col-delta{
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* “Разделитель-неделя” — выглядит как продолжение, но визуально отделяет */
+.data-table tr.week-row td{
+  background: #f6f8fb;
+  border-top: 1px solid #e8edf5;
+  border-bottom: 1px solid #e8edf5;
+  font-weight: 800;
+}
+
+.data-table tr.week-row td:first-child{
+  color: var(--text);
+}
+
+.data-table tr.week-row td.col-traffic{
+  color: var(--text);
+}
+
+/* Лёгкий hover только для обычных строк */
+.data-table tbody tr:not(.week-row):hover td{
+  background: #fbfcfe;
+}
+
+/* Мобилка: чуть компактнее */
+@media (max-width: 920px){
+  .data-table thead th,
+  .data-table tbody td{
+    padding: 9px 10px;
+  }
+}
+
+.table-wrap--compact { margin-top: 12px; }
+
+.table-title{
+  padding: 10px 12px;
+  background: #fafbfc;
+  border-bottom: 1px solid #eef1f5;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.data-table--compact td{
+  padding: 10px 12px;
+}
+
+.data-table--compact td:first-child{
+  color: var(--muted);
+  font-weight: 700;
+  width: 48%;
+}
+
+.data-table--compact td:last-child{
+  text-align: right;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
     </style>
 </head>
 <body>
@@ -836,176 +936,256 @@
 
             <!-- Row: 2 charts under Events (wide like Events) -->
             <div class="cards-row cards-row--wide">
-                <!-- Chart 4 -->
-                <div class="card">
-                    <div class="title-row">
-  <h3 class="title title--with-controls">
-    Трафик за
-
-    <select class="title-select js-imprYear" aria-label="Год">
-      <option value="2025">2025</option>
-      <option value="2026" selected>2026</option>
-    </select>
-
-    год
-
-    <select class="title-select js-imprMonth" aria-label="Месяц">
-      <option value="1">январь</option>
-      <option value="2">февраль</option>
-      <option value="3">март</option>
-      <option value="4">апрель</option>
-      <option value="5">май</option>
-      <option value="6">июнь</option>
-      <option value="7">июль</option>
-      <option value="8">август</option>
-      <option value="9">сентябрь</option>
-      <option value="10">октябрь</option>
-      <option value="11">ноябрь</option>
-      <option value="12">декабрь</option>
-    </select>
-      месяц
-  </h3>
-</div>
-
-                    <div class="chart-wrap js-chart">
-                        <canvas class="js-canvas"></canvas>
-
-                        <div class="tooltip js-tip" aria-hidden="true">
-  <div class="tip-date js-tipDate">пт 23 янв.</div>
-
-  <div class="tip-row">
-    <div class="tip-left">
-      <span class="dot"></span>
-      <span class="js-seriesName">Трафик</span>
+  <!-- Chart 4 -->
+  <div class="card">
+    <div class="title-row">
+      <h3 class="title title--with-controls">
+        Трафик за
+        <select class="title-select js-imprYear" aria-label="Год">
+          <option value="2025">2025</option>
+          <option value="2026" selected>2026</option>
+        </select>
+        год
+        <select class="title-select js-imprMonth" aria-label="Месяц">
+          <option value="1">январь</option>
+          <option value="2">февраль</option>
+          <option value="3">март</option>
+          <option value="4">апрель</option>
+          <option value="5">май</option>
+          <option value="6">июнь</option>
+          <option value="7">июль</option>
+          <option value="8">август</option>
+          <option value="9">сентябрь</option>
+          <option value="10">октябрь</option>
+          <option value="11">ноябрь</option>
+          <option value="12">декабрь</option>
+        </select>
+        месяц
+      </h3>
     </div>
-    <div class="tip-val js-tipVal">0</div>
-  </div>
 
-  <div class="tip-row" style="margin-top:6px;">
-    <div class="tip-left">
-      <span class="dot"></span>
-      <span class="js-seriesName2">Процентное соотношение</span>
+    <div class="chart-wrap js-chart">
+      <canvas class="js-canvas"></canvas>
+
+      <div class="tooltip js-tip" aria-hidden="true">
+        <div class="tip-date js-tipDate">пт 23 янв.</div>
+
+        <div class="tip-row">
+          <div class="tip-left">
+            <span class="dot"></span>
+            <span class="js-seriesName">Трафик</span>
+          </div>
+          <div class="tip-val js-tipVal">0</div>
+        </div>
+
+        <div class="tip-row" style="margin-top:6px;">
+          <div class="tip-left">
+            <span class="dot"></span>
+            <span class="js-seriesName2">Процентное соотношение</span>
+          </div>
+          <div class="tip-val js-tipVal2">0</div>
+        </div>
+
+        <div class="tip-row tip-extra" style="margin-top:10px;">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel1">Звонки</span>
+          </div>
+          <div class="tip-val js-extraVal1">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel2">Звонки с начала месяца</span>
+          </div>
+          <div class="tip-val js-extraVal2">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel3">Заявки</span>
+          </div>
+          <div class="tip-val js-extraVal3">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel4">Заявки с начала месяца</span>
+          </div>
+          <div class="tip-val js-extraVal4">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel5">Общая конверсия</span>
+          </div>
+          <div class="tip-val js-extraVal5">0</div>
+        </div>
+      </div>
     </div>
-    <div class="tip-val js-tipVal2">0</div>
-  </div>
-<div class="tip-row tip-extra" style="margin-top:10px;">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel1">Звонки</span>
-  </div>
-  <div class="tip-val js-extraVal1">0</div>
-</div>
 
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel2">Звонки с начала месяца</span>
-  </div>
-  <div class="tip-val js-extraVal2">0</div>
-</div>
+    <!-- ✅ Таблица строго под Chart 4 -->
+    <div class="table-wrap">
+      <table class="data-table js-table" aria-label="Таблица трафика за месяц">
+        <thead>
+          <tr>
+            <th>День</th>
+            <th class="col-traffic">Трафик</th>
+            <th class="col-delta">Изменение</th>
+          </tr>
+        </thead>
+        <tbody class="js-tableBody4">
+          <tr><td>1</td><td class="col-traffic">34</td><td class="col-delta">+3%</td></tr>
+          <tr><td>2</td><td class="col-traffic">29</td><td class="col-delta">-15%</td></tr>
+          <tr><td>3</td><td class="col-traffic">31</td><td class="col-delta">+7%</td></tr>
+          <tr><td>4</td><td class="col-traffic">28</td><td class="col-delta">-9%</td></tr>
+          <tr><td>5</td><td class="col-traffic">36</td><td class="col-delta">+29%</td></tr>
+          <tr><td>6</td><td class="col-traffic">33</td><td class="col-delta">-8%</td></tr>
+          <tr><td>7</td><td class="col-traffic">37</td><td class="col-delta">+12%</td></tr>
 
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel3">Заявки</span>
-  </div>
-  <div class="tip-val js-extraVal3">0</div>
-</div>
+          <tr class="week-row">
+            <td>Неделя 1</td>
+            <td class="col-traffic">250</td>
+            <td class="col-delta"></td>
+          </tr>
 
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel4">Заявки с начала месяца</span>
-  </div>
-  <div class="tip-val js-extraVal4">0</div>
-</div>
+          <tr><td>8</td><td class="col-traffic">30</td><td class="col-delta">-19%</td></tr>
+          <tr><td>9</td><td class="col-traffic">35</td><td class="col-delta">+17%</td></tr>
+          <tr><td>10</td><td class="col-traffic">32</td><td class="col-delta">-9%</td></tr>
+          <tr><td>11</td><td class="col-traffic">38</td><td class="col-delta">+19%</td></tr>
+          <tr><td>12</td><td class="col-traffic">41</td><td class="col-delta">+8%</td></tr>
+          <tr><td>13</td><td class="col-traffic">39</td><td class="col-delta">-5%</td></tr>
+          <tr><td>14</td><td class="col-traffic">35</td><td class="col-delta">-10%</td></tr>
 
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel5">Общая конверсия</span>
-  </div>
-  <div class="tip-val js-extraVal5">0</div>
-</div>
-
-</div>
-                    </div>
-
-                    <div class="hint">Наведите курсор на график — появится подсказка.</div>
-                </div>
-
-                <!-- Chart 5 -->
-                <div class="card">
-                    <h3 class="title">Трафик за последний месяц</h3>
-
-                    <div class="chart-wrap js-chart">
-                        <canvas class="js-canvas"></canvas>
-
-                        <div class="tooltip js-tip" aria-hidden="true">
-  <div class="tip-date js-tipDate">пт 23 янв.</div>
-
-  <div class="tip-row">
-    <div class="tip-left">
-      <span class="dot"></span>
-      <span class="js-seriesName">Конверсии</span>
+          <tr class="week-row">
+            <td>Неделя 2</td>
+            <td class="col-traffic">250</td>
+            <td class="col-delta"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="tip-val js-tipVal">0</div>
+      <div class="table-wrap table-wrap--compact">
+  <div class="table-title">Заявки</div>
+  <table class="data-table data-table--compact" aria-label="Заявки (месяц)">
+    <tbody class="js-leadsBody4"></tbody>
+  </table>
+</div>
+
+
+    <div class="hint">Наведите курсор на график — появится подсказка.</div>
   </div>
 
-  <!-- NEW: вторая строка -->
-  <div class="tip-row" style="margin-top:6px;">
-    <div class="tip-left">
-      <span class="dot"></span>
-      <span class="js-seriesName2">Процентное соотношение</span>
+  <!-- Chart 5 -->
+  <div class="card">
+    <h3 class="title">Трафик за последний месяц</h3>
+
+    <div class="chart-wrap js-chart">
+      <canvas class="js-canvas"></canvas>
+
+      <div class="tooltip js-tip" aria-hidden="true">
+        <div class="tip-date js-tipDate">пт 23 янв.</div>
+
+        <div class="tip-row">
+          <div class="tip-left">
+            <span class="dot"></span>
+            <span class="js-seriesName">Конверсии</span>
+          </div>
+          <div class="tip-val js-tipVal">0</div>
+        </div>
+
+        <div class="tip-row" style="margin-top:6px;">
+          <div class="tip-left">
+            <span class="dot"></span>
+            <span class="js-seriesName2">Процентное соотношение</span>
+          </div>
+          <div class="tip-val js-tipVal2">0</div>
+        </div>
+
+        <div class="tip-row tip-extra" style="margin-top:10px;">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel1">Звонки</span>
+          </div>
+          <div class="tip-val js-extraVal1">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel2">Звонки с начала месяца</span>
+          </div>
+          <div class="tip-val js-extraVal2">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel3">Заявки</span>
+          </div>
+          <div class="tip-val js-extraVal3">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel4">Заявки с начала месяца</span>
+          </div>
+          <div class="tip-val js-extraVal4">0</div>
+        </div>
+
+        <div class="tip-row tip-extra">
+          <div class="tip-left">
+            <span class="dot dot--extra"></span>
+            <span class="js-extraLabel5">Общая конверсия</span>
+          </div>
+          <div class="tip-val js-extraVal5">0</div>
+        </div>
+      </div>
     </div>
-    <div class="tip-val js-tipVal2">0</div>
-  </div>
- <div class="tip-row tip-extra" style="margin-top:10px;">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel1">Звонки</span>
-  </div>
-  <div class="tip-val js-extraVal1">0</div>
+
+    <!-- ✅ Таблица строго под Chart 5 -->
+    <div class="table-wrap">
+      <table class="data-table js-table" aria-label="Таблица трафика за последний месяц">
+        <thead>
+          <tr>
+            <th>День</th>
+            <th class="col-traffic">Трафик</th>
+            <th class="col-delta">Изменение</th>
+          </tr>
+        </thead>
+        <tbody class="js-tableBody5">
+          <tr><td>1</td><td class="col-traffic">12</td><td class="col-delta">+0%</td></tr>
+          <tr><td>2</td><td class="col-traffic">18</td><td class="col-delta">+50%</td></tr>
+          <tr><td>3</td><td class="col-traffic">16</td><td class="col-delta">-11%</td></tr>
+          <tr><td>4</td><td class="col-traffic">20</td><td class="col-delta">+25%</td></tr>
+          <tr><td>5</td><td class="col-traffic">19</td><td class="col-delta">-5%</td></tr>
+          <tr><td>6</td><td class="col-traffic">22</td><td class="col-delta">+16%</td></tr>
+          <tr><td>7</td><td class="col-traffic">21</td><td class="col-delta">-4%</td></tr>
+
+          <tr class="week-row">
+            <td>Неделя 1</td>
+            <td class="col-traffic">250</td>
+            <td class="col-delta"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<div class="table-wrap table-wrap--compact">
+  <div class="table-title">Заявки</div>
+  <table class="data-table data-table--compact" aria-label="Заявки (последний месяц)">
+    <tbody class="js-leadsBody5"></tbody>
+  </table>
 </div>
 
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel2">Звонки с начала месяца</span>
+    <div class="hint">Наведите курсор на график — появится подсказка.</div>
   </div>
-  <div class="tip-val js-extraVal2">0</div>
 </div>
 
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel3">Заявки</span>
-  </div>
-  <div class="tip-val js-extraVal3">0</div>
-</div>
-
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel4">Заявки с начала месяца</span>
-  </div>
-  <div class="tip-val js-extraVal4">0</div>
-</div>
-
-<div class="tip-row tip-extra">
-  <div class="tip-left">
-    <span class="dot dot--extra"></span>
-    <span class="js-extraLabel5">Общая конверсия</span>
-  </div>
-  <div class="tip-val js-extraVal5">0</div>
-</div>
-
-</div>
-                    </div>
-
-                    <div class="hint">Наведите курсор на график — появится подсказка.</div>
-                </div>
-            </div>
 
 
         </div>
@@ -2030,6 +2210,197 @@ document.querySelector(".js-imprMonth")?.addEventListener("change", (e) => {
   const year = document.querySelector(".js-imprYear")?.value;
   // TODO: загрузка/перерисовка данных показов
 });
+
+function fmtDeltaPct(curr, prev) {
+  if (prev == null || prev === 0) return ""; // нет базы сравнения
+  const pct = ((curr - prev) / prev) * 100;
+  const sign = pct > 0 ? "+" : "";
+  return `${sign}${pct.toFixed(1).replace(".", ",")}%`;
+}
+
+function dayKeyFromLabelSafe(label) {
+  // "ср 4 фев." -> 4
+  const m = String(label).match(/\b(\d{1,2})\b/);
+  return m ? Number(m[1]) : null;
+}
+
+/**
+ * Рендер таблицы с неделями 1..3 и итогом.
+ * rows: [{label, v}, ...]
+ */
+function renderTrafficTable(tbodyEl, rows) {
+  if (!tbodyEl) return;
+  tbodyEl.innerHTML = "";
+
+  const maxWeeks = 3;
+
+  // сумма за всё
+  let totalSum = 0;
+
+  // вспомогательная: сумма диапазона [from..to] включительно
+  function sumRange(from, to) {
+    let s = 0;
+    for (let k = from; k <= to; k++) s += Number(rows[k]?.v || 0);
+    return s;
+  }
+
+  for (let i = 0; i < rows.length; i++) {
+    const r = rows[i];
+    const day = dayKeyFromLabelSafe(r.label) ?? (i + 1);
+
+    const curr = Number(r.v || 0);
+    totalSum += curr;
+
+    const prev = i > 0 ? Number(rows[i - 1].v || 0) : null;
+    const delta = fmtDeltaPct(curr, prev);
+
+    // обычная строка дня
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${day}</td>
+      <td class="col-traffic">${curr.toLocaleString("ru-RU")}</td>
+      <td class="col-delta">${delta}</td>
+    `;
+    tbodyEl.appendChild(tr);
+
+    // неделя после каждых 7 дней, но только 1..3
+    const isEndOfWeek = (i + 1) % 7 === 0;
+    const weekNum = (i + 1) / 7;
+
+    if (isEndOfWeek && weekNum <= maxWeeks) {
+      // сумма за последние 7 дней (текущая неделя)
+      const weekSum = sumRange(0, i);
+
+      const w = document.createElement("tr");
+      w.className = "week-row";
+      w.innerHTML = `
+        <td>Неделя ${weekNum}</td>
+        <td class="col-traffic">${weekSum.toLocaleString("ru-RU")}</td>
+        <td class="col-delta"></td>
+      `;
+      tbodyEl.appendChild(w);
+    }
+  }
+
+  // Итоговая строка в стиле недели
+  const итог = document.createElement("tr");
+  итог.className = "week-row";
+  итог.innerHTML = `
+    <td>Итого</td>
+    <td class="col-traffic">${totalSum.toLocaleString("ru-RU")}</td>
+    <td class="col-delta"></td>
+  `;
+  tbodyEl.appendChild(итог);
+}
+
+/* ====== Привязка таблиц к данным графиков ====== */
+const tbody4 = document.querySelector(".js-tableBody4");
+const tbody5 = document.querySelector(".js-tableBody5");
+
+/** Таблица 4 = ТЕ ЖЕ данные, что в графике 4 */
+function updateTable4() {
+  const built = buildChart4Data();          // возвращает { data, data2, ... }
+  renderTrafficTable(tbody4, built.data);   // важно: built.data — это трафик графика 4
+}
+
+/** Таблица 5 = ТЕ ЖЕ данные, что в графике 5 */
+function updateTable5() {
+  renderTrafficTable(tbody5, dataConversions); // dataConversions используется в chart5
+}
+
+/* первичная отрисовка */
+updateTable4();
+updateTable5();
+
+/* таблица 4 должна обновляться при смене года/месяца (вместе с графиком 4) */
+function updateChart4AndTable() {
+  updateChart4();   // твоя функция обновления графика
+  updateTable4();   // обновляем таблицу строго теми же данными
+}
+
+yearSel?.removeEventListener("change", updateChart4);   // чтобы не было двойных обработчиков
+monthSel?.removeEventListener("change", updateChart4);
+
+yearSel?.addEventListener("change", updateChart4AndTable);
+monthSel?.addEventListener("change", updateChart4AndTable);
+
+function pickLastRow(arr) {
+  if (!Array.isArray(arr) || !arr.length) return null;
+  // берём последнюю НЕ пустую (если вдруг есть)
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i]) return arr[i];
+  }
+  return null;
+}
+
+function fmtAny(v) {
+  if (v == null) return "—";
+  if (typeof v === "number") return v.toLocaleString("ru-RU");
+  // если приходит строка типа "12.3%" — оставляем
+  return String(v);
+}
+
+function renderLeadsTable(tbodyEl, rowObj) {
+  if (!tbodyEl) return;
+  tbodyEl.innerHTML = "";
+
+  const calls = rowObj?.["Звонки"];
+  const callsMtd = rowObj?.["Звонки с начала месяца"];
+  const leads = rowObj?.["Заявки"];
+  const leadsMtd = rowObj?.["Заявки с начала месяца"];
+  const conv = rowObj?.["Общая конверсия"];
+
+  // Строки ровно как ты описал
+  tbodyEl.innerHTML = `
+    <tr>
+      <td>Звонки</td>
+      <td>${fmtAny(callsMtd ?? calls)}</td>
+    </tr>
+    <tr>
+      <td>Заявки</td>
+      <td>${fmtAny(leadsMtd ?? leads)}</td>
+    </tr>
+    <tr class="week-row">
+      <td>Итого</td>
+      <td>${fmtAny(conv)}</td>
+    </tr>
+  `;
+}
+
+/* DOM */
+const leadsBody4 = document.querySelector(".js-leadsBody4");
+const leadsBody5 = document.querySelector(".js-leadsBody5");
+
+/* График 4: берём данные2 из buildChart4Data() (это percentMonth с доп. полями) */
+function updateLeads4() {
+  const built = buildChart4Data();
+  const last = pickLastRow(built.data2);   // <-- из traffic_all_graph_percent (после фильтра)
+  renderLeadsTable(leadsBody4, last);
+}
+
+/* График 5: берём из dataConversionsPercent (traffic_current_graph_percent) */
+function updateLeads5() {
+  const last = pickLastRow(dataConversionsPercent);
+  renderLeadsTable(leadsBody5, last);
+}
+
+/* первичная отрисовка */
+updateLeads4();
+updateLeads5();
+
+/* чтобы “Заявки” у графика 4 менялись вместе с месяцем/годом */
+function updateChart4AndTablesAll() {
+  updateChart4();    // твоя функция графика
+  updateTable4();    // основная таблица
+  updateLeads4();    // таблица "Заявки"
+}
+
+yearSel?.removeEventListener("change", updateChart4AndTable);
+monthSel?.removeEventListener("change", updateChart4AndTable);
+
+yearSel?.addEventListener("change", updateChart4AndTablesAll);
+monthSel?.addEventListener("change", updateChart4AndTablesAll);
+
 </script>
 
 </body>
