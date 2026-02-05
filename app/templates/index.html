@@ -1,112 +1,2036 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>AI Dashboard</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Google Ads-like Line Chart</title>
+    <style>
+        :root {
+            /* Palette */
+            --bg: #f7f8fa;
+            --text: #1f2937;
+            --muted: #6b7280;
+
+            /* UI */
+            --card-border: #e6e8eb;
+            --grid: #eceff3;
+            --axis: #aeb5bf;
+            --blue: #1a73e8;
+
+            /* Layout */
+            --container-w: 1100px;
+            --sidebar-w: 280px;
+            --app-gap: 18px;
+
+            /* Cards */
+            --radius: 10px;
+            --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .06);
+            --card-w: 760px;
+
+            /* Series colors (events) */
+            --s1: #1a73e8;
+            --s2: #34a853;
+            --s3: #fbbc04;
+            --s4: #ea4335;
+            --s5: #a142f4;
+            --s6: #00acc1;  /* teal */
+  --s7: #8e24aa;  /* deep purple */
+  --s8: #fb8c00;  /* orange */
+  --s9: #6d4c41;  /* brown */
+  --s10:#546e7a;  /* blue grey */
+        }
+
+        /* ========== Base ========== */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        /* ========== Topbar ========== */
+        .topbar {
+            width: min(var(--container-w), 96vw);
+            margin: 0 auto 14px;
+            background: #fff;
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 10px 12px;
+        }
+
+        .topbar-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topbar-title {
+            flex: 0 0 auto;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text);
+            padding: 6px 8px;
+            border-radius: 8px;
+            background: #fafbfc;
+            border: 1px solid #eef1f5;
+        }
+
+        /* Horizontal brand strip */
+        .brand-strip {
+            flex: 1 1 auto;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 2px;
+            scrollbar-width: thin; /* Firefox */
+            scrollbar-color: #d7dce5 transparent;
+        }
+
+        .brand-strip::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .brand-strip::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .brand-strip::-webkit-scrollbar-thumb {
+            background: #d7dce5;
+            border-radius: 999px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
+
+        .brand-list {
+            display: inline-flex;
+            align-items: stretch;
+            gap: 8px;
+            padding: 2px;
+        }
+
+        .brand-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            border: 1px solid #eef1f5;
+            background: #fff;
+            border-radius: 999px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+            cursor: pointer;
+            user-select: none;
+            transition: transform .06s ease, border-color .06s ease, background .06s ease;
+        }
+
+        .brand-chip:hover {
+            border-color: #dfe5ee;
+            background: #fafbfc;
+            transform: translateY(-1px);
+        }
+
+        .brand-chip.active {
+            border-color: rgba(26, 115, 232, .35);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 0 0 3px rgba(26, 115, 232, .10);
+        }
+
+        .brand-name {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .brand-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .brand-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 8px;
+            border-radius: 999px;
+            border: 1px solid #eef1f5;
+            background: #fafbfc;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .brand-pill .b {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--blue);
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, .10);
+        }
+
+        /* ========== App layout ========== */
+        .app {
+            width: min(var(--container-w), 96vw);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: var(--sidebar-w) 1fr;
+            gap: var(--app-gap);
+            align-items: start;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #fff;
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 14px;
+            position: sticky;
+            top: 24px;
+            z-index: 1; /* ниже events-card */
+        }
+
+
+        .sidebar {
+            position: sticky;
+            top: 24px;
+            z-index: 1;
+        }
+
+        /* новая обёртка колонки */
+        .sidebar-col {
+            position: relative;
+        }
+
+        .side-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0 0 10px;
+            letter-spacing: .1px;
+        }
+
+        .side-section {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #eef1f5;
+        }
+
+        .metric {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 10px;
+            border: 1px solid #eef1f5;
+            background: #fafbfc;
+            border-radius: 10px;
+            margin: 8px 0;
+        }
+
+        .metric .k {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.2;
+        }
+
+        .metric .v {
+            font-size: 13px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+            color: var(--text);
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 10px;
+            border: 1px solid var(--card-border);
+            border-radius: 999px;
+            background: #fff;
+            font-size: 12px;
+            margin: 6px 6px 0 0;
+            user-select: none;
+            cursor: pointer;              /* палец при наведении */
+  transition:
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+        }
+
+        .pill:hover {
+  background: #f6f8fb;
+}
+        .pill.active {
+  background: rgba(26, 115, 232, .06);
+  border-color: rgba(26, 115, 232, .35);
+  box-shadow: 0 0 0 1px rgba(26, 115, 232, .15) inset;
+}
+
+        .pill .b {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px currentColor;
+        }
+
+        /* Content + cards */
+        .content {
+            display: block;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 16px 16px 16px; /* было 16 16 10 */
+            position: relative;
+            width: 100%;
+        }
+
+        .cards > .card {
+            max-width: var(--card-w);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Events card expands into sidebar area */
+        .cards > .card--events {
+            max-width: none;
+            z-index: 2;
+            margin-left: calc(-1 * (var(--sidebar-w) + var(--app-gap)));
+            width: calc(100% + var(--sidebar-w) + var(--app-gap));
+        }
+
+        /* Ряд снизу остаётся wide */
+        .cards-row--wide {
+            margin-left: calc(-1 * (var(--sidebar-w) + var(--app-gap)));
+            width: calc(100% + var(--sidebar-w) + var(--app-gap));
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Внутри ряда карточки НЕ центрируем */
+        .cards-row > .card {
+            margin: 0;
+            max-width: none;
+            width: 100%;
+        }
+
+        /* Default cards are centered and max-width constrained */
+        .cards > .card {
+            width: 100%;
+            max-width: var(--card-w);
+            margin-left: auto;
+            margin-right: auto;
+
+            background: #fff;
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 16px 16px 10px;
+            position: relative;
+        }
+
+        /* Events card expands into sidebar area */
+        .cards > .card--events {
+            max-width: none;
+            z-index: 2; /* above sidebar */
+
+            margin-left: calc(-1 * (var(--sidebar-w) + var(--app-gap)));
+            width: calc(100% + var(--sidebar-w) + var(--app-gap));
+        }
+
+        /* ====== Row with 2 charts under Events (same wide width as Events) ====== */
+        .cards-row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        /* Важное: ряд тоже "wide" и тоже перекрывает sidebar */
+        .cards-row--wide {
+            margin-left: calc(-1 * (var(--sidebar-w) + var(--app-gap)));
+            width: calc(100% + var(--sidebar-w) + var(--app-gap));
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Внутри ряда карточки не должны центрироваться как .cards > .card */
+        .cards-row > .card {
+            margin: 0;
+            max-width: none;
+            width: 100%;
+        }
+
+        /* Mobile: в столбик и без wide */
+        @media (max-width: 920px) {
+            .cards-row {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-row--wide {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+        /* ========== Chart UI ========== */
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            letter-spacing: .1px;
+        }
+
+        .chart-wrap {
+            position: relative;
+            height: 260px;
+            user-select: none;
+        }
+
+        .cards-row--wide .chart-wrap{
+  height: 420px; /* было 260 */
+}
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            pointer-events: none;
+            min-width: 190px;
+            background: #fff;
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+            padding: 10px 12px;
+            transform: translate(-50%, -100%);
+            opacity: 0;
+            transition: opacity .08s ease;
+            font-size: 13px;
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        .tip-date {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 8px;
+            white-space: nowrap;
+        }
+
+        .tip-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .tip-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text);
+            white-space: nowrap;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--blue);
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, .15);
+        }
+
+        .tip-val {
+            font-variant-numeric: tabular-nums;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .hint {
+            margin-top: 10px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 920px) {
+            .app {
+                grid-template-columns: 1fr;
+            }
+
+            /* на мобилке sticky чаще мешает */
+            .sidebar {
+                position: static;
+                top: auto;
+            }
+
+            /* events card не должен “залезать” */
+            .cards > .card--events {
+                margin-left: auto;
+                width: 100%;
+            }
+        }
+
+        /* ===== Title controls for Chart 4 ===== */
+.title-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin:0 0 8px;
+}
+
+.title--with-controls{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:0; /* заголовок уже с margin у .title, тут убираем чтобы не двоилось */
+}
+
+.title-muted{
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Select в стиле ваших pill */
+.title-select{
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+
+  padding: 7px 30px 7px 10px;
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* hover/focus как у pill */
+.title-select:hover{
+  background:#f6f8fb;
+  border-color:#dfe5ee;
+}
+
+.title-select:focus{
+  outline: none;
+  border-color: rgba(26, 115, 232, .35);
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, .10);
+}
+
+/* стрелка */
+.title-select{
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%),
+    linear-gradient(to right, transparent, transparent);
+  background-position:
+    calc(100% - 16px) 52%,
+    calc(100% - 11px) 52%,
+    0 0;
+  background-size: 5px 5px, 5px 5px, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* extra строки выглядят как обычные tip-row */
+.tooltip .tip-row.tip-extra {
+  margin-top: 6px; /* как у второй строки */
+}
+
+/* точка как у серий, но более спокойная */
+.tooltip .dot.dot--extra {
+  background: rgba(107, 114, 128, .65); /* близко к muted */
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, .12);
+}
+
+/* подпись и значение — как обычно, просто можно чуть "мутнее" */
+.tooltip .tip-row.tip-extra .tip-left span {
+  color: var(--muted, #6b7280);
+}
+
+.tooltip .tip-row.tip-extra .tip-val {
+  color: #111827; /* как у значений */
+  font-variant-numeric: tabular-nums;
+}
+/* === Only row with Charts 4-5: shift each card 20px outward and bring them closer === */
+.cards-row--wide{
+  gap: 10px;                 /* было 18 — сближаем 4 и 5 */
+}
+
+.cards-row--wide > .card:first-child{
+  transform: translateX(-40px);                 /* 4-й левее */
+  width: calc(100% + 40px);                     /* расширяем вправо (ближе к 5) */
+}
+
+.cards-row--wide > .card:last-child{
+  transform: translateX(40px);                  /* 5-й правее */
+  width: calc(100% + 40px);                     /* расширяем влево (ближе к 4) */
+}
+
+/* чтобы тени не "резались" при уплотнении */
+.cards-row--wide{
+  overflow: visible;
+}
+
+/* мобильная версия: без смещений */
+@media (max-width: 920px){
+  .cards-row--wide{ gap: 18px; }
+  .cards-row--wide > .card:first-child,
+  .cards-row--wide > .card:last-child{
+    transform: none;
+    width: 100%;
+  }
+}
+
+    </style>
 </head>
 <body>
+<!-- ====== Top menu with many brands ====== -->
+<div class="topbar">
+    <div class="topbar-row">
+        <div class="topbar-title">Бренды</div>
 
-<!-- ===== Sidebar ===== -->
-<div class="sidebar">
-    <h2>Параметры</h2>
-    <a href="/">
-        <div class="tab {% if active_tab == 'avatr' %}selected{% endif %}">📌 AVATR</div>
-    </a>
-    <a href="/mitsubishi">
-        <div class="tab {% if active_tab == 'mitsubishi' %}selected{% endif %}">📌 Mitsubishi</div>
-    </a>
+        <div class="brand-strip" id="brandStrip" aria-label="Список брендов (горизонтальная прокрутка)">
+            <div class="brand-list">
+                <div class="brand-chip active" role="button" tabindex="0">
+                    <span class="brand-name">Avatr</span>
+                    <span class="brand-meta">
+                        <span class="brand-pill"><span class="b"></span>77</span>
+                        <span class="brand-pill">CTR 5</span>
+                        <span class="brand-pill">25 000 UAH</span>
+                    </span>
+                </div>
+            </div>
+            <div class="brand-list">
+                <div class="brand-chip" role="button" tabindex="0">
+                    <span class="brand-name">Mitsubishi</span>
+                    <span class="brand-meta">
+                        <span class="brand-pill"><span class="b"></span>77</span>
+                        <span class="brand-pill">CTR 5</span>
+                        <span class="brand-pill">25 000 UAH</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="app">
+    <!-- ====== Sidebar ====== -->
+    <div class="sidebar-col">
+        <aside class="sidebar">
+            <h4 class="side-title">Параметры кампании</h4>
+
+            <div class="metric">
+                <div class="k">Показы за последний месяц</div>
+                <div class="v">{{ impressions }}</div>
+            </div>
+            <div class="metric">
+                <div class="k">Клики за последний месяц</div>
+                <div class="v">{{ clicks }}</div>
+            </div>
+            <div class="metric">
+                <div class="k">CTR</div>
+                <div class="v">3,35%</div>
+            </div>
+            <div class="metric">
+                <div class="k">Цена за клик</div>
+                <div class="v">12,80 UAH</div>
+            </div>
+            <div class="metric">
+                <div class="k">Расход</div>
+                <div class="v">16&nbsp;461 UAH</div>
+            </div>
+
+            <div class="side-section">
+                <div class="side-title" style="margin:0 0 6px;">Фильтры</div>
+                <span class="pill active"><span class="b" style="background: var(--blue); box-shadow: 0 0 0 3px rgba(26, 115, 232, .12);"></span>page_view</span>
+                <span class="pill"><span class="b" style="background: var(--s2); box-shadow: 0 0 0 3px rgba(52,168,83,.12);"></span>session_start</span>
+                <span class="pill active"><span class="b" style="background: var(--s3); box-shadow: 0 0 0 3px rgba(251,188,4,.14);"></span>first_visit</span>
+                <span class="pill"><span class="b" style="background: var(--s4); box-shadow: 0 0 0 3px rgba(234,67,53,.12);"></span>user_engagement</span>
+                <span class="pill"><span class="b" style="background: var(--s5); box-shadow: 0 0 0 3px rgba(161,66,244,.12);"></span>scroll</span>
+                <span class="pill active"><span class="b" style="background: var(--s6); box-shadow: 0 0 0 3px rgba(0,172,193,.12);"></span>form_start</span>
+                <span class="pill"><span class="b" style="background: var(--s7); box-shadow: 0 0 0 3px rgba(142,36,170,.12);"></span>all_forms</span>
+                <span class="pill"><span class="b" style="background: var(--s8); box-shadow: 0 0 0 3px rgba(251,140,0,.14);"></span>G-MSGH2BB72V</span>
+                <span class="pill"><span class="b" style="background: var(--s9); box-shadow: 0 0 0 3px rgba(109,76,65,.12);"></span>binotel_ct_call_details</span>
+                <span class="pill"><span class="b" style="background: var(--s10); box-shadow: 0 0 0 3px rgba(84,110,122,.12);"></span>binotel_ct_call_received</span>
+            </div>
+
+            <div class="side-section">
+                <div class="metric">
+                    <div class="k">Статус</div>
+                    <div class="v">Активна</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ====== Centered content ====== -->
+    <main class="content">
+        <div class="cards">
+            <!-- Chart 1 -->
+            <div class="card">
+                <h3 class="title">Cреднее время пребывания пользователей на сайте</h3>
+
+                <div class="chart-wrap js-chart">
+                    <canvas class="js-canvas"></canvas>
+
+                    <div class="tooltip js-tip" aria-hidden="true">
+                        <div class="tip-date js-tipDate">пт 23 янв.</div>
+                        <div class="tip-row">
+                            <div class="tip-left">
+                                <span class="dot"></span>
+                                <span class="js-seriesName">Среднее время</span>
+                            </div>
+                            <div class="tip-val js-tipVal">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hint">Наведите курсор на график — появится подсказка, вертикальная линия и маркер точки.
+                </div>
+            </div>
+
+            <!-- Chart 2 -->
+            <div class="card">
+                <h3 class="title">Количество кликов по рекламе</h3>
+
+                <div class="chart-wrap js-chart">
+                    <canvas class="js-canvas"></canvas>
+
+                    <div class="tooltip js-tip" aria-hidden="true">
+                        <div class="tip-date js-tipDate">пт 23 янв.</div>
+                        <div class="tip-row">
+                            <div class="tip-left">
+                                <span class="dot"></span>
+                                <span class="js-seriesName">Клики</span>
+                            </div>
+                            <div class="tip-val js-tipVal">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left">
+                                <span class="dot"></span>
+                                <span class="js-seriesName2">Показы</span>
+                            </div>
+                            <div class="tip-val js-tipVal2">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hint">Наведите курсор на график — появится подсказка, вертикальная линия и маркер точки.
+                </div>
+            </div>
+
+            <!-- Chart 3 (Multi): Events -->
+            <div class="card card--events">
+                <h3 class="title">Ивенты</h3>
+
+                <div class="chart-wrap js-multichart">
+                    <canvas class="js-canvas"></canvas>
+
+                    <div class="tooltip js-tip" aria-hidden="true">
+                        <div class="tip-date js-tipDate">пт 23 янв.</div>
+
+                        <!-- 5 строк в тултипе -->
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="0"></span><span class="js-seriesName"
+                                                                                                   data-s="0">page_view</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="0">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="1"></span><span class="js-seriesName"
+                                                                                                   data-s="1">session_start</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="1">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="2"></span><span class="js-seriesName"
+                                                                                                   data-s="2">first_visit</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="2">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="3"></span><span class="js-seriesName"
+                                                                                                   data-s="3">user_engagement</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="3">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="4"></span><span class="js-seriesName"
+                                                                                                   data-s="4">scroll</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="4">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="5"></span><span class="js-seriesName"
+                                                                                                   data-s="5">form_start</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="5">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="6"></span><span class="js-seriesName"
+                                                                                                   data-s="6">all_forms</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="6">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="7"></span><span class="js-seriesName"
+                                                                                                   data-s="7">G-MSGH2BB72V</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="7">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="8"></span><span class="js-seriesName"
+                                                                                                   data-s="8">binotel_ct_call_details</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="8">0</div>
+                        </div>
+                        <div class="tip-row" style="margin-top:6px;">
+                            <div class="tip-left"><span class="dot js-dot" data-s="9"></span><span class="js-seriesName"
+                                                                                                   data-s="9">binotel_ct_call_received</span>
+                            </div>
+                            <div class="tip-val js-tipVal" data-s="9">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hint">Пять линий — разные типы событий. Наведите курсор, чтобы увидеть значения по каждой
+                    линии.
+                </div>
+            </div>
+
+            <!-- Row: 2 charts under Events (wide like Events) -->
+            <div class="cards-row cards-row--wide">
+                <!-- Chart 4 -->
+                <div class="card">
+                    <div class="title-row">
+  <h3 class="title title--with-controls">
+    Трафик за
+
+    <select class="title-select js-imprYear" aria-label="Год">
+      <option value="2025">2025</option>
+      <option value="2026" selected>2026</option>
+    </select>
+
+    год
+
+    <select class="title-select js-imprMonth" aria-label="Месяц">
+      <option value="1">январь</option>
+      <option value="2">февраль</option>
+      <option value="3">март</option>
+      <option value="4">апрель</option>
+      <option value="5">май</option>
+      <option value="6">июнь</option>
+      <option value="7">июль</option>
+      <option value="8">август</option>
+      <option value="9">сентябрь</option>
+      <option value="10">октябрь</option>
+      <option value="11">ноябрь</option>
+      <option value="12">декабрь</option>
+    </select>
+      месяц
+  </h3>
 </div>
 
-<!-- ===== Main ===== -->
-<div class="main">
+                    <div class="chart-wrap js-chart">
+                        <canvas class="js-canvas"></canvas>
 
-    <!-- Chart -->
-    <div class="top">
-        {% for img in images %}
-            <div class="zigzag">
-                <img src="{{ img }}" alt="Graph">
+                        <div class="tooltip js-tip" aria-hidden="true">
+  <div class="tip-date js-tipDate">пт 23 янв.</div>
+
+  <div class="tip-row">
+    <div class="tip-left">
+      <span class="dot"></span>
+      <span class="js-seriesName">Трафик</span>
+    </div>
+    <div class="tip-val js-tipVal">0</div>
+  </div>
+
+  <div class="tip-row" style="margin-top:6px;">
+    <div class="tip-left">
+      <span class="dot"></span>
+      <span class="js-seriesName2">Процентное соотношение</span>
+    </div>
+    <div class="tip-val js-tipVal2">0</div>
+  </div>
+<div class="tip-row tip-extra" style="margin-top:10px;">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel1">Звонки</span>
+  </div>
+  <div class="tip-val js-extraVal1">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel2">Звонки с начала месяца</span>
+  </div>
+  <div class="tip-val js-extraVal2">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel3">Заявки</span>
+  </div>
+  <div class="tip-val js-extraVal3">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel4">Заявки с начала месяца</span>
+  </div>
+  <div class="tip-val js-extraVal4">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel5">Общая конверсия</span>
+  </div>
+  <div class="tip-val js-extraVal5">0</div>
+</div>
+
+</div>
+                    </div>
+
+                    <div class="hint">Наведите курсор на график — появится подсказка.</div>
+                </div>
+
+                <!-- Chart 5 -->
+                <div class="card">
+                    <h3 class="title">Трафик за последний месяц</h3>
+
+                    <div class="chart-wrap js-chart">
+                        <canvas class="js-canvas"></canvas>
+
+                        <div class="tooltip js-tip" aria-hidden="true">
+  <div class="tip-date js-tipDate">пт 23 янв.</div>
+
+  <div class="tip-row">
+    <div class="tip-left">
+      <span class="dot"></span>
+      <span class="js-seriesName">Конверсии</span>
+    </div>
+    <div class="tip-val js-tipVal">0</div>
+  </div>
+
+  <!-- NEW: вторая строка -->
+  <div class="tip-row" style="margin-top:6px;">
+    <div class="tip-left">
+      <span class="dot"></span>
+      <span class="js-seriesName2">Процентное соотношение</span>
+    </div>
+    <div class="tip-val js-tipVal2">0</div>
+  </div>
+ <div class="tip-row tip-extra" style="margin-top:10px;">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel1">Звонки</span>
+  </div>
+  <div class="tip-val js-extraVal1">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel2">Звонки с начала месяца</span>
+  </div>
+  <div class="tip-val js-extraVal2">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel3">Заявки</span>
+  </div>
+  <div class="tip-val js-extraVal3">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel4">Заявки с начала месяца</span>
+  </div>
+  <div class="tip-val js-extraVal4">0</div>
+</div>
+
+<div class="tip-row tip-extra">
+  <div class="tip-left">
+    <span class="dot dot--extra"></span>
+    <span class="js-extraLabel5">Общая конверсия</span>
+  </div>
+  <div class="tip-val js-extraVal5">0</div>
+</div>
+
+</div>
+                    </div>
+
+                    <div class="hint">Наведите курсор на график — появится подсказка.</div>
+                </div>
             </div>
-        {% endfor %}
-    </div>
 
-    <!-- Chat -->
-    <div class="bottom">
-        <div class="chat" id="chat"></div>
 
-    </div>
+        </div>
+    </main>
+
 
 </div>
 
 <script>
-    const chat = document.getElementById("chat");
-    const thoughtFile = "{{ thought }}";
+    const fresh_date = {{ fresh_date | tojson }};
+    // ====== Общая функция инициализации графика (каждый график независим) ======
+    function initChart(rootEl, cfg) {
+        const data = cfg.data;
+        let yMin = cfg.yMin ?? 0;
+let yMax = cfg.yMax ?? 6;
+let yTicks = cfg.yTicks ?? [2, 4, 6];
 
-    function addMessage(prefix, className) {
-        const msg = document.createElement("pre"); // <pre> сохраняет все отступы
-        msg.className = className;
-        msg.textContent = prefix;
-        chat.appendChild(msg);
-        return msg;
-    }
+function applyScaleFromCfg() {
+  yMin = cfg.yMin ?? 0;
+  yMax = cfg.yMax ?? 6;
+  yTicks = cfg.yTicks ?? [2, 4, 6];
+}
 
-    // Разбивка строки на куски ≤ maxLen без разрыва слов
-    function splitByWords(text, maxLen = 300) {
-        const result = [];
-        let remaining = text;
+        const canvas = rootEl.querySelector(".js-canvas");
+        const ctx = canvas.getContext("2d");
 
-        while (remaining.length > 0) {
-            if (remaining.length <= maxLen) {
-                result.push(remaining);
-                break;
-            }
+        const tip = rootEl.querySelector(".js-tip");
+        const tipDate = rootEl.querySelector(".js-tipDate");
+        const tipVal = rootEl.querySelector(".js-tipVal");
+        const seriesNameEl = rootEl.querySelector(".js-seriesName");
+        if (seriesNameEl && cfg.seriesName) seriesNameEl.textContent = cfg.seriesName;
 
-            // Берем кусок примерно maxLen, затем ищем последний пробел
-            let slice = remaining.slice(0, maxLen);
-            let lastSpace = slice.lastIndexOf(" ");
-            if (lastSpace === -1) lastSpace = maxLen; // если пробелов нет, режем по maxLen
+        // (опционально) вторая строка в тултипе — для второго показателя
+const tipVal2 = rootEl.querySelector(".js-tipVal2");
 
-            result.push(slice.slice(0, lastSpace).trim());
-            remaining = remaining.slice(lastSpace).trim();
+const extraVal1 = rootEl.querySelector(".js-extraVal1");
+const extraVal2 = rootEl.querySelector(".js-extraVal2");
+const extraVal3 = rootEl.querySelector(".js-extraVal3");
+const extraVal4 = rootEl.querySelector(".js-extraVal4");
+const extraVal5 = rootEl.querySelector(".js-extraVal5");
+
+const seriesNameEl2 = rootEl.querySelector(".js-seriesName2");
+if (seriesNameEl2 && cfg.seriesName2) seriesNameEl2.textContent = cfg.seriesName2;
+
+        const state = {hoverIndex: null};
+
+        function layout() {
+            const w = rootEl.clientWidth;
+            const h = rootEl.clientHeight;
+
+            const pad = {top: 10, right: 42, bottom: 34, left: 10};
+            const plot = {
+                x: pad.left,
+                y: pad.top,
+                w: w - pad.left - pad.right,
+                h: h - pad.top - pad.bottom
+            };
+            return {w, h, pad, plot};
         }
 
-        return result;
+        function xForIndex(i, plot) {
+            const n = data.length;
+            if (n === 1) return plot.x + plot.w / 2;
+            return plot.x + (i * (plot.w / (n - 1)));
+        }
+
+        function yForValue(v, plot) {
+            const t = (v - yMin) / (yMax - yMin);
+            return plot.y + plot.h - (t * plot.h);
+        }
+
+        function nearestIndex(mx, plot) {
+            const n = data.length;
+            const rel = Math.max(0, Math.min(plot.w, mx - plot.x));
+            const i = Math.round(rel / (plot.w / (n - 1)));
+            return Math.max(0, Math.min(n - 1, i));
+        }
+
+        function drawGrid(plot) {
+            ctx.lineWidth = 1;
+
+            ctx.strokeStyle = "#e3e7ee";
+            ctx.beginPath();
+            ctx.moveTo(plot.x, plot.y + plot.h);
+            ctx.lineTo(plot.x + plot.w, plot.y + plot.h);
+            ctx.stroke();
+
+            ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--grid").trim() || "#eceff3";
+            yTicks.forEach(t => {
+                const y = yForValue(t, plot);
+                ctx.beginPath();
+                ctx.moveTo(plot.x, y);
+                ctx.lineTo(plot.x + plot.w, y);
+                ctx.stroke();
+            });
+
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+            ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+            ctx.textAlign = "left";
+            ctx.textBaseline = "middle";
+
+            yTicks.forEach(t => {
+                const y = yForValue(t, plot);
+                ctx.fillText(String(t), plot.x + plot.w + 10, y);
+            });
+        }
+
+function drawXAxis(plot) {
+  const n = data.length;
+
+  // 1) Пытаемся взять marks из fresh_date или cfg.marks
+  let marks = (Array.isArray(fresh_date) && fresh_date.length)
+    ? fresh_date
+    : (cfg.marks ?? []);
+
+  // 2) Оставляем только валидные индексы
+  marks = marks.filter(m => m && Number.isFinite(m.i) && m.i >= 0 && m.i < n);
+
+  // 3) Если меток нет (типичный кейс при n=4) — генерим сами
+  if (!marks.length) {
+    if (n <= 7) {
+      // показываем подпись каждой точки
+      marks = data.map((p, i) => ({ i, text: p.label }));
+    } else {
+      // показываем 3 метки: начало/середина/конец
+      const mid = Math.floor((n - 1) / 2);
+      marks = [
+        { i: 0, text: data[0].label },
+        { i: mid, text: data[mid].label },
+        { i: n - 1, text: data[n - 1].label }
+      ];
+    }
+  }
+
+  ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+  ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "top";
+
+  marks.forEach(m => {
+    const x = xForIndex(m.i, plot);
+    const lines = String(m.text).split("\n");
+    const y0 = plot.y + plot.h + 10;
+    lines.forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
+  });
+}
+
+
+        function drawLine(plot) {
+            const blue = getComputedStyle(document.documentElement).getPropertyValue("--blue").trim() || "#1a73e8";
+            ctx.strokeStyle = blue;
+            ctx.lineWidth = 2.2;
+            ctx.lineJoin = "round";
+            ctx.lineCap = "round";
+
+            ctx.beginPath();
+            data.forEach((p, i) => {
+                const x = xForIndex(i, plot);
+                const y = yForValue(p.v, plot);
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+        }
+
+        function drawHover(plot) {
+            if (state.hoverIndex == null) return;
+
+            const i = state.hoverIndex;
+            const blue = getComputedStyle(document.documentElement).getPropertyValue("--blue").trim() || "#1a73e8";
+            const x = xForIndex(i, plot);
+            const y = yForValue(data[i].v, plot);
+
+            ctx.strokeStyle = "#d6dbe3";
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(x, plot.y);
+            ctx.lineTo(x, plot.y + plot.h);
+            ctx.stroke();
+
+            ctx.fillStyle = "#fff";
+            ctx.strokeStyle = blue;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.fillStyle = "rgba(26,115,232,.15)";
+            ctx.beginPath();
+            ctx.arc(x, y, 10, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        function draw() {
+            const {w, h, plot} = layout();
+            ctx.clearRect(0, 0, w, h);
+
+            ctx.fillStyle = "#fff";
+            ctx.fillRect(0, 0, w, h);
+
+            drawGrid(plot);
+            drawLine(plot);
+            drawHover(plot);
+            drawXAxis(plot);
+        }
+
+        function showTooltip(i, plot) {
+  const x = xForIndex(i, plot);
+  const y = yForValue(data[i].v, plot);
+
+  tipDate.textContent = data[i].label;
+
+  // основное значение
+  tipVal.textContent = cfg.formatValue ? cfg.formatValue(data[i].v) : String(Math.round(data[i].v));
+
+  // второе значение (если передано и есть DOM-элементы)
+  if (cfg.data2 && tipVal2) {
+    const v2 = cfg.data2[i]?.v;
+    if (v2 != null) {
+      tipVal2.textContent = cfg.formatValue2 ? cfg.formatValue2(v2) : String(Math.round(v2));
+    }
+  }
+
+  if (cfg.data2 && cfg.data2[i]) {
+  const row = cfg.data2[i];
+
+  if (extraVal1) extraVal1.textContent = (row["Звонки"] ?? 0).toLocaleString("ru-RU");
+  if (extraVal2) extraVal2.textContent = (row["Звонки с начала месяца"] ?? 0).toLocaleString("ru-RU");
+  if (extraVal3) extraVal3.textContent = (row["Заявки"] ?? 0).toLocaleString("ru-RU");
+  if (extraVal4) extraVal4.textContent = (row["Заявки с начала месяца"] ?? 0).toLocaleString("ru-RU");
+  if (extraVal5) extraVal5.textContent = (row["Общая конверсия"] ?? 0).toLocaleString("ru-RU");
+}
+  const extraRows = rootEl.querySelectorAll(".tip-row.tip-extra");
+const hasExtras = cfg.data2 && cfg.data2[i] && ("Звонки" in cfg.data2[i] || "Заявки" in cfg.data2[i]);
+extraRows.forEach(r => r.style.display = hasExtras ? "" : "none");
+
+
+  tip.classList.add("show");
+  tip.setAttribute("aria-hidden", "false");
+
+  tip.style.left = x + "px";
+  tip.style.top = y + "px";
+
+  const rect = rootEl.getBoundingClientRect();
+  const tipRect = tip.getBoundingClientRect();
+  const pad = 10;
+
+  let left = x;
+  let top = y;
+
+  const minTop = pad + tipRect.height;
+  const maxTop = rect.height - pad;
+
+  left = Math.max(pad + tipRect.width / 2, Math.min(rect.width - pad - tipRect.width / 2, left));
+  top = Math.max(minTop, Math.min(maxTop, top));
+
+  tip.style.left = left + "px";
+  tip.style.top = top + "px";
+}
+
+
+        function hideTooltip() {
+            tip.classList.remove("show");
+            tip.setAttribute("aria-hidden", "true");
+        }
+
+        function onMove(e) {
+            const {plot} = layout();
+            const r = rootEl.getBoundingClientRect();
+            const mx = e.clientX - r.left;
+            const my = e.clientY - r.top;
+
+            const inside =
+                mx >= plot.x && mx <= plot.x + plot.w &&
+                my >= plot.y && my <= plot.y + plot.h;
+
+            if (!inside) {
+                state.hoverIndex = null;
+                hideTooltip();
+                draw();
+                return;
+            }
+
+            const i = nearestIndex(mx, plot);
+            state.hoverIndex = i;
+            showTooltip(i, plot);
+            draw();
+        }
+
+        function onLeave() {
+            state.hoverIndex = null;
+            hideTooltip();
+            draw();
+        }
+
+        function resize() {
+            const rect = rootEl.getBoundingClientRect();
+            const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+            canvas.width = Math.floor(rect.width * dpr);
+            canvas.height = Math.floor(rect.height * dpr);
+            canvas.style.width = rect.width + "px";
+            canvas.style.height = rect.height + "px";
+
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            draw();
+        }
+
+        rootEl.addEventListener("mousemove", onMove);
+        rootEl.addEventListener("mouseleave", onLeave);
+        window.addEventListener("resize", resize);
+
+        function setData(newData, overrides = {}) {
+  cfg = { ...cfg, ...overrides };
+  applyScaleFromCfg(); // <-- ВОТ ЭТО делает yMax динамическим
+
+  data.length = 0;
+  newData.forEach(x => data.push(x));
+
+  state.hoverIndex = null;
+  hideTooltip();
+  draw();
+}
+
+// вернуть API наружу
+applyScaleFromCfg();
+resize();
+function findIndexByDayKey(dayKey) {
+  if (!dayKey) return null;
+  const idx = data.findIndex(p => dayKeyFromLabel(p.label) === String(dayKey));
+  return idx >= 0 ? idx : null;
+}
+
+function setHoverIndex(i) {
+  const { plot } = layout();
+  state.hoverIndex = i;
+  showTooltip(i, plot);
+  draw();
+}
+
+function clearHover() {
+  state.hoverIndex = null;
+  hideTooltip();
+  draw();
+}
+
+// Публичный метод: подсветить по dayKey (числу дня)
+function setHoverByDayKey(dayKey) {
+  const i = findIndexByDayKey(dayKey);
+  if (i == null) return false;
+  setHoverIndex(i);
+  return true;
+}
+
+// Публичный метод: получить dayKey текущего hover
+function getHoverDayKey() {
+  if (state.hoverIndex == null) return null;
+  return dayKeyFromLabel(data[state.hoverIndex]?.label);
+}
+
+return { setData, setHoverByDayKey, clearHover, getHoverDayKey };
     }
 
-    function simulateAIThinking() {
-        fetch(thoughtFile)
-            .then(response => response.text())
-            .then(text => {
-                const lines = text.split("\n"); // сохраняем исходные переносы
-                let index = 0;
-                const aiMessage = addMessage("🤖 ", "ai");
+    function dayKeyFromLabel(label) {
+  // "ср 4 фев." -> "4"
+  const m = String(label).match(/\b(\d{1,2})\b/);
+  return m ? m[1] : null;
+}
 
-                const interval = setInterval(() => {
-                    if (index < lines.length) {
-                        let line = lines[index];
-                        let chunks = splitByWords(line, 190);
 
-                        // выводим куски с небольшим интервалом
-                        chunks.forEach((chunk, i) => {
-                            setTimeout(() => {
-                                aiMessage.textContent += "\n" + chunk;
-                                chat.scrollTop = chat.scrollHeight;
-                            }, i * 100); // 100ms между кусками
-                        });
+    // ====== Данные для Графика 1: среднее время (пример) ======
+    const duration_graph = {{ duration_graph | tojson }};
+    const dataTime = duration_graph;
 
-                        index++;
-                    } else {
-                        clearInterval(interval);
-                    }
-                }, 100); // интервал между исходными строками
-            })
-            .catch(err => console.error("Ошибка при загрузке файла:", err));
+    // ====== Данные для Графика 2: клики (независимо от первого) ======
+    const clicks_graph = {{ clicks_graph | tojson }};
+    const dataClicks = clicks_graph;
+    const dataClicksImpressions = dataClicks.map(p => ({
+  label: p.label,
+  v:  p.imp ?? 0
+}));
+
+    // Инициализируем оба графика
+    const chartEls = document.querySelectorAll(".js-chart");
+
+    /* Chart 1 */
+    const duration_graph_points = {{ duration_graph_points | tojson }};
+    initChart(chartEls[0], {
+        data: dataTime,
+        yMin: duration_graph_points[0],
+        yMax: duration_graph_points[2],
+        yTicks: duration_graph_points,
+        seriesName: "Среднее время",
+        formatValue: (v) => v.toFixed(1)
+    });
+
+    /* Chart 2 */
+    const clicks_graph_points = {{ clicks_graph_points | tojson }};
+    initChart(chartEls[1], {
+  data: dataClicks,
+  data2: dataClicksImpressions,      // <-- второе значение в тултипе
+  yMin: clicks_graph_points[0],
+  yMax: clicks_graph_points[2],
+  yTicks: clicks_graph_points,
+  seriesName: "Клики",
+  seriesName2: "Показы",             // <-- подпись второй строки
+  formatValue: (v) => String(Math.round(v)),
+  formatValue2: (v) => v.toLocaleString("ru-RU")
+});
+
+    /* ==== Chart 4 (Показы) — независимые данные ==== */
+    const traffic_all_graph = {{ (traffic_all_graph or []) | tojson }};
+const traffic_all_graph_percent = {{ (traffic_all_graph_percent or []) | tojson }};
+
+// Надёжный парсинг "YYYY-MM-DD" без таймзоны
+function ymFromISO(dateStr) {
+  if (!dateStr) return null;
+  const parts = String(dateStr).split("-");
+  if (parts.length < 2) return null;
+  const y = Number(parts[0]);
+  const m = Number(parts[1]);
+  if (!Number.isFinite(y) || !Number.isFinite(m)) return null;
+  return { y, m };
+}
+
+function filterByYearMonth(arr, year, month) {
+  const y = Number(year);
+  const m = Number(month);
+  return arr.filter(p => {
+    const ym = ymFromISO(p.date);
+    return ym && ym.y === y && ym.m === m;
+  });
+}
+
+// 1) Нормализуем данные
+const allTraffic = traffic_all_graph.map(p => ({
+  date: p.date,
+  label: p.label,
+  v: Number(p.v) || 0
+}));
+
+const allPercent = traffic_all_graph_percent.map(p => ({
+  ...p,                          // <-- сохраняем новые поля!
+  date: p.date,
+  label: p.label,
+  v: Number(p.v) || 0
+}));
+
+const yearSel = document.querySelector(".js-imprYear");
+const monthSel = document.querySelector(".js-imprMonth");
+
+// 2) Строим данные для выбранного месяца
+function buildChart4Data() {
+  const year = yearSel?.value || "2026";
+  const month = monthSel?.value || "2";
+
+  const trafficMonth = filterByYearMonth(allTraffic, year, month);
+  const percentMonth = filterByYearMonth(allPercent, year, month);
+
+  // выровняем длины (на всякий случай)
+  const n = Math.min(trafficMonth.length, percentMonth.length);
+
+  if (!n) {
+    return {
+      data: [{ label: "нет данных", v: 0 }],
+      data2: [{ label: "нет данных", v: 0 }],
+      yMax: 10,
+      ticks: [3, 7, 10]
+    };
+  }
+
+  const data = trafficMonth.slice(0, n).map(p => ({ label: p.label, v: p.v }));
+  const data2 = percentMonth.slice(0, n).map(p => ({
+  ...p,                 // сохраняем Звонки/Заявки/...
+  label: p.label,
+  v: Number(p.v) || 0
+}));
+
+  // === ШКАЛА КАК В 5 ГРАФИКЕ (ПО ТРАФИКУ) ===
+  const maxV = Math.max(1, ...data.map(p => p.v));
+  const yMax = Math.ceil(maxV / 10) * 10;
+  const ticks = [
+    Math.round(yMax / 3),
+    Math.round((2 * yMax) / 3),
+    yMax
+  ];
+
+  return { data, data2, yMax, ticks };
+}
+
+// 3) init один раз
+const init4 = buildChart4Data();
+const chart4 = initChart(chartEls[2], {
+  data: init4.data,
+  data2: init4.data2,
+  yMin: 0,
+  yMax: init4.yMax,
+  yTicks: init4.ticks,
+  seriesName: "Трафик",
+  seriesName2: "Процент",
+  formatValue: (v) => v.toLocaleString("ru-RU"),
+  formatValue2: (v) => `${Number(v).toFixed(1).replace(".", ",")}%`
+});
+
+// 4) update по селектам
+function updateChart4() {
+  const next = buildChart4Data();
+  chart4.setData(next.data, {
+    data2: next.data2,
+    yMin: 0,
+    yMax: next.yMax,
+    yTicks: next.ticks
+  });
+}
+
+yearSel?.addEventListener("change", updateChart4);
+monthSel?.addEventListener("change", updateChart4);
+
+    /* ==== Chart 5 (Конверсии) — независимые данные ==== */
+const traffic_current_graph = {{ traffic_current_graph | tojson }};
+const traffic_current_graph_percent = {{ traffic_current_graph_percent | tojson }};
+const dataConversions = traffic_current_graph.map(p => ({
+  label: p.label,
+  v: Number(p.v) || 0
+}));
+
+// процентное соотношение (доля каждой точки от суммы за период)
+const dataConversionsPercent = traffic_current_graph_percent.map(p => ({
+  ...p,                          // <-- сохраняем новые поля!
+  label: p.label,
+  v: Number(p.v) || 0
+}));
+
+const maxV = Math.max(1, ...dataConversions.map(p => p.v));
+const yMaxTraffic = Math.ceil(maxV / 10) * 10;          // округление вверх до десятков
+const yTicksTraffic = [
+  Math.round(yMaxTraffic / 3),
+  Math.round((2 * yMaxTraffic) / 3),
+  yMaxTraffic
+];
+
+const chart5 = initChart(chartEls[3], {
+  data: dataConversions,
+  data2: dataConversionsPercent,        // <-- второй показатель в тултипе
+  yMin: 0,
+  yMax: yMaxTraffic,
+  yTicks: yTicksTraffic,
+  seriesName: "Трафик",
+  seriesName2: "Процент",
+  formatValue: (v) => v.toLocaleString("ru-RU"),
+  formatValue2: (v) => `${v.toFixed(1).replace(".", ",")}%`
+});
+
+let isSyncing = false;
+
+function linkHovers(a, b) {
+  const elA = a.rootEl;
+  const elB = b.rootEl;
+}
+
+// наведение на A -> подсветить B
+function syncFromTo(fromChart, toChart) {
+  if (isSyncing) return;
+  const dayKey = fromChart.getHoverDayKey?.();
+  if (!dayKey) return;
+
+  isSyncing = true;
+  toChart.setHoverByDayKey?.(dayKey);
+  isSyncing = false;
+}
+
+// уход с A -> убрать hover с B
+function clearOther(toChart) {
+  if (isSyncing) return;
+  isSyncing = true;
+  toChart.clearHover?.();
+  isSyncing = false;
+}
+
+// вешаем слушатели на DOM контейнеры графиков
+const el4 = chartEls[2]; // 4-й график
+const el5 = chartEls[3]; // 5-й график
+
+el4.addEventListener("mousemove", () => syncFromTo(chart4, chart5));
+el5.addEventListener("mousemove", () => syncFromTo(chart5, chart4));
+
+el4.addEventListener("mouseleave", () => clearOther(chart5));
+el5.addEventListener("mouseleave", () => clearOther(chart4));
+
+    // ====== Твой existing topbar код (оставь как есть) ======
+    const brandStrip = document.getElementById("brandStrip");
+
+    brandStrip.addEventListener("wheel", (e) => {
+        const absY = Math.abs(e.deltaY);
+        const absX = Math.abs(e.deltaX);
+        if (absX > absY) return;
+        e.preventDefault();
+        brandStrip.scrollLeft += e.deltaY * 1.15;
+    }, {passive: false});
+
+function shiftDayInText(text, delta = 1) {
+  const s = String(text);
+
+  // ищем первое число 1-2 цифры (в твоих метках это день)
+  const m = s.match(/\b(\d{1,2})\b/);
+  if (!m) return s;
+
+  const raw = m[1];
+  const n = Number(raw);
+  if (!Number.isFinite(n)) return s;
+
+  let next = n + delta;
+
+  // сохраним ведущий ноль, если был "01"
+  const repl = (raw.length === 2) ? String(next).padStart(2, "0") : String(next);
+
+  return s.replace(m[1], repl);
+}
+
+    function initMultiChart(rootEl, cfg) {
+  const allSeries = cfg.series; // полный список серий
+  const labels = allSeries[0].data.map(p => p.label);
+
+  const yMin = cfg.yMin ?? 0;
+  const yMax = cfg.yMax ?? 30;
+  const yTicks = cfg.yTicks ?? [10, 20, 30];
+
+  const canvas = rootEl.querySelector(".js-canvas");
+  const ctx = canvas.getContext("2d");
+
+  const tip = rootEl.querySelector(".js-tip");
+  const tipDate = rootEl.querySelector(".js-tipDate");
+  const tipVals = rootEl.querySelectorAll(".js-tipVal");
+  const seriesNameEls = rootEl.querySelectorAll(".js-seriesName");
+  const dotEls = rootEl.querySelectorAll(".js-dot");
+
+  // строка тултипа для каждой серии (удобно прятать целиком)
+  const tipRows = Array.from(tipVals).map(v => v.closest(".tip-row")).filter(Boolean);
+
+  // назначим имена/цвета в тултипе (один раз)
+  allSeries.forEach((s, i) => {
+    if (seriesNameEls[i]) seriesNameEls[i].textContent = s.name;
+    if (dotEls[i]) {
+      dotEls[i].style.background = s.color;
+      dotEls[i].style.boxShadow = `0 0 0 3px ${s.glow}`;
+    }
+  });
+
+  const state = {
+    hoverIndex: null,
+    activeNames: new Set(allSeries.map(s => s.name)) // по умолчанию все видимы
+  };
+
+  function getVisibleSeries() {
+    return allSeries.filter(s => state.activeNames.has(s.name));
+  }
+
+  function layout() {
+    const w = rootEl.clientWidth;
+    const h = rootEl.clientHeight;
+    const pad = { top: 10, right: 42, bottom: 34, left: 10 };
+    const plot = { x: pad.left, y: pad.top, w: w - pad.left - pad.right, h: h - pad.top - pad.bottom };
+    return { w, h, plot };
+  }
+
+  function xForIndex(i, plot) {
+    const n = labels.length;
+    if (n === 1) return plot.x + plot.w / 2;
+    return plot.x + (i * (plot.w / (n - 1)));
+  }
+
+  function yForValue(v, plot) {
+    const t = (v - yMin) / (yMax - yMin);
+    return plot.y + plot.h - (t * plot.h);
+  }
+
+  function nearestIndex(mx, plot) {
+    const n = labels.length;
+    const rel = Math.max(0, Math.min(plot.w, mx - plot.x));
+    const i = Math.round(rel / (plot.w / (n - 1)));
+    return Math.max(0, Math.min(n - 1, i));
+  }
+
+  function drawGrid(plot) {
+    ctx.lineWidth = 1;
+
+    ctx.strokeStyle = "#e3e7ee";
+    ctx.beginPath();
+    ctx.moveTo(plot.x, plot.y + plot.h);
+    ctx.lineTo(plot.x + plot.w, plot.y + plot.h);
+    ctx.stroke();
+
+    ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--grid").trim() || "#eceff3";
+    yTicks.forEach(t => {
+      const y = yForValue(t, plot);
+      ctx.beginPath();
+      ctx.moveTo(plot.x, y);
+      ctx.lineTo(plot.x + plot.w, y);
+      ctx.stroke();
+    });
+
+    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+    ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+    ctx.textAlign = "left";
+    ctx.textBaseline = "middle";
+    yTicks.forEach(t => {
+      const y = yForValue(t, plot);
+      ctx.fillText(String(t), plot.x + plot.w + 10, y);
+    });
+  }
+
+  function drawXAxis(plot) {
+const marks = (Array.isArray(fresh_date) && fresh_date.length)
+  ? fresh_date.map(m => ({
+      ...m,
+      text: shiftDayInText(m.text, 1)
+    }))
+  : (cfg.marks ?? [
+      { i: 10, text: "11\nянв." },
+      { i: 17, text: "18" },
+      { i: 22, text: "23\nянв." },
+      { i: 31, text: "01\nфев." }
+    ]);
+
+    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+    ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+
+    marks.forEach(m => {
+      if (m.i < 0 || m.i >= labels.length) return;
+      const x = xForIndex(m.i, plot);
+      const y0 = plot.y + plot.h + 10;
+      m.text.split("\n").forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
+    });
+  }
+
+  function drawSeries(plot) {
+    const visible = getVisibleSeries();
+    visible.forEach(s => {
+      ctx.strokeStyle = s.color;
+      ctx.lineWidth = 2.1;
+      ctx.lineJoin = "round";
+      ctx.lineCap = "round";
+
+      ctx.beginPath();
+      s.data.forEach((p, i) => {
+        const x = xForIndex(i, plot);
+        const y = yForValue(p.v, plot);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+    });
+  }
+
+  function drawHover(plot) {
+    if (state.hoverIndex == null) return;
+
+    const visible = getVisibleSeries();
+    if (!visible.length) return;
+
+    const i = state.hoverIndex;
+    const x = xForIndex(i, plot);
+
+    // вертикальная линия
+    ctx.strokeStyle = "#d6dbe3";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, plot.y);
+    ctx.lineTo(x, plot.y + plot.h);
+    ctx.stroke();
+
+    // маркеры только видимых серий
+    visible.forEach(s => {
+      const y = yForValue(s.data[i].v, plot);
+
+      ctx.fillStyle = "#fff";
+      ctx.strokeStyle = s.color;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(x, y, 4.5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.fillStyle = s.glow;
+      ctx.beginPath();
+      ctx.arc(x, y, 9, 0, Math.PI * 2);
+      ctx.fill();
+    });
+  }
+
+  function draw() {
+    const { w, h, plot } = layout();
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = "#fff";
+    ctx.fillRect(0, 0, w, h);
+
+    drawGrid(plot);
+    drawSeries(plot);
+    drawHover(plot);
+    drawXAxis(plot);
+  }
+
+  function updateTooltipRowsVisibility() {
+    // прячем строки тултипа для НЕ активных серий
+    allSeries.forEach((s, idx) => {
+      const row = tipRows[idx];
+      if (!row) return;
+      row.style.display = state.activeNames.has(s.name) ? "" : "none";
+    });
+  }
+
+  function showTooltip(i, plot) {
+    const visible = getVisibleSeries();
+    if (!visible.length) {
+      hideTooltip();
+      return;
     }
 
-    window.onload = simulateAIThinking;
+    tipDate.textContent = labels[i];
+
+    // обновляем значения в тултипе, но выводим/прячем строками
+    allSeries.forEach((s, idx) => {
+      const v = s.data[i].v;
+      if (tipVals[idx]) {
+        tipVals[idx].textContent = cfg.formatValue ? cfg.formatValue(v, idx) : String(Math.round(v));
+      }
+    });
+
+    updateTooltipRowsVisibility();
+
+    const x = xForIndex(i, plot);
+    const avgY = visible.reduce((acc, s) => acc + yForValue(s.data[i].v, plot), 0) / visible.length;
+
+    tip.classList.add("show");
+    tip.setAttribute("aria-hidden", "false");
+    tip.style.left = x + "px";
+    tip.style.top = avgY + "px";
+
+    const rect = rootEl.getBoundingClientRect();
+    const tipRect = tip.getBoundingClientRect();
+    const pad = 10;
+
+    let left = x;
+    let top = avgY;
+
+    const minTop = pad + tipRect.height;
+    const maxTop = rect.height - pad;
+
+    left = Math.max(pad + tipRect.width / 2, Math.min(rect.width - pad - tipRect.width / 2, left));
+    top = Math.max(minTop, Math.min(maxTop, top));
+
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+
+  function hideTooltip() {
+    tip.classList.remove("show");
+    tip.setAttribute("aria-hidden", "true");
+  }
+
+  function onMove(e) {
+    const { plot } = layout();
+    const r = rootEl.getBoundingClientRect();
+    const mx = e.clientX - r.left;
+    const my = e.clientY - r.top;
+
+    const inside = mx >= plot.x && mx <= plot.x + plot.w && my >= plot.y && my <= plot.y + plot.h;
+    if (!inside) {
+      state.hoverIndex = null;
+      hideTooltip();
+      draw();
+      return;
+    }
+
+    const i = nearestIndex(mx, plot);
+    state.hoverIndex = i;
+    showTooltip(i, plot);
+    draw();
+  }
+
+  function onLeave() {
+    state.hoverIndex = null;
+    hideTooltip();
+    draw();
+  }
+
+  function resize() {
+    const rect = rootEl.getBoundingClientRect();
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+    canvas.width = Math.floor(rect.width * dpr);
+    canvas.height = Math.floor(rect.height * dpr);
+    canvas.style.width = rect.width + "px";
+    canvas.style.height = rect.height + "px";
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    draw();
+  }
+
+  rootEl.addEventListener("mousemove", onMove);
+  rootEl.addEventListener("mouseleave", onLeave);
+  window.addEventListener("resize", resize);
+
+  // --- публичный метод для фильтра ---
+  function setActiveNames(namesSet) {
+    state.activeNames = new Set(namesSet);
+    updateTooltipRowsVisibility();
+
+    // если ничего не активно — убираем hover/tooltip
+    if (!state.activeNames.size) {
+      state.hoverIndex = null;
+      hideTooltip();
+    }
+    draw();
+  }
+
+  resize();
+  updateTooltipRowsVisibility();
+
+  return { setActiveNames };
+}
+
+
+    // ====== Инициализация 3-го графика (5 линий) ======
+    const multiEl = document.querySelector(".js-multichart");
+
+    // ====== Реальные данные для 3-го графика (Events) ======
+const event_graph = {{ events_graph | tojson }};
+
+// labels берём из event_graph
+const baseLabels = event_graph.map(p => p.label);
+
+function seriesFromEventKey(name, colorVar, glow) {
+  const color = getComputedStyle(document.documentElement).getPropertyValue(colorVar).trim();
+  return {
+    name,
+    color,
+    glow,
+    data: event_graph.map(p => ({
+      label: p.label,
+      v: Number(p[name] ?? 0)
+    }))
+  };
+}
+
+const eventsSeries = [
+  seriesFromEventKey("page_view", "--s1", "rgba(26,115,232,.12)"),
+  seriesFromEventKey("session_start", "--s2", "rgba(52,168,83,.12)"),
+  seriesFromEventKey("first_visit", "--s3", "rgba(251,188,4,.14)"),
+  seriesFromEventKey("user_engagement", "--s4", "rgba(234,67,53,.12)"),
+  seriesFromEventKey("scroll", "--s5", "rgba(161,66,244,.12)"),
+  seriesFromEventKey("form_start", "--s6", "rgba(0,172,193,.12)"),
+  seriesFromEventKey("all_forms", "--s7", "rgba(142,36,170,.12)"),
+  seriesFromEventKey("G-MSGH2BB72V", "--s8", "rgba(251,140,0,.14)"),
+  seriesFromEventKey("binotel_ct_call_details", "--s9", "rgba(109,76,65,.12)"),
+  seriesFromEventKey("binotel_ct_call_received", "--s10", "rgba(84,110,122,.12)"),
+];
+
+const events_graph_points = {{ events_graph_points | tojson }};
+
+    const multiChart = initMultiChart(multiEl, {
+  series: eventsSeries,
+  yMin: events_graph_points[0],
+  yMax: events_graph_points[2],
+  yTicks: events_graph_points,
+  formatValue: (v) => String(Math.round(v))
+});
+
+
+    function clampSidebarToEvents() {
+        const app = document.querySelector(".app");
+        const sidebarCol = document.querySelector(".sidebar-col");
+        const eventsCard = document.querySelector(".card--events");
+        if (!app || !sidebarCol || !eventsCard) return;
+
+        const appRect = app.getBoundingClientRect();
+        const eventsRect = eventsCard.getBoundingClientRect();
+
+        // расстояние от верха .app до начала 3-го графика (внутри .app)
+        const stopAt = (eventsRect.top - appRect.top);
+
+        // делаем левую колонку высотой до начала 3-го графика
+        sidebarCol.style.height = Math.max(0, stopAt) + "px";
+    }
+
+    window.addEventListener("load", clampSidebarToEvents);
+    window.addEventListener("resize", clampSidebarToEvents);
+    window.addEventListener("scroll", clampSidebarToEvents, {passive: true});
+
+
+    function syncPillsToMultiChart() {
+  const actives = new Set(
+    Array.from(document.querySelectorAll(".pill.active"))
+      .map(p => p.textContent.trim())
+  );
+  multiChart.setActiveNames(actives);
+}
+
+// клик по фильтру: переключили класс → обновили график
+document.querySelectorAll(".pill").forEach(pill => {
+  pill.addEventListener("click", () => {
+    pill.classList.toggle("active");
+    syncPillsToMultiChart();
+  });
+});
+
+// начальная инициализация (при загрузке страницы)
+syncPillsToMultiChart();
+
+
+document.querySelector(".js-imprYear")?.addEventListener("change", (e) => {
+  const year = e.target.value;
+  const month = document.querySelector(".js-imprMonth")?.value;
+  // TODO: загрузка/перерисовка данных показов
+});
+
+document.querySelector(".js-imprMonth")?.addEventListener("change", (e) => {
+  const month = e.target.value;
+  const year = document.querySelector(".js-imprYear")?.value;
+  // TODO: загрузка/перерисовка данных показов
+});
 </script>
-
 
 </body>
 </html>

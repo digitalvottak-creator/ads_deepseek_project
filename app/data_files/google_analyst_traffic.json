@@ -1,0 +1,10445 @@
+[
+  {
+    "campaign_name": "Бош Сервис Измаил",
+    "campaign_id": "435894686",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 40
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 46
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 38
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 51
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 49
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 46
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 28
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 31
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 38
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 32
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 35
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 36
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 83
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 60
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 71
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 56
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 70
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 143
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 87
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 93
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 231
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 249
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 182
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 68
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 111
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 56
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 95
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 89
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 43
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 89
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 174
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 103
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 138
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 118
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 216
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 152
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 145
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 74
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 10
+      }
+    ]
+  },
+  {
+    "campaign_name": "Сервис АГМ",
+    "campaign_id": "452965891",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 38
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 33
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 32
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 41
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 49
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 39
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 41
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 41
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 70
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 54
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 74
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 61
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 30
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 57
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 14
+      }
+    ]
+  },
+  {
+    "campaign_name": "Сhery АВТОГРУП МОТОРС",
+    "campaign_id": "472232563",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 53
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 81
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 71
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 78
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 54
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 60
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 67
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 55
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 85
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 81
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 70
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 69
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 90
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 49
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 67
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 90
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 59
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 55
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 110
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 71
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 77
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 93
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 92
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 85
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 121
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 71
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 76
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 68
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 57
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 60
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 53
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 53
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 51
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 54
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 69
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 103
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 58
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 90
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 40
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 64
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 34
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 56
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 50
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 33
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 70
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 31
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 43
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 41
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 61
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 45
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 36
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 33
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 70
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 36
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 41
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 46
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 38
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 43
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 49
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 36
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 64
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 45
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 41
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 38
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 41
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 76
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 28
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 16
+      }
+    ]
+  },
+  {
+    "campaign_name": "AG Cars с пробегом",
+    "campaign_id": "359119669",
+    "data": []
+  },
+  {
+    "campaign_name": "Autogroup E-Service",
+    "campaign_id": "499578401",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 7
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 7
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 7
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 7
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 7
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 3
+      }
+    ]
+  },
+  {
+    "campaign_name": "Autogroup Electro",
+    "campaign_id": "436806123",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 332
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 296
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 282
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 264
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 259
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 263
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 266
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 262
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 260
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 264
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 301
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 329
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 286
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 334
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 336
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 283
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 302
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 295
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 326
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 584
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 538
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 331
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 256
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 876
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 650
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 442
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 475
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 404
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 340
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 373
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 361
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 323
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 441
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 346
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 493
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 472
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 477
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 458
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 445
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 455
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 434
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 392
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 357
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 373
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 375
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 841
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 596
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 399
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 387
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 440
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 372
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 433
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 314
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 366
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 366
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 308
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 297
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 307
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 319
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 282
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 342
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 364
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 368
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 255
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 2608
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 1601
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 338
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 219
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 200
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 198
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 206
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 162
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 198
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 152
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 146
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 148
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 154
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 145
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 173
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 178
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 130
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 138
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 220
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 192
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 193
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 166
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 181
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 342
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 297
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 316
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 517
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 503
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 405
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 491
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 402
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 346
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 394
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 445
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 445
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 310
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 301
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 325
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 339
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 2167
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 2117
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 1245
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 567
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 484
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 260
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 324
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 422
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 480
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 384
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 152
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 510
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 284
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 49
+      }
+    ]
+  },
+  {
+    "campaign_name": "Autogroup.ua",
+    "campaign_id": "359106592",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 574
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 591
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 579
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 1219
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 694
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 876
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 725
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 588
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 559
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 569
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 747
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 1406
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 1415
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 886
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 725
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 705
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 776
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 588
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 579
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 543
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 522
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 446
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 384
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 286
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 286
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 309
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 353
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 324
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 538
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 485
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 507
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 487
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 380
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 376
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 335
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 442
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 473
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 598
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 576
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 571
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 609
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 614
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 582
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 524
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 597
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 662
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 546
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 655
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 698
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 665
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 684
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 584
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 517
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 421
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 531
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 485
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 640
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 460
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 508
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 457
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 458
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 518
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 582
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 465
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 490
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 424
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 418
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 342
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 387
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 403
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 422
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 424
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 463
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 495
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 489
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 432
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 384
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 401
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 464
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 534
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 582
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 514
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 515
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 390
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 275
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 247
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 242
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 168
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 148
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 179
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 201
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 253
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 279
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 357
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 328
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 287
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 359
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 320
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 366
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 347
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 311
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 316
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 289
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 343
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 319
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 318
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 304
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 811
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 437
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 357
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 596
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 931
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 933
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 966
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 1904
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 943
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 561
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 494
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 464
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 514
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 198
+      }
+    ]
+  },
+  {
+    "campaign_name": "Avatr Одесса",
+    "campaign_id": "513448672",
+    "data": [
+      {
+        "date": "2025-11-17",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 55
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 423
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 483
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 32
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 293
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 225
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 286
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 346
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 254
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 361
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 453
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 434
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 389
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 313
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 346
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 315
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 353
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 368
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 178
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 134
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 211
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 119
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 143
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 109
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 90
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 69
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 124
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 143
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 64
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 162
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 56
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 123
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 88
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 114
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 118
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 126
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 114
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 81
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 104
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 81
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 169
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 162
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 153
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 115
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 92
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 81
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 77
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 47
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 59
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 73
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 66
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 43
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 94
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 65
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 64
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 49
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 64
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 79
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 65
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 41
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 92
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 46
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 52
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 42
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 53
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 23
+      }
+    ]
+  },
+  {
+    "campaign_name": "Basis Cars c пробегом",
+    "campaign_id": "359123141",
+    "data": []
+  },
+  {
+    "campaign_name": "Cars Autogroup c пробегом",
+    "campaign_id": "359065252",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 489
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 550
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 757
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 493
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 598
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 1011
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 463
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 642
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 536
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 502
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 522
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 646
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 681
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 719
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 577
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 501
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 544
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 571
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 592
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 640
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 474
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 704
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 471
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 466
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 539
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 652
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 470
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 611
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 595
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 669
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 652
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 649
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 677
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 666
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 675
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 1133
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 766
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 980
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 510
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 613
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 659
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 611
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 466
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 609
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 569
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 641
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 695
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 1821
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 275
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 87
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 114
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 212
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 757
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 744
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 532
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 670
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 714
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 689
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 674
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 706
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 761
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 753
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 654
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 785
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 1276
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 626
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 561
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 634
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 1297
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 588
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 559
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 530
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 580
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 522
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 755
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 564
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 700
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 505
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 127
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 111
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 112
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 634
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 709
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 780
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 852
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 829
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 831
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 695
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 772
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 713
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 596
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 714
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 577
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 813
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 807
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 608
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 637
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 848
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 1331
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 1627
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 583
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 738
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 671
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 588
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 616
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 535
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 512
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 617
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 604
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 533
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 583
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 657
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 527
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 604
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 561
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 579
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 570
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 689
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 540
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 54
+      }
+    ]
+  },
+  {
+    "campaign_name": "Citroen АВТОГРАД",
+    "campaign_id": "358944685",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 160
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 117
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 113
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 162
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 147
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 121
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 132
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 109
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 99
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 117
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 116
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 142
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 118
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 113
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 99
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 118
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 161
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 130
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 119
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 109
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 129
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 108
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 124
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 133
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 111
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 116
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 114
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 124
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 95
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 90
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 96
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 118
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 105
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 95
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 108
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 103
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 108
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 92
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 102
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 96
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 116
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 118
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 97
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 126
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 127
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 129
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 129
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 108
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 104
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 94
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 113
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 92
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 89
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 121
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 92
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 99
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 104
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 114
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 99
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 104
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 95
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 89
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 108
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 104
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 106
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 106
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 82
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 98
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 130
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 120
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 36
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 48
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 56
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 50
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 69
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 81
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 50
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 133
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 94
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 94
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 89
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 91
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 88
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 88
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 179
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 138
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 175
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 188
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 222
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 226
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 208
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 189
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 149
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 137
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 115
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 135
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 163
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 146
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 104
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 128
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 122
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 87
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 50
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 112
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 119
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 37
+      }
+    ]
+  },
+  {
+    "campaign_name": "DS Одесса",
+    "campaign_id": "510760500",
+    "data": [
+      {
+        "date": "2025-12-04",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 44
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 94
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 227
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 375
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 431
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 490
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 436
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 507
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 359
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 574
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 595
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 589
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 526
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 632
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 648
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 516
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 712
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 732
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 622
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 601
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 182
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 59
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 51
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 147
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 88
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 82
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 132
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 120
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 121
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 59
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 40
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 71
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 61
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 78
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 64
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 53
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 28
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 57
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 65
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 93
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 67
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 18
+      }
+    ]
+  },
+  {
+    "campaign_name": "Scoda",
+    "campaign_id": "399285460",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 68
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 77
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 94
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 78
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 71
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 98
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 59
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 78
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 60
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 59
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 47
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 67
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 47
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 44
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 58
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 59
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 49
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 69
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 60
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 76
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 70
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 54
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 84
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 54
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 44
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 51
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 57
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 44
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 32
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 35
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 33
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 35
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 32
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 32
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 29
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 36
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 38
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 48
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 50
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 21
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 34
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 36
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 26
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 35
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 37
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 33
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 30
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 40
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 30
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 27
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 33
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 27
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 27
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 35
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 37
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 12
+      }
+    ]
+  },
+  {
+    "campaign_name": "Ford Mustang",
+    "campaign_id": "358979732",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 210
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 207
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 213
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 209
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 257
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 261
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 249
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 242
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 231
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 232
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 301
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 257
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 223
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 229
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 234
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 243
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 235
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 300
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 236
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 232
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 268
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 277
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 277
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 275
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 285
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 249
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 257
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 279
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 316
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 248
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 257
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 246
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 209
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 193
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 191
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 236
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 200
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 236
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 234
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 259
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 246
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 222
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 212
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 198
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 203
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 205
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 211
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 207
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 163
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 202
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 180
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 188
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 167
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 115
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 140
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 178
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 216
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 207
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 206
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 230
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 219
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 205
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 261
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 180
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 213
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 206
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 221
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 245
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 237
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 216
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 208
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 245
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 229
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 219
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 106
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 275
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 248
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 207
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 273
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 213
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 86
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 93
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 98
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 90
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 91
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 90
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 102
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 80
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 104
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 125
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 101
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 117
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 158
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 118
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 131
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 107
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 131
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 107
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 250
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 269
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 333
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 284
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 328
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 376
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 352
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 317
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 332
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 330
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 265
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 141
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 287
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 252
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 185
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 161
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 238
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 58
+      }
+    ]
+  },
+  {
+    "campaign_name": "G Cars c пробегом",
+    "campaign_id": "359068356",
+    "data": []
+  },
+  {
+    "campaign_name": "Hyundai",
+    "campaign_id": "389930422",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 154
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 228
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 197
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 187
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 182
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 198
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 161
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 204
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 189
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 93
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 97
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 119
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 201
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 231
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 224
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 210
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 216
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 216
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 209
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 191
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 202
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 145
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 176
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 180
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 204
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 211
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 174
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 124
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 140
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 131
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 108
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 104
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 160
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 129
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 125
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 110
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 96
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 116
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 118
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 152
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 191
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 243
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 211
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 229
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 314
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 242
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 258
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 233
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 157
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 145
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 144
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 149
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 101
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 184
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 179
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 166
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 156
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 173
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 135
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 127
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 139
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 101
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 97
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 64
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 111
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 73
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 101
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 81
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 91
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 84
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 87
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 76
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 49
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 77
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 87
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 101
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 96
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 90
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 120
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 168
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 179
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 248
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 239
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 243
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 226
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 205
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 195
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 165
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 177
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 196
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 173
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 106
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 149
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 243
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 182
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 225
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 216
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 386
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 285
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 246
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 216
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 181
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 90
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 174
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 183
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 173
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 177
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 140
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 26
+      }
+    ]
+  },
+  {
+    "campaign_name": "Шинний готель",
+    "campaign_id": "464508955",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 7
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 7
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 1
+      }
+    ]
+  },
+  {
+    "campaign_name": "Infiniti Service",
+    "campaign_id": "435927626",
+    "data": []
+  },
+  {
+    "campaign_name": "Kia Автоград",
+    "campaign_id": "435896090",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 166
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 137
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 121
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 98
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 148
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 114
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 124
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 163
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 124
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 140
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 127
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 130
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 104
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 152
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 139
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 101
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 209
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 126
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 156
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 114
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 131
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 129
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 84
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 39
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 260
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 195
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 82
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 102
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 105
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 124
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 113
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 70
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 171
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 133
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 106
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 121
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 56
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 50
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 57
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 49
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 44
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 38
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 109
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 103
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 90
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 143
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 125
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 105
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 121
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 102
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 108
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 94
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 106
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 93
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 119
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 98
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 78
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 100
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 68
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 97
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 111
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 55
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 148
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 89
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 128
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 100
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 57
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 60
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 59
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 67
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 77
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 82
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 72
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 111
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 83
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 153
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 190
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 121
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 235
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 177
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 203
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 147
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 237
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 180
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 184
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 167
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 187
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 134
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 146
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 269
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 213
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 194
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 178
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 60
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 69
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 57
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 67
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 65
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 289
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 262
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 30
+      }
+    ]
+  },
+  {
+    "campaign_name": "LTS (Лидер Тех Стандарт)",
+    "campaign_id": "435894081",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 43
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 39
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 32
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 39
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 31
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 35
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 54
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 33
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 53
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 31
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 34
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 40
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 33
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 50
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 43
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 38
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 34
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 50
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 50
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 40
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 35
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 44
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 41
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 38
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 46
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 45
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 34
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 40
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 40
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 35
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 41
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 33
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 55
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 54
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 44
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 33
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 36
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 35
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 30
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 48
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 44
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 32
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 29
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 26
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 29
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 31
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 30
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 26
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 27
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 28
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 21
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 22
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 26
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 33
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 3
+      }
+    ]
+  },
+  {
+    "campaign_name": "ЛТС Грушевского",
+    "campaign_id": "465870779",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 32
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 31
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 35
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 11
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 10
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 8
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 21
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 1
+      }
+    ]
+  },
+  {
+    "campaign_name": "MG-GA4",
+    "campaign_id": "294153596",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 59
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 105
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 69
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 60
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 60
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 64
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 123
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 71
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 111
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 69
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 99
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 135
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 71
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 64
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 57
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 107
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 57
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 76
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 68
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 46
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 93
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 85
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 57
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 48
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 57
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 55
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 58
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 47
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 78
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 81
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 77
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 54
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 49
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 39
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 42
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 59
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 62
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 9
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 5
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 64
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 50
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 13
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 21
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 29
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 21
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 79
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 68
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 74
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 95
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 74
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 78
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 67
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 67
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 89
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 100
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 64
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 89
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 155
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 139
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 220
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 115
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 191
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 149
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 131
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 250
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 299
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 115
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 199
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 171
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 172
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 104
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 121
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 37
+      }
+    ]
+  },
+  {
+    "campaign_name": "Mitsubishi АВТОГРАД",
+    "campaign_id": "358646982",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 212
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 244
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 235
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 237
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 241
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 222
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 227
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 174
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 172
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 208
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 189
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 185
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 199
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 177
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 197
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 184
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 211
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 220
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 232
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 198
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 221
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 197
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 137
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 77
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 76
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 46
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 261
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 240
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 256
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 244
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 216
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 151
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 157
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 183
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 173
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 204
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 190
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 210
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 192
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 171
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 166
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 152
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 139
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 164
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 170
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 170
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 144
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 156
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 176
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 92
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 137
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 51
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 141
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 187
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 147
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 173
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 189
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 214
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 154
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 169
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 161
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 133
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 134
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 136
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 135
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 149
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 140
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 149
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 136
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 147
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 159
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 186
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 132
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 117
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 146
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 97
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 116
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 176
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 132
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 105
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 119
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 111
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 60
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 49
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 38
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 44
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 57
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 98
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 96
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 120
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 89
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 109
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 160
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 151
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 136
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 132
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 128
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 130
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 146
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 115
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 132
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 126
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 113
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 153
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 97
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 98
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 68
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 51
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 61
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 51
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 62
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 93
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 116
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 27
+      }
+    ]
+  },
+  {
+    "campaign_name": "NISSAN СКАЙ",
+    "campaign_id": "358911296",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 176
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 274
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 258
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 237
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 326
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 230
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 240
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 198
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 325
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 192
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 254
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 354
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 244
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 161
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 288
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 224
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 266
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 292
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 411
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 243
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 320
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 274
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 324
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 249
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 361
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 417
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 290
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 249
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 168
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 181
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 242
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 199
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 325
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 183
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 178
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 199
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 157
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 274
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 304
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 331
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 264
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 288
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 244
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 227
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 166
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 167
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 355
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 179
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 203
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 175
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 121
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 84
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 99
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 89
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 189
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 186
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 155
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 142
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 155
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 241
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 151
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 161
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 184
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 227
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 147
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 287
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 258
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 178
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 130
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 246
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 245
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 217
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 246
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 209
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 229
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 272
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 204
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 226
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 306
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 256
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 225
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 134
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 221
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 337
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 166
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 82
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 184
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 215
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 146
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 151
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 330
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 112
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 322
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 364
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 414
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 220
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 216
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 226
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 431
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 262
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 350
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 201
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 429
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 413
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 307
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 261
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 300
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 267
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 307
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 212
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 180
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 136
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 98
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 333
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 210
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 258
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 194
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 164
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 18
+      }
+    ]
+  },
+  {
+    "campaign_name": "Peugeot ДЦ",
+    "campaign_id": "508557505",
+    "data": [
+      {
+        "date": "2025-12-24",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 31
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 41
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 114
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 100
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 87
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 76
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 86
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 104
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 82
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 109
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 172
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 218
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 843
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 1585
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 1509
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 1539
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 1517
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 492
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 123
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 103
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 87
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 68
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 77
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 76
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 45
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 46
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 45
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 34
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 143
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 165
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 134
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 164
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 104
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 85
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 108
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 50
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 58
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 74
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 81
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 87
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 94
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 8
+      }
+    ]
+  },
+  {
+    "campaign_name": "Peugeot service",
+    "campaign_id": "359114234",
+    "data": [
+      {
+        "date": "2025-10-19",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 1
+      }
+    ]
+  },
+  {
+    "campaign_name": "ProMax Detailing",
+    "campaign_id": "467426053",
+    "data": [
+      {
+        "date": "2025-10-09",
+        "totalUsers": 3
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 1
+      }
+    ]
+  },
+  {
+    "campaign_name": "Renault АВТО ГРУП +",
+    "campaign_id": "358973168",
+    "data": []
+  },
+  {
+    "campaign_name": "Renault ДЦ Аналитика",
+    "campaign_id": "283486031",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 189
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 458
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 277
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 217
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 230
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 225
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 271
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 197
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 256
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 205
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 189
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 165
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 165
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 223
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 220
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 193
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 209
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 184
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 220
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 162
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 192
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 196
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 156
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 135
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 191
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 224
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 263
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 187
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 179
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 175
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 90
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 129
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 122
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 117
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 133
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 83
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 72
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 93
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 119
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 93
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 95
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 63
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 78
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 92
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 120
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 93
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 101
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 68
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 88
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 95
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 87
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 117
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 112
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 126
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 37
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 109
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 141
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 116
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 123
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 74
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 61
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 96
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 75
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 94
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 91
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 66
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 67
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 56
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 87
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 98
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 103
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 65
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 69
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 79
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 81
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 86
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 80
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 87
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 113
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 90
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 37
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 73
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 55
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 39
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 30
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 131
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 123
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 122
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 126
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 148
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 110
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 115
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 104
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 136
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 203
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 154
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 143
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 140
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 128
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 129
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 147
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 152
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 391
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 616
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 950
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 976
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 1916
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 948
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 565
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 496
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 466
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 509
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 210
+      }
+    ]
+  },
+  {
+    "campaign_name": "Vag Service",
+    "campaign_id": "436943438",
+    "data": [
+      {
+        "date": "2025-10-08",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-10-09",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-10-10",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-11",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-12",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-10-13",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-10-14",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-10-15",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-10-16",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-10-17",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-10-18",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-10-19",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-10-20",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-10-21",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-10-22",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-10-23",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-10-24",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-10-25",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-10-26",
+        "totalUsers": 40
+      },
+      {
+        "date": "2025-10-27",
+        "totalUsers": 31
+      },
+      {
+        "date": "2025-10-28",
+        "totalUsers": 34
+      },
+      {
+        "date": "2025-10-29",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-10-30",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-10-31",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-01",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-02",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-03",
+        "totalUsers": 30
+      },
+      {
+        "date": "2025-11-04",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-05",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-06",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-11-07",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-11-08",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-09",
+        "totalUsers": 29
+      },
+      {
+        "date": "2025-11-10",
+        "totalUsers": 31
+      },
+      {
+        "date": "2025-11-11",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-12",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-13",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-14",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-11-15",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-11-16",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-11-17",
+        "totalUsers": 31
+      },
+      {
+        "date": "2025-11-18",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-11-19",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-11-20",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-21",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-11-22",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-23",
+        "totalUsers": 27
+      },
+      {
+        "date": "2025-11-24",
+        "totalUsers": 25
+      },
+      {
+        "date": "2025-11-25",
+        "totalUsers": 20
+      },
+      {
+        "date": "2025-11-26",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-11-27",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-11-28",
+        "totalUsers": 1
+      },
+      {
+        "date": "2025-11-29",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-11-30",
+        "totalUsers": 6
+      },
+      {
+        "date": "2025-12-01",
+        "totalUsers": 2
+      },
+      {
+        "date": "2025-12-02",
+        "totalUsers": 28
+      },
+      {
+        "date": "2025-12-03",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-04",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-05",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-06",
+        "totalUsers": 24
+      },
+      {
+        "date": "2025-12-07",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-08",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-09",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-10",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-11",
+        "totalUsers": 21
+      },
+      {
+        "date": "2025-12-12",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-12-13",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-14",
+        "totalUsers": 15
+      },
+      {
+        "date": "2025-12-15",
+        "totalUsers": 4
+      },
+      {
+        "date": "2025-12-16",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-12-17",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-12-18",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-12-19",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-20",
+        "totalUsers": 17
+      },
+      {
+        "date": "2025-12-21",
+        "totalUsers": 14
+      },
+      {
+        "date": "2025-12-22",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-23",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-24",
+        "totalUsers": 26
+      },
+      {
+        "date": "2025-12-25",
+        "totalUsers": 16
+      },
+      {
+        "date": "2025-12-26",
+        "totalUsers": 23
+      },
+      {
+        "date": "2025-12-27",
+        "totalUsers": 22
+      },
+      {
+        "date": "2025-12-28",
+        "totalUsers": 18
+      },
+      {
+        "date": "2025-12-29",
+        "totalUsers": 12
+      },
+      {
+        "date": "2025-12-30",
+        "totalUsers": 19
+      },
+      {
+        "date": "2025-12-31",
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-01-01",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-02",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-03",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-04",
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-01-05",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-06",
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-01-07",
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-01-08",
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-01-09",
+        "totalUsers": 27
+      },
+      {
+        "date": "2026-01-10",
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-01-11",
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-01-12",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-13",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-14",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-01-15",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-16",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-17",
+        "totalUsers": 21
+      },
+      {
+        "date": "2026-01-18",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-01-19",
+        "totalUsers": 29
+      },
+      {
+        "date": "2026-01-20",
+        "totalUsers": 22
+      },
+      {
+        "date": "2026-01-21",
+        "totalUsers": 27
+      },
+      {
+        "date": "2026-01-22",
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-01-23",
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-01-24",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-01-25",
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-01-26",
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-01-27",
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-01-28",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-01-29",
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-01-30",
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-01-31",
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-02-01",
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-02-02",
+        "totalUsers": 21
+      },
+      {
+        "date": "2026-02-03",
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-02-04",
+        "totalUsers": 26
+      },
+      {
+        "date": "2026-02-05",
+        "totalUsers": 6
+      }
+    ]
+  }
+]

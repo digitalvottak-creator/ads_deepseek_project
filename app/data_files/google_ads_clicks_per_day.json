@@ -1,0 +1,3267 @@
+[
+  {
+    "campaign_name": "AVATR",
+    "campaign_id": "1346938215",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 95,
+        "impressions": 3005
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 107,
+        "impressions": 3500
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 105,
+        "impressions": 3314
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 134,
+        "impressions": 5193
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 125,
+        "impressions": 3777
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 119,
+        "impressions": 3000
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 92,
+        "impressions": 3158
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 78,
+        "impressions": 2193
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 51,
+        "impressions": 949
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 42,
+        "impressions": 651
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 10,
+        "impressions": 191
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 50,
+        "impressions": 1221
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 56,
+        "impressions": 1329
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 38,
+        "impressions": 840
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 12,
+        "impressions": 175
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 27,
+        "impressions": 916
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 75,
+        "impressions": 1485
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 10,
+        "impressions": 189
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 48,
+        "impressions": 1717
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 48,
+        "impressions": 1012
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 6,
+        "impressions": 129
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 54,
+        "impressions": 4552
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 54,
+        "impressions": 2494
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 48,
+        "impressions": 1414
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 15,
+        "impressions": 1391
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 49,
+        "impressions": 3655
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 58,
+        "impressions": 1796
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 53,
+        "impressions": 3422
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 56,
+        "impressions": 3378
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 60,
+        "impressions": 2073
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 56,
+        "impressions": 1799
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 15,
+        "impressions": 544
+      }
+    ]
+  },
+  {
+    "campaign_name": "Autogroup E-Service",
+    "campaign_id": "2643327827",
+    "data": [
+      {
+        "date": "2026-01-06",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 0,
+        "impressions": 7
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 25,
+        "impressions": 214
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 17,
+        "impressions": 178
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 16,
+        "impressions": 167
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 13,
+        "impressions": 182
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 12,
+        "impressions": 136
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 13,
+        "impressions": 143
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 13,
+        "impressions": 135
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 11,
+        "impressions": 135
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 10,
+        "impressions": 84
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 5,
+        "impressions": 112
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 7,
+        "impressions": 130
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 10,
+        "impressions": 65
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 19,
+        "impressions": 91
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 13,
+        "impressions": 118
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 16,
+        "impressions": 130
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 7,
+        "impressions": 120
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 9,
+        "impressions": 83
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 16,
+        "impressions": 134
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 13,
+        "impressions": 112
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 13,
+        "impressions": 117
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 15,
+        "impressions": 91
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 13,
+        "impressions": 97
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 8,
+        "impressions": 128
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 13,
+        "impressions": 141
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 11,
+        "impressions": 84
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 15,
+        "impressions": 114
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 8,
+        "impressions": 38
+      }
+    ]
+  },
+  {
+    "campaign_name": "Autogroup с пробегом",
+    "campaign_id": "4169872872",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 152,
+        "impressions": 5232
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 110,
+        "impressions": 4591
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 90,
+        "impressions": 3107
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 133,
+        "impressions": 5331
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 120,
+        "impressions": 2904
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 135,
+        "impressions": 5327
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 139,
+        "impressions": 6532
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 139,
+        "impressions": 6931
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 102,
+        "impressions": 3732
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 111,
+        "impressions": 4582
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 137,
+        "impressions": 6464
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 137,
+        "impressions": 6662
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 138,
+        "impressions": 4962
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 172,
+        "impressions": 9324
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 34,
+        "impressions": 747
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 33,
+        "impressions": 1488
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 46,
+        "impressions": 1936
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 41,
+        "impressions": 2002
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 53,
+        "impressions": 2364
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 123,
+        "impressions": 5111
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 60,
+        "impressions": 2209
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 36,
+        "impressions": 1596
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 44,
+        "impressions": 2007
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 41,
+        "impressions": 1445
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 76,
+        "impressions": 3190
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 42,
+        "impressions": 1100
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 40,
+        "impressions": 2282
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 91,
+        "impressions": 4689
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 36,
+        "impressions": 1717
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 82,
+        "impressions": 3888
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 47,
+        "impressions": 2121
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 12,
+        "impressions": 575
+      }
+    ]
+  },
+  {
+    "campaign_name": "Bosch Service",
+    "campaign_id": "5225293272",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 45,
+        "impressions": 446
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 56,
+        "impressions": 953
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 44,
+        "impressions": 1020
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 0,
+        "impressions": 10
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 122,
+        "impressions": 3325
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 90,
+        "impressions": 1964
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 125,
+        "impressions": 1237
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 78,
+        "impressions": 756
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 104,
+        "impressions": 1005
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 253,
+        "impressions": 2730
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 110,
+        "impressions": 1196
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 149,
+        "impressions": 1785
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 343,
+        "impressions": 5335
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 421,
+        "impressions": 7830
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 295,
+        "impressions": 5958
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 82,
+        "impressions": 1613
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 192,
+        "impressions": 3784
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 73,
+        "impressions": 1874
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 54,
+        "impressions": 1449
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 139,
+        "impressions": 2747
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 142,
+        "impressions": 2694
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 57,
+        "impressions": 1252
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 125,
+        "impressions": 2275
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 231,
+        "impressions": 4363
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 139,
+        "impressions": 3372
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 204,
+        "impressions": 3590
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 169,
+        "impressions": 2381
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 352,
+        "impressions": 5450
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 227,
+        "impressions": 4020
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 181,
+        "impressions": 2987
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 73,
+        "impressions": 1345
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 47,
+        "impressions": 770
+      }
+    ]
+  },
+  {
+    "campaign_name": "Citroen ДЦ",
+    "campaign_id": "8035807835",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 45,
+        "impressions": 384
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 54,
+        "impressions": 408
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 45,
+        "impressions": 373
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 55,
+        "impressions": 450
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 40,
+        "impressions": 452
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 42,
+        "impressions": 393
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 39,
+        "impressions": 345
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 37,
+        "impressions": 465
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 44,
+        "impressions": 342
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 44,
+        "impressions": 410
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 139,
+        "impressions": 34776
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 104,
+        "impressions": 17514
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 104,
+        "impressions": 18504
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 78,
+        "impressions": 17817
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 114,
+        "impressions": 21088
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 96,
+        "impressions": 20631
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 130,
+        "impressions": 35286
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 122,
+        "impressions": 36290
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 115,
+        "impressions": 33978
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 109,
+        "impressions": 34640
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 98,
+        "impressions": 33931
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 104,
+        "impressions": 34572
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 108,
+        "impressions": 34599
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 97,
+        "impressions": 35333
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 92,
+        "impressions": 33916
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 111,
+        "impressions": 33763
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 73,
+        "impressions": 31902
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 23,
+        "impressions": 15201
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 0,
+        "impressions": 84
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 76,
+        "impressions": 17821
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 28,
+        "impressions": 237
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 5,
+        "impressions": 89
+      }
+    ]
+  },
+  {
+    "campaign_name": "DS Automobiles",
+    "campaign_id": "6837485242",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 1373,
+        "impressions": 15780
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 1268,
+        "impressions": 14152
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 1269,
+        "impressions": 15894
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 1270,
+        "impressions": 13873
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 1376,
+        "impressions": 15300
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 1232,
+        "impressions": 13523
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 1333,
+        "impressions": 14746
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 195,
+        "impressions": 2354
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 1,
+        "impressions": 38
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 2,
+        "impressions": 30
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 2,
+        "impressions": 28
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 1,
+        "impressions": 29
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 0,
+        "impressions": 45
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 2,
+        "impressions": 36
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 10,
+        "impressions": 117
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 9,
+        "impressions": 166
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 8,
+        "impressions": 112
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 5,
+        "impressions": 168
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 9,
+        "impressions": 119
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 4,
+        "impressions": 103
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 3,
+        "impressions": 112
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 4,
+        "impressions": 96
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 9,
+        "impressions": 113
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 8,
+        "impressions": 103
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 4,
+        "impressions": 102
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 6,
+        "impressions": 86
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 5,
+        "impressions": 94
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 10,
+        "impressions": 88
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 8,
+        "impressions": 88
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 46,
+        "impressions": 18703
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 33,
+        "impressions": 13797
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 12,
+        "impressions": 9550
+      }
+    ]
+  },
+  {
+    "campaign_name": "Ford ДЦ",
+    "campaign_id": "6922687176",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 51,
+        "impressions": 320
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 31,
+        "impressions": 342
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 55,
+        "impressions": 422
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 41,
+        "impressions": 406
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 46,
+        "impressions": 326
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 43,
+        "impressions": 374
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 31,
+        "impressions": 440
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 52,
+        "impressions": 452
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 45,
+        "impressions": 407
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 53,
+        "impressions": 352
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 51,
+        "impressions": 443
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 43,
+        "impressions": 417
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 43,
+        "impressions": 446
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 47,
+        "impressions": 463
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 270,
+        "impressions": 77162
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 427,
+        "impressions": 66611
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 487,
+        "impressions": 71891
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 346,
+        "impressions": 72293
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 442,
+        "impressions": 76797
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 440,
+        "impressions": 76097
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 402,
+        "impressions": 70125
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 350,
+        "impressions": 71416
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 406,
+        "impressions": 72192
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 396,
+        "impressions": 73019
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 184,
+        "impressions": 62724
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 23,
+        "impressions": 9680
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 267,
+        "impressions": 105416
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 196,
+        "impressions": 82437
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 121,
+        "impressions": 30711
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 91,
+        "impressions": 26381
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 125,
+        "impressions": 32132
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 29,
+        "impressions": 14554
+      }
+    ]
+  },
+  {
+    "campaign_name": "Hyundai ДЦ",
+    "campaign_id": "5897993852",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 70,
+        "impressions": 772
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 87,
+        "impressions": 809
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 82,
+        "impressions": 1049
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 114,
+        "impressions": 1431
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 126,
+        "impressions": 1723
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 122,
+        "impressions": 2145
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 138,
+        "impressions": 2500
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 102,
+        "impressions": 1437
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 115,
+        "impressions": 1710
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 128,
+        "impressions": 1919
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 119,
+        "impressions": 1328
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 114,
+        "impressions": 1467
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 131,
+        "impressions": 2536
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 102,
+        "impressions": 1364
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 100,
+        "impressions": 1752
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 77,
+        "impressions": 862
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 197,
+        "impressions": 4722
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 153,
+        "impressions": 3781
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 194,
+        "impressions": 6022
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 217,
+        "impressions": 6495
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 519,
+        "impressions": 21092
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 294,
+        "impressions": 9668
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 238,
+        "impressions": 6189
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 181,
+        "impressions": 3642
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 141,
+        "impressions": 2684
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 0,
+        "impressions": 7
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 126,
+        "impressions": 1650
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 123,
+        "impressions": 1236
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 111,
+        "impressions": 1197
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 175,
+        "impressions": 16098
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 158,
+        "impressions": 16592
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 41,
+        "impressions": 7849
+      }
+    ]
+  },
+  {
+    "campaign_name": "KIA ДЦ",
+    "campaign_id": "8434180413",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 65,
+        "impressions": 949
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 73,
+        "impressions": 899
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 80,
+        "impressions": 1583
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 78,
+        "impressions": 1396
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 69,
+        "impressions": 940
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 88,
+        "impressions": 1540
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 103,
+        "impressions": 2216
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 110,
+        "impressions": 2149
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 71,
+        "impressions": 1239
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 225,
+        "impressions": 15006
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 143,
+        "impressions": 17625
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 191,
+        "impressions": 16471
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 136,
+        "impressions": 16032
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 214,
+        "impressions": 18431
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 167,
+        "impressions": 16480
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 182,
+        "impressions": 15483
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 172,
+        "impressions": 16470
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 187,
+        "impressions": 17754
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 117,
+        "impressions": 14300
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 117,
+        "impressions": 15116
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 276,
+        "impressions": 19420
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 195,
+        "impressions": 17486
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 173,
+        "impressions": 14517
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 166,
+        "impressions": 15392
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 0,
+        "impressions": 12
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 0,
+        "impressions": 16
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 0,
+        "impressions": 4
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 329,
+        "impressions": 32566
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 305,
+        "impressions": 24686
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 37,
+        "impressions": 4722
+      }
+    ]
+  },
+  {
+    "campaign_name": "MG ДЦ",
+    "campaign_id": "7755473425",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 37,
+        "impressions": 592
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 19,
+        "impressions": 485
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 24,
+        "impressions": 276
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 15,
+        "impressions": 179
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 15,
+        "impressions": 189
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 17,
+        "impressions": 182
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 34,
+        "impressions": 695
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 65,
+        "impressions": 1527
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 43,
+        "impressions": 918
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 32,
+        "impressions": 640
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 19,
+        "impressions": 316
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 15,
+        "impressions": 149
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 32,
+        "impressions": 714
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 74,
+        "impressions": 1474
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 19,
+        "impressions": 320
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 23,
+        "impressions": 402
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 178,
+        "impressions": 5146
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 206,
+        "impressions": 6903
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 243,
+        "impressions": 7734
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 89,
+        "impressions": 2697
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 215,
+        "impressions": 7644
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 142,
+        "impressions": 2672
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 153,
+        "impressions": 2196
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 408,
+        "impressions": 6660
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 486,
+        "impressions": 8158
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 77,
+        "impressions": 1240
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 222,
+        "impressions": 3967
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 179,
+        "impressions": 4333
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 185,
+        "impressions": 5979
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 69,
+        "impressions": 1827
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 120,
+        "impressions": 2628
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 27,
+        "impressions": 853
+      }
+    ]
+  },
+  {
+    "campaign_name": "Mitsubishi Автоград Одесса",
+    "campaign_id": "6751259696",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 48,
+        "impressions": 948
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 39,
+        "impressions": 349
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 43,
+        "impressions": 376
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 54,
+        "impressions": 770
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 78,
+        "impressions": 3557
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 78,
+        "impressions": 1472
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 102,
+        "impressions": 4034
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 92,
+        "impressions": 2292
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 93,
+        "impressions": 2497
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 149,
+        "impressions": 19813
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 127,
+        "impressions": 17863
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 124,
+        "impressions": 18191
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 126,
+        "impressions": 19131
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 121,
+        "impressions": 19544
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 138,
+        "impressions": 19600
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 133,
+        "impressions": 19594
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 118,
+        "impressions": 20813
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 106,
+        "impressions": 18433
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 122,
+        "impressions": 18757
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 106,
+        "impressions": 17982
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 158,
+        "impressions": 20995
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 78,
+        "impressions": 9485
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 54,
+        "impressions": 4596
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 51,
+        "impressions": 4858
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 1,
+        "impressions": 884
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 0,
+        "impressions": 116
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 0,
+        "impressions": 6
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 70,
+        "impressions": 13057
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 92,
+        "impressions": 20100
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 24,
+        "impressions": 5494
+      }
+    ]
+  },
+  {
+    "campaign_name": "Nissan ДЦ",
+    "campaign_id": "8443184321",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 282,
+        "impressions": 11898
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 140,
+        "impressions": 5057
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 101,
+        "impressions": 2016
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 386,
+        "impressions": 14589
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 64,
+        "impressions": 999
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 362,
+        "impressions": 13107
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 411,
+        "impressions": 11723
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 457,
+        "impressions": 16184
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 231,
+        "impressions": 7295
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 184,
+        "impressions": 4922
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 232,
+        "impressions": 6737
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 506,
+        "impressions": 14217
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 271,
+        "impressions": 7676
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 392,
+        "impressions": 8937
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 148,
+        "impressions": 3697
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 537,
+        "impressions": 17427
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 510,
+        "impressions": 20177
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 314,
+        "impressions": 11891
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 251,
+        "impressions": 10485
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 307,
+        "impressions": 14720
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 287,
+        "impressions": 14100
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 344,
+        "impressions": 13145
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 142,
+        "impressions": 4996
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 116,
+        "impressions": 4991
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 40,
+        "impressions": 897
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 2,
+        "impressions": 57
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 362,
+        "impressions": 15557
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 156,
+        "impressions": 6333
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 201,
+        "impressions": 7282
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 121,
+        "impressions": 4460
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 118,
+        "impressions": 3363
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 22,
+        "impressions": 424
+      }
+    ]
+  },
+  {
+    "campaign_name": "Peugeot ДЦ",
+    "campaign_id": "5831284192",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 42,
+        "impressions": 377
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 300,
+        "impressions": 10815
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 1773,
+        "impressions": 35822
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 3591,
+        "impressions": 65617
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 3578,
+        "impressions": 64059
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 3381,
+        "impressions": 60294
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 3613,
+        "impressions": 62119
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 623,
+        "impressions": 10433
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 39,
+        "impressions": 392
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 45,
+        "impressions": 557
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 50,
+        "impressions": 376
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 43,
+        "impressions": 616
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 49,
+        "impressions": 448
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 37,
+        "impressions": 479
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 17,
+        "impressions": 176
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 50,
+        "impressions": 660
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 46,
+        "impressions": 697
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 46,
+        "impressions": 505
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 54,
+        "impressions": 777
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 68,
+        "impressions": 756
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 40,
+        "impressions": 691
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 49,
+        "impressions": 787
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 32,
+        "impressions": 676
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 41,
+        "impressions": 666
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 43,
+        "impressions": 560
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 48,
+        "impressions": 696
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 66,
+        "impressions": 588
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 54,
+        "impressions": 675
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 9,
+        "impressions": 139
+      }
+    ]
+  },
+  {
+    "campaign_name": "Renault ДЦ",
+    "campaign_id": "9241730184",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 0,
+        "impressions": 10
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 1,
+        "impressions": 21
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 270,
+        "impressions": 7118
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 240,
+        "impressions": 5398
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 213,
+        "impressions": 4528
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 215,
+        "impressions": 3667
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 252,
+        "impressions": 7606
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 185,
+        "impressions": 3134
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 198,
+        "impressions": 4434
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 199,
+        "impressions": 3643
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 151,
+        "impressions": 3216
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 250,
+        "impressions": 5989
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 163,
+        "impressions": 1842
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 164,
+        "impressions": 2809
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 174,
+        "impressions": 3745
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 234,
+        "impressions": 5347
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 169,
+        "impressions": 3015
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 223,
+        "impressions": 6329
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 318,
+        "impressions": 8648
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 375,
+        "impressions": 55077
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 294,
+        "impressions": 49588
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 306,
+        "impressions": 54609
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 841,
+        "impressions": 236501
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 873,
+        "impressions": 325428
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 698,
+        "impressions": 300976
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 616,
+        "impressions": 233992
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 311,
+        "impressions": 62583
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 51,
+        "impressions": 13086
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 0,
+        "impressions": 128
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 158,
+        "impressions": 53900
+      }
+    ]
+  },
+  {
+    "campaign_name": "Skoda ДЦ",
+    "campaign_id": "9630430696",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 121,
+        "impressions": 26111
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 132,
+        "impressions": 24967
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 105,
+        "impressions": 24859
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 117,
+        "impressions": 25073
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 119,
+        "impressions": 26170
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 145,
+        "impressions": 24630
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 132,
+        "impressions": 25600
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 64,
+        "impressions": 9980
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 74,
+        "impressions": 9929
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 73,
+        "impressions": 10132
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 87,
+        "impressions": 9861
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 78,
+        "impressions": 9447
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 66,
+        "impressions": 9795
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 79,
+        "impressions": 9570
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 53,
+        "impressions": 4100
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 57,
+        "impressions": 590
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 58,
+        "impressions": 635
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 50,
+        "impressions": 593
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 75,
+        "impressions": 675
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 43,
+        "impressions": 560
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 44,
+        "impressions": 712
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 58,
+        "impressions": 673
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 52,
+        "impressions": 684
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 49,
+        "impressions": 649
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 48,
+        "impressions": 534
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 1,
+        "impressions": 6
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 45,
+        "impressions": 599
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 49,
+        "impressions": 488
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 59,
+        "impressions": 585
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 64,
+        "impressions": 486
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 64,
+        "impressions": 540
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 10,
+        "impressions": 91
+      }
+    ]
+  },
+  {
+    "campaign_name": "VAG Service",
+    "campaign_id": "4577777980",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 24,
+        "impressions": 214
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 13,
+        "impressions": 304
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 11,
+        "impressions": 246
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 27,
+        "impressions": 533
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 28,
+        "impressions": 274
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 23,
+        "impressions": 204
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 22,
+        "impressions": 215
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 20,
+        "impressions": 226
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 16,
+        "impressions": 231
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 13,
+        "impressions": 252
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 22,
+        "impressions": 233
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 23,
+        "impressions": 281
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 23,
+        "impressions": 256
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 21,
+        "impressions": 321
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 28,
+        "impressions": 376
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 21,
+        "impressions": 282
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 25,
+        "impressions": 202
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 20,
+        "impressions": 282
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 16,
+        "impressions": 249
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 18,
+        "impressions": 306
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 14,
+        "impressions": 317
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 18,
+        "impressions": 461
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 15,
+        "impressions": 202
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 16,
+        "impressions": 200
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 21,
+        "impressions": 266
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 14,
+        "impressions": 270
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 20,
+        "impressions": 225
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 15,
+        "impressions": 215
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 24,
+        "impressions": 387
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 21,
+        "impressions": 342
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 23,
+        "impressions": 200
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 8,
+        "impressions": 54
+      }
+    ]
+  },
+  {
+    "campaign_name": "АВТОГРУПП СЕРВИС",
+    "campaign_id": "5063006337",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 54,
+        "impressions": 1674
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 60,
+        "impressions": 1838
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 60,
+        "impressions": 1120
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 32,
+        "impressions": 1035
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 53,
+        "impressions": 1415
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 42,
+        "impressions": 1028
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 40,
+        "impressions": 1065
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 34,
+        "impressions": 658
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 40,
+        "impressions": 732
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 44,
+        "impressions": 861
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 29,
+        "impressions": 649
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 45,
+        "impressions": 815
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 44,
+        "impressions": 683
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 53,
+        "impressions": 816
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 57,
+        "impressions": 1242
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 47,
+        "impressions": 1172
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 54,
+        "impressions": 1039
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 26,
+        "impressions": 963
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 60,
+        "impressions": 1430
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 37,
+        "impressions": 1576
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 32,
+        "impressions": 1079
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 54,
+        "impressions": 868
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 42,
+        "impressions": 1307
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 58,
+        "impressions": 1884
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 55,
+        "impressions": 1861
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 58,
+        "impressions": 2765
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 46,
+        "impressions": 1880
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 61,
+        "impressions": 1485
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 78,
+        "impressions": 1961
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 64,
+        "impressions": 2290
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 79,
+        "impressions": 2786
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 18,
+        "impressions": 374
+      }
+    ]
+  },
+  {
+    "campaign_name": "Електро",
+    "campaign_id": "3517647715",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 92,
+        "impressions": 2295
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 113,
+        "impressions": 1588
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 91,
+        "impressions": 1431
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 96,
+        "impressions": 1432
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 146,
+        "impressions": 3205
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 465,
+        "impressions": 19802
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 443,
+        "impressions": 11075
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 207,
+        "impressions": 4398
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 434,
+        "impressions": 11726
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 248,
+        "impressions": 7127
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 227,
+        "impressions": 6266
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 338,
+        "impressions": 7121
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 428,
+        "impressions": 9332
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 391,
+        "impressions": 8552
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 144,
+        "impressions": 3447
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 179,
+        "impressions": 3793
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 166,
+        "impressions": 3331
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 223,
+        "impressions": 4307
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 264,
+        "impressions": 5200
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 387,
+        "impressions": 7837
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 488,
+        "impressions": 10058
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 286,
+        "impressions": 5573
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 414,
+        "impressions": 8754
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 242,
+        "impressions": 3677
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 383,
+        "impressions": 5331
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 318,
+        "impressions": 3846
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 240,
+        "impressions": 4265
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 440,
+        "impressions": 7053
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 53,
+        "impressions": 690
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 676,
+        "impressions": 11588
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 274,
+        "impressions": 4442
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 37,
+        "impressions": 928
+      }
+    ]
+  },
+  {
+    "campaign_name": "Сhery ДЦ",
+    "campaign_id": "8945982690",
+    "data": [
+      {
+        "date": "2026-01-06",
+        "clicks": 133,
+        "impressions": 2821
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 163,
+        "impressions": 4035
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 188,
+        "impressions": 4492
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 98,
+        "impressions": 2360
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 150,
+        "impressions": 3948
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 150,
+        "impressions": 3635
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 77,
+        "impressions": 1813
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 49,
+        "impressions": 1138
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 73,
+        "impressions": 1724
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 70,
+        "impressions": 1876
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 37,
+        "impressions": 1309
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 37,
+        "impressions": 1019
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 69,
+        "impressions": 1870
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 53,
+        "impressions": 1837
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 31,
+        "impressions": 1312
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 57,
+        "impressions": 1374
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 34,
+        "impressions": 923
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 38,
+        "impressions": 947
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 32,
+        "impressions": 794
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 108,
+        "impressions": 3309
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 40,
+        "impressions": 670
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 28,
+        "impressions": 723
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 23,
+        "impressions": 729
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 53,
+        "impressions": 1226
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 44,
+        "impressions": 899
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 42,
+        "impressions": 749
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 48,
+        "impressions": 1013
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 38,
+        "impressions": 961
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 34,
+        "impressions": 564
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 37,
+        "impressions": 807
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 7,
+        "impressions": 194
+      }
+    ]
+  },
+  {
+    "campaign_name": "ТОВ \"ЛІДЕР ТЕХСТАНДАРТ\"",
+    "campaign_id": "1373003358",
+    "data": [
+      {
+        "date": "2026-01-05",
+        "clicks": 56,
+        "impressions": 435
+      },
+      {
+        "date": "2026-01-06",
+        "clicks": 53,
+        "impressions": 336
+      },
+      {
+        "date": "2026-01-07",
+        "clicks": 26,
+        "impressions": 295
+      },
+      {
+        "date": "2026-01-08",
+        "clicks": 31,
+        "impressions": 286
+      },
+      {
+        "date": "2026-01-09",
+        "clicks": 34,
+        "impressions": 261
+      },
+      {
+        "date": "2026-01-10",
+        "clicks": 20,
+        "impressions": 207
+      },
+      {
+        "date": "2026-01-11",
+        "clicks": 28,
+        "impressions": 161
+      },
+      {
+        "date": "2026-01-12",
+        "clicks": 31,
+        "impressions": 294
+      },
+      {
+        "date": "2026-01-13",
+        "clicks": 27,
+        "impressions": 253
+      },
+      {
+        "date": "2026-01-14",
+        "clicks": 29,
+        "impressions": 297
+      },
+      {
+        "date": "2026-01-15",
+        "clicks": 24,
+        "impressions": 274
+      },
+      {
+        "date": "2026-01-16",
+        "clicks": 28,
+        "impressions": 272
+      },
+      {
+        "date": "2026-01-17",
+        "clicks": 26,
+        "impressions": 167
+      },
+      {
+        "date": "2026-01-18",
+        "clicks": 13,
+        "impressions": 84
+      },
+      {
+        "date": "2026-01-19",
+        "clicks": 26,
+        "impressions": 368
+      },
+      {
+        "date": "2026-01-20",
+        "clicks": 39,
+        "impressions": 262
+      },
+      {
+        "date": "2026-01-21",
+        "clicks": 34,
+        "impressions": 289
+      },
+      {
+        "date": "2026-01-22",
+        "clicks": 20,
+        "impressions": 252
+      },
+      {
+        "date": "2026-01-23",
+        "clicks": 29,
+        "impressions": 259
+      },
+      {
+        "date": "2026-01-24",
+        "clicks": 20,
+        "impressions": 133
+      },
+      {
+        "date": "2026-01-25",
+        "clicks": 16,
+        "impressions": 174
+      },
+      {
+        "date": "2026-01-26",
+        "clicks": 29,
+        "impressions": 229
+      },
+      {
+        "date": "2026-01-27",
+        "clicks": 20,
+        "impressions": 193
+      },
+      {
+        "date": "2026-01-28",
+        "clicks": 28,
+        "impressions": 270
+      },
+      {
+        "date": "2026-01-29",
+        "clicks": 29,
+        "impressions": 231
+      },
+      {
+        "date": "2026-01-30",
+        "clicks": 15,
+        "impressions": 180
+      },
+      {
+        "date": "2026-01-31",
+        "clicks": 10,
+        "impressions": 118
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 24,
+        "impressions": 128
+      },
+      {
+        "date": "2026-02-02",
+        "clicks": 24,
+        "impressions": 297
+      },
+      {
+        "date": "2026-02-03",
+        "clicks": 47,
+        "impressions": 308
+      },
+      {
+        "date": "2026-02-04",
+        "clicks": 19,
+        "impressions": 253
+      },
+      {
+        "date": "2026-02-05",
+        "clicks": 8,
+        "impressions": 78
+      }
+    ]
+  }
+]
