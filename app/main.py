@@ -36,11 +36,13 @@ async def get_full_data(data_class: Data) -> dict:
 async def avatr(request: Request):
     data_class = Data()
 
-    data_class.data = await data_class.get_page_info(car_name="avatr")
+    car_name="avatr"
+
+    data_class.data = await data_class.get_page_info(car_name=car_name)
 
     full_data = await get_full_data(data_class)
     full_data["request"] = request
-    full_data["active_tab"] = "avatr"
+    full_data["active_tab"] = car_name
 
     return templates.TemplateResponse(
         "index.html",
@@ -51,11 +53,13 @@ async def avatr(request: Request):
 async def ag_electro(request: Request):
     data_class = Data()
 
-    data_class.data = await data_class.get_page_info(car_name="electro")
+    car_name = "electro"
 
-    full_data = await get_full_data(data_class)
+    data_class.data = await data_class.get_page_info(car_name=car_name)
+
+    full_data = await get_full_data(data_class,car_name)
     full_data["request"] = request
-    full_data["active_tab"] = "electro"
+    full_data["active_tab"] = car_name
 
     return templates.TemplateResponse(
         "index.html",

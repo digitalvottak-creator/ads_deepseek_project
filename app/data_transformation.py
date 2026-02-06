@@ -141,8 +141,8 @@ class Data:
 
             ev = events_by_date.get(date_str, {})
 
-            calls_day = int(ev.get("binotel_ct_call_details", 0) or 0) + int(ev.get("binotel_ct_call_received", 0) or 0)
-            forms_day = int(ev.get("form_start", 0) or 0)
+            calls_day = int(ev.get("binotel_ct_call_details", 0) or 0) + int(ev.get("Get_call", 0) or 0)
+            forms_day = int(ev.get("all_forms", 0) or 0)
 
             calls_mtd += calls_day
             forms_mtd += forms_day
