@@ -57,7 +57,7 @@ async def ag_electro(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class,car_name)
+    full_data = await get_full_data(data_class)
     full_data["request"] = request
     full_data["active_tab"] = car_name
 
