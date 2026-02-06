@@ -209,23 +209,23 @@ async def main():
     sub_ads_accounts = await google.get_sub_accounts()
 
     # Google Ads
-    traffic_drop_per_day = []
-    for sub in sub_ads_accounts:
-        sub_id = sub.customer_client.client_customer.removeprefix('customers/')
-        sub_name = sub.customer_client.descriptive_name or ""
-        print(f"Подчинённый рекламный аккаунт: {sub_name} ({sub_id})")
-##
-        if sub_id == '5109744025':
-            continue
-##
-        # Google Ads Result
-        ads_results = await asyncio.gather(
-            google.gaql_async(sub_id, functions.traffic_drop)
-        )
-        traffic_drop_per_day_temp = ads_results[0]
-        traffic_drop_per_day_temp = await functions.get_traffic(traffic_drop_per_day_temp)
-        traffic_drop_per_day.append({"campaign_name": sub_name, "campaign_id": sub_id, "data": traffic_drop_per_day_temp})
-    await Other.save_data(traffic_drop_per_day, os.getenv("GOOGLE_ADS_CLICKS_PER_DAY_FILE"))
+    # traffic_drop_per_day = []
+    # for sub in sub_ads_accounts:
+    #     sub_id = sub.customer_client.client_customer.removeprefix('customers/')
+    #     sub_name = sub.customer_client.descriptive_name or ""
+    #     print(f"Подчинённый рекламный аккаунт: {sub_name} ({sub_id})")
+###
+    #     if sub_id == '5109744025':
+    #         continue
+###
+    #     # Google Ads Result
+    #     ads_results = await asyncio.gather(
+    #         google.gaql_async(sub_id, functions.traffic_drop)
+    #     )
+    #     traffic_drop_per_day_temp = ads_results[0]
+    #     traffic_drop_per_day_temp = await functions.get_traffic(traffic_drop_per_day_temp)
+    #     traffic_drop_per_day.append({"campaign_name": sub_name, "campaign_id": sub_id, "data": traffic_drop_per_day_temp})
+    # await Other.save_data(traffic_drop_per_day, os.getenv("GOOGLE_ADS_CLICKS_PER_DAY_FILE"))
 
     # Google Analyst
     sub_analytics_account = await Other.get_data(os.getenv("ANALYTIC_ACCOUNTS_FILE"))

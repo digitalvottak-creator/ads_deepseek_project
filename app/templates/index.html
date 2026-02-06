@@ -724,26 +724,30 @@
         <div class="topbar-title">Бренды</div>
 
         <div class="brand-strip" id="brandStrip" aria-label="Список брендов (горизонтальная прокрутка)">
-            <div class="brand-list">
-                <div class="brand-chip active" role="button" tabindex="0">
-                    <span class="brand-name">Avatr</span>
-                    <span class="brand-meta">
-                        <span class="brand-pill"><span class="b"></span>77</span>
-                        <span class="brand-pill">CTR 5</span>
-                        <span class="brand-pill">25 000 UAH</span>
-                    </span>
+            <a href="/">
+                <div class="brand-list">
+                    <div class="brand-chip {% if active_tab == 'avatr' %} active {% endif %}" role="button" tabindex="0">
+                        <span class="brand-name">Avatr</span>
+                        <span class="brand-meta">
+                            <span class="brand-pill"><span class="b"></span>77</span>
+                            <span class="brand-pill">CTR 5</span>
+                            <span class="brand-pill">25 000 UAH</span>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="brand-list">
-                <div class="brand-chip" role="button" tabindex="0">
-                    <span class="brand-name">Mitsubishi</span>
-                    <span class="brand-meta">
-                        <span class="brand-pill"><span class="b"></span>77</span>
-                        <span class="brand-pill">CTR 5</span>
-                        <span class="brand-pill">25 000 UAH</span>
-                    </span>
+            </a>
+            <a href="/electro">
+                <div class="brand-list">
+                    <div class="brand-chip {% if active_tab == 'electro' %} active {% endif %}" role="button" tabindex="0">
+                        <span class="brand-name">Autogroup Electro</span>
+                        <span class="brand-meta">
+                            <span class="brand-pill"><span class="b"></span>77</span>
+                            <span class="brand-pill">CTR 5</span>
+                            <span class="brand-pill">25 000 UAH</span>
+                        </span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
         </div>
 
