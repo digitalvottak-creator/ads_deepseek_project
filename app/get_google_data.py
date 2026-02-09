@@ -199,7 +199,7 @@ class Other:
             await f.write(json_str)
 
 
-async def main():
+async def refresh_data_func():
     google = Google()
     sql = SQL()
     functions = Functions()
@@ -252,4 +252,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(refresh_data_func())

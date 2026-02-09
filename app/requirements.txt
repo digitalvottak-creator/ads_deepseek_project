@@ -5,3 +5,4 @@ google-analytics-data
 aiofiles
 dotenv
 numpy
+APScheduler

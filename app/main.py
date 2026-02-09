@@ -1,16 +1,40 @@
+import asyncio
+from contextlib import asynccontextmanager
+from zoneinfo import ZoneInfo
+
+from apscheduler.triggers.cron import CronTrigger
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from app.get_google_data import refresh_data_func
 from data_transformation import Data
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    loop = asyncio.get_event_loop()
+    scheduler = AsyncIOScheduler(event_loop=loop)
+    scheduler.add_job(refresh_data, trigger=CronTrigger(hour=9, minute=0, timezone=ZoneInfo("Europe/Kyiv")))
+    scheduler.add_job(refresh_data, trigger=CronTrigger(hour=12, minute=0, timezone=ZoneInfo("Europe/Kyiv")))
+    scheduler.add_job(refresh_data, trigger=CronTrigger(hour=15, minute=0, timezone=ZoneInfo("Europe/Kyiv")))
+    scheduler.start()
+    try:
+        yield
+    finally:
+        scheduler.shutdown()
+
+async def refresh_data():
+    print("Запуск обновления данных")
+    await refresh_data_func()
+
+app = FastAPI(lifespan=lifespan)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
-
 
 async def get_full_data(data_class: Data) -> dict:
     total_clicks, total_impressions, fresh_date = await data_class.get_additional_information()
