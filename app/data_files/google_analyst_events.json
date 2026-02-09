@@ -4,111 +4,6 @@
     "campaign_id": "435894686",
     "data": [
       {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 44
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 37
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 28
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 18
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "G-MSGH2BB72V",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "all_forms",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 10
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 109
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 89
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 69
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 54
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 3
-      },
-      {
         "date": "2026-01-10",
         "eventName": "page_view",
         "eventCount": 93
@@ -1186,27 +1081,142 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 40
+        "eventCount": 173
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 36
+        "eventCount": 144
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 23
+        "eventCount": 87
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 12
+        "eventCount": 54
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
+        "eventCount": 24
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "form_start",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 201
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 154
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 109
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 67
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 23
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
         "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 261
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 190
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 112
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 74
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 36
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "G-MSGH2BB72V",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "all_forms",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 51
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 45
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
+        "eventCount": 3
       }
     ]
   },
@@ -1214,66 +1224,6 @@
     "campaign_name": "Сервис АГМ",
     "campaign_id": "452965891",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 23
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 22
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 4
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -1986,18 +1936,108 @@
       },
       {
         "date": "2026-02-06",
-        "eventName": "first_visit",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 12
+        "eventCount": 41
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 12
+        "eventCount": 41
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "first_visit",
+        "eventCount": 39
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "user_engagement",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "G-ZFDKTP32X9",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "all_forms",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "scroll",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 45
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 44
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 43
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 40
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 39
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 37
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 7
       }
     ]
   },
@@ -2005,101 +2045,6 @@
     "campaign_name": "Сhery АВТОГРУП МОТОРС",
     "campaign_id": "472232563",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 51
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 35
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 30
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 28
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 54
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 34
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 30
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 69
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 43
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 43
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 41
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "all_forms",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -2883,27 +2828,127 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 42
+        "eventCount": 82
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 21
+        "eventCount": 41
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 19
+        "eventCount": 38
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 16
+        "eventCount": 27
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 11
+        "eventCount": 24
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 127
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 78
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 56
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 46
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 39
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 94
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 47
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 47
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 34
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 22
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 42
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 19
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 13
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 6
       }
     ]
   },
@@ -2916,111 +2961,6 @@
     "campaign_name": "Autogroup E-Service",
     "campaign_id": "499578401",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 32
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 18
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 17
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -4099,22 +4039,22 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 13
+        "eventCount": 21
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 10
+        "eventCount": 16
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 9
+        "eventCount": 14
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 8
+        "eventCount": 11
       },
       {
         "date": "2026-02-06",
@@ -4123,27 +4063,142 @@
       },
       {
         "date": "2026-02-06",
+        "eventName": "form_start",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-06",
         "eventName": "binotel_ct_call_received",
         "eventCount": 4
       },
       {
         "date": "2026-02-06",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "form_start",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 1
+        "eventCount": 4
       },
       {
         "date": "2026-02-06",
         "eventName": "service_form",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "service_form",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
         "eventCount": 1
       }
     ]
@@ -4152,186 +4207,6 @@
     "campaign_name": "Autogroup Electro",
     "campaign_id": "436806123",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 469
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "gtm.dom",
-        "eventCount": 411
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 362
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 289
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 204
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 40
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "G-EKMR3T60Q4",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 489
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "gtm.dom",
-        "eventCount": 438
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 315
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 267
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 243
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 56
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "G-EKMR3T60Q4",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 464
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "gtm.dom",
-        "eventCount": 412
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 343
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 253
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 253
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 44
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "G-EKMR3T60Q4",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "view_item",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "gtm.linkClick",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "telegram",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -5925,41 +5800,51 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 196
+        "eventCount": 456
       },
       {
         "date": "2026-02-06",
         "eventName": "gtm.dom",
-        "eventCount": 155
+        "eventCount": 360
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 128
+        "eventCount": 297
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 103
+        "eventCount": 243
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 98
+        "eventCount": 210
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "click",
-        "eventCount": 3
+        "eventCount": 38
       },
       {
         "date": "2026-02-06",
         "eventName": "form_start",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "click",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_received",
         "eventCount": 3
       },
       {
@@ -5969,7 +5854,182 @@
       },
       {
         "date": "2026-02-06",
-        "eventName": "binotel_ct_call_details",
+        "eventName": "Get_call",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "facebook_click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "gtm.linkClick",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 509
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "gtm.dom",
+        "eventCount": 428
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 347
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 274
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 237
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 41
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "G-EKMR3T60Q4",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_gc_opened_passive_form",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 559
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "gtm.dom",
+        "eventCount": 501
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 392
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 325
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 222
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 42
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 16
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "binotel_gc_opened_passive_form",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "G-EKMR3T60Q4",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "all_forms",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "ec_form",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "footer_zvyazatis_obshie_formi",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "submit_form693206178",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 119
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "gtm.dom",
+        "eventCount": 98
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 62
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 55
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 39
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "G-EKMR3T60Q4",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "gtm.linkClick",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "telegram",
         "eventCount": 1
       }
     ]
@@ -5978,231 +6038,6 @@
     "campaign_name": "Autogroup.ua",
     "campaign_id": "359106592",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 581
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 361
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 280
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 203
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 66
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "G-Z2ZJQ9C2DZ",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "video_progress",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "all_forms",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "TO_submit_form",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "service_renault_form",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "video_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "Заявка_на_передзвон",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 645
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 323
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 321
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 219
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 59
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "G-Z2ZJQ9C2DZ",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "all_forms",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "запис_тест_драйв",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 682
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 388
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 350
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 285
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 59
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "G-Z2ZJQ9C2DZ",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_progress",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "all_forms",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "diagnostika_form",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_start",
-        "eventCount": 2
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -8141,62 +7976,72 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 721
+        "eventCount": 1332
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 505
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "first_visit",
-        "eventCount": 399
+        "eventCount": 935
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 398
+        "eventCount": 723
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "first_visit",
+        "eventCount": 718
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 91
+        "eventCount": 158
       },
       {
         "date": "2026-02-06",
         "eventName": "click",
-        "eventCount": 39
+        "eventCount": 71
       },
       {
         "date": "2026-02-06",
         "eventName": "file_download",
-        "eventCount": 34
+        "eventCount": 63
       },
       {
         "date": "2026-02-06",
         "eventName": "Banner Auto Close",
-        "eventCount": 27
+        "eventCount": 58
       },
       {
         "date": "2026-02-06",
         "eventName": "Banner Accept Cookies",
-        "eventCount": 20
+        "eventCount": 36
       },
       {
         "date": "2026-02-06",
         "eventName": "form_start",
-        "eventCount": 6
+        "eventCount": 8
       },
       {
         "date": "2026-02-06",
         "eventName": "G-Z2ZJQ9C2DZ",
-        "eventCount": 3
+        "eventCount": 5
       },
       {
         "date": "2026-02-06",
         "eventName": "Get_call",
-        "eventCount": 1
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 3
       },
       {
         "date": "2026-02-06",
@@ -8205,12 +8050,257 @@
       },
       {
         "date": "2026-02-06",
+        "eventName": "diagnostika_form",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 793
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 536
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 476
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 390
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 85
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Banner Auto Close",
+        "eventCount": 40
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 35
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 29
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "G-Z2ZJQ9C2DZ",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "video_progress",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Floating Cookie Settings Open Button",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Get_call",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "all_forms",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "video_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 822
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 636
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 427
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 259
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 83
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 51
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 44
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Banner Auto Close",
+        "eventCount": 42
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 41
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "G-Z2ZJQ9C2DZ",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "all_forms",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Floating Cookie Settings Open Button",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Get_call",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
         "eventName": "binotel_ct_call_received",
         "eventCount": 1
       },
       {
-        "date": "2026-02-06",
-        "eventName": "diagnostika_form",
+        "date": "2026-02-08",
+        "eventName": "Заявка_обмін_авто",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "первинна_реестрація",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 303
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 241
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 164
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 103
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 34
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 18
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "Banner Auto Close",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_progress",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "G-Z2ZJQ9C2DZ",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "Get_call",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_start",
         "eventCount": 1
       }
     ]
@@ -8219,126 +8309,6 @@
     "campaign_name": "Avatr Одесса",
     "campaign_id": "513448672",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 96
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 82
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 61
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 37
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 19
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 215
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 179
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 147
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 86
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 36
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 34
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 197
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 172
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 153
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 63
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 2
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -9347,27 +9317,117 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 53
+        "eventCount": 125
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 37
+        "eventCount": 90
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 30
+        "eventCount": 73
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 26
+        "eventCount": 63
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 5
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 83
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 66
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 54
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 53
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 56
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 40
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 38
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 30
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 1
       }
     ]
   },
@@ -9380,151 +9440,6 @@
     "campaign_name": "Cars Autogroup c пробегом",
     "campaign_id": "359065252",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 994
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 624
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 368
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 349
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 93
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "G-1PWQE2PSVL",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "all_forms",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 1212
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 773
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 435
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 416
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 133
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "G-1PWQE2PSVL",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 1225
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 625
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 582
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 317
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 150
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "G-1PWQE2PSVL",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "all_forms",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -10813,46 +10728,186 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 312
+        "eventCount": 891
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 182
+        "eventCount": 564
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 150
+        "eventCount": 355
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 80
+        "eventCount": 286
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 50
+        "eventCount": 91
       },
       {
         "date": "2026-02-06",
         "eventName": "form_start",
-        "eventCount": 5
+        "eventCount": 8
       },
       {
         "date": "2026-02-06",
         "eventName": "G-1PWQE2PSVL",
-        "eventCount": 1
+        "eventCount": 2
       },
       {
         "date": "2026-02-06",
         "eventName": "all_forms",
-        "eventCount": 1
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "click",
+        "eventCount": 2
       },
       {
         "date": "2026-02-06",
         "eventName": "pokazat_vartist_form",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 799
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 493
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 274
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 267
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 70
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "G-1PWQE2PSVL",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "all_forms",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "pokazat_vartist_form",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 1026
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 674
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 375
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 363
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 80
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "G-1PWQE2PSVL",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "all_forms",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "pokazat_vartist_form",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 124
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 80
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 40
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 37
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
         "eventCount": 1
       }
     ]
@@ -10861,121 +10916,6 @@
     "campaign_name": "Citroen АВТОГРАД",
     "campaign_id": "358944685",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 131
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 92
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 60
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 40
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 37
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 36
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 235
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 145
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 131
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 116
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 36
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 23
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 164
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 105
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 69
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 69
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 43
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 39
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 6
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -12124,42 +12064,157 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 124
+        "eventCount": 198
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 79
+        "eventCount": 127
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 57
+        "eventCount": 94
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 51
+        "eventCount": 93
       },
       {
         "date": "2026-02-06",
         "eventName": "click",
-        "eventCount": 19
+        "eventCount": 31
       },
       {
         "date": "2026-02-06",
         "eventName": "file_download",
-        "eventCount": 18
+        "eventCount": 27
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 8
+        "eventCount": 17
       },
       {
         "date": "2026-02-06",
         "eventName": "binotel_gc_opened_passive_form",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 172
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 117
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 89
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 69
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 35
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 29
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 13
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_gc_opened_passive_form",
         "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 157
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 87
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 83
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 63
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 28
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "binotel_gc_opened_passive_form",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 56
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 38
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 23
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 21
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 4
       }
     ]
   },
@@ -12167,111 +12222,6 @@
     "campaign_name": "DS Одесса",
     "campaign_id": "510760500",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 779
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 587
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 339
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 272
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 23
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 1082
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 825
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 410
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 405
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 23
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 1049
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 827
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 422
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 409
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_progress",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_start",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -13310,36 +13260,126 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 22
+        "eventCount": 65
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 19
+        "eventCount": 48
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 16
+        "eventCount": 41
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 8
+        "eventCount": 25
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 3
+        "eventCount": 7
       },
       {
         "date": "2026-02-06",
         "eventName": "click",
-        "eventCount": 1
+        "eventCount": 4
       },
       {
         "date": "2026-02-06",
         "eventName": "file_download",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 41
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 28
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 25
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 24
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 50
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 32
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 29
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 29
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
         "eventCount": 1
       }
     ]
@@ -13348,291 +13388,6 @@
     "campaign_name": "Scoda",
     "campaign_id": "399285460",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 123
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_item_list",
-        "eventCount": 114
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll_down",
-        "eventCount": 90
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "undefined",
-        "eventCount": 55
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 46
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "button_click",
-        "eventCount": 44
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 35
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 32
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "cookie_manager_accept_all",
-        "eventCount": 26
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "cta_click",
-        "eventCount": 17
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_promotion",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_item",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "orientation_change",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "select_promotion",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "tab_change",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "просмотреть_подробную_информацию",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "Banner Accept Cookies",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "select_item",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "download",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 162
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "view_item_list",
-        "eventCount": 161
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll_down",
-        "eventCount": 73
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 68
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 56
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "cookie_manager_accept_all",
-        "eventCount": 40
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "button_click",
-        "eventCount": 39
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "view_promotion",
-        "eventCount": 36
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "undefined",
-        "eventCount": 34
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 31
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "cta_click",
-        "eventCount": 27
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "view_item",
-        "eventCount": 20
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "просмотреть_подробную_информацию",
-        "eventCount": 11
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "orientation_change",
-        "eventCount": 10
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "select_promotion",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "select_item",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "tab_change",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "download",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "Banner Accept Cookies",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 114
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "view_item_list",
-        "eventCount": 85
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll_down",
-        "eventCount": 84
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 64
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 45
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 36
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "button_click",
-        "eventCount": 32
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "cookie_manager_accept_all",
-        "eventCount": 29
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "view_promotion",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "cta_click",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "undefined",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "select_item",
-        "eventCount": 11
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "view_item",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "просмотреть_подробную_информацию",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "Banner Accept Cookies",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "orientation_change",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "select_promotion",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "download",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "search_click",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -16045,63 +15800,93 @@
       },
       {
         "date": "2026-02-06",
-        "eventName": "scroll_down",
-        "eventCount": 33
-      },
-      {
-        "date": "2026-02-06",
         "eventName": "view_item_list",
-        "eventCount": 33
+        "eventCount": 131
       },
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 25
+        "eventCount": 126
       },
       {
         "date": "2026-02-06",
-        "eventName": "button_click",
-        "eventCount": 11
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "session_start",
-        "eventCount": 9
+        "eventName": "scroll_down",
+        "eventCount": 111
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 8
+        "eventCount": 41
       },
       {
         "date": "2026-02-06",
-        "eventName": "cookie_manager_accept_all",
-        "eventCount": 7
+        "eventName": "button_click",
+        "eventCount": 40
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "session_start",
+        "eventCount": 38
       },
       {
         "date": "2026-02-06",
         "eventName": "cta_click",
-        "eventCount": 7
+        "eventCount": 24
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 7
+        "eventCount": 24
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "cookie_manager_accept_all",
+        "eventCount": 21
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "view_item",
+        "eventCount": 10
       },
       {
         "date": "2026-02-06",
         "eventName": "view_promotion",
-        "eventCount": 4
+        "eventCount": 10
       },
       {
         "date": "2026-02-06",
-        "eventName": "download",
-        "eventCount": 3
+        "eventName": "просмотреть_подробную_информацию",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "form_start",
+        "eventCount": 5
       },
       {
         "date": "2026-02-06",
         "eventName": "tab_change",
-        "eventCount": 3
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "download",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "select_item",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "cookie_manager_icon_click",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "select_promotion",
+        "eventCount": 2
       },
       {
         "date": "2026-02-06",
@@ -16109,18 +15894,263 @@
         "eventCount": 2
       },
       {
-        "date": "2026-02-06",
-        "eventName": "view_item",
-        "eventCount": 2
+        "date": "2026-02-07",
+        "eventName": "view_item_list",
+        "eventCount": 250
       },
       {
-        "date": "2026-02-06",
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 178
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll_down",
+        "eventCount": 99
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "button_click",
+        "eventCount": 63
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "view_promotion",
+        "eventCount": 51
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 49
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 42
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 39
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "cookie_manager_accept_all",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "cta_click",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "view_item",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "select_promotion",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "просмотреть_подробную_информацию",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "download",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-07",
         "eventName": "select_item",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "tab_change",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Banner Accept Cookies",
         "eventCount": 1
       },
       {
-        "date": "2026-02-06",
+        "date": "2026-02-07",
+        "eventName": "cookie_manager_open_preferences",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_focus",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "orientation_change",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 126
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_item_list",
+        "eventCount": 120
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll_down",
+        "eventCount": 95
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "button_click",
+        "eventCount": 61
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 48
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 43
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 30
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 26
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_promotion",
+        "eventCount": 26
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "cookie_manager_accept_all",
+        "eventCount": 25
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "cta_click",
+        "eventCount": 23
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "просмотреть_подробную_информацию",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "cookie_manager_icon_click",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-08",
         "eventName": "select_promotion",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_item",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "tab_change",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "select_item",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "download",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_focus",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "view_item_list",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 13
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll_down",
+        "eventCount": 13
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "button_click",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "cookie_manager_accept_all",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "cta_click",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "download",
         "eventCount": 1
       }
     ]
@@ -16129,211 +16159,6 @@
     "campaign_name": "Ford Mustang",
     "campaign_id": "358979732",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 212
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 111
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 83
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 80
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 40
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "download_price",
-        "eventCount": 38
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_priceTourneoCourier",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_priceKuga",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_pricePuma",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_submit_service",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_priceE_Puma",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 139
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 85
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 61
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 49
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "download_price",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 22
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 20
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "view_priceKuga",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_submit_perezvon",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "view_pricePuma",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 173
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 107
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 81
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 59
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 39
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "download_price",
-        "eventCount": 18
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "view_priceKuga",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "view_pricePuma",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -18132,52 +17957,52 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 188
+        "eventCount": 333
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 123
+        "eventCount": 222
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 95
+        "eventCount": 172
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 57
+        "eventCount": 85
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 28
+        "eventCount": 49
       },
       {
         "date": "2026-02-06",
         "eventName": "download_price",
-        "eventCount": 22
+        "eventCount": 36
       },
       {
         "date": "2026-02-06",
         "eventName": "file_download",
-        "eventCount": 12
+        "eventCount": 21
       },
       {
         "date": "2026-02-06",
         "eventName": "view_priceKuga",
-        "eventCount": 10
+        "eventCount": 12
       },
       {
         "date": "2026-02-06",
         "eventName": "view_priceTourneoCourier",
-        "eventCount": 5
+        "eventCount": 10
       },
       {
         "date": "2026-02-06",
         "eventName": "view_pricePuma",
-        "eventCount": 3
+        "eventCount": 5
       },
       {
         "date": "2026-02-06",
@@ -18197,6 +18022,186 @@
       {
         "date": "2026-02-06",
         "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 274
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 215
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 172
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 81
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 42
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "download_price",
+        "eventCount": 27
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 16
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "view_priceKuga",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "view_pricePuma",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "view_priceTourneoCourier",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 312
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 202
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 158
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 75
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 55
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "download_price",
+        "eventCount": 54
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 37
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_priceKuga",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_priceTourneoCourier",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_pricePuma",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_submit_service",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_priceE_Puma",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 81
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 67
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 53
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 26
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 17
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "download_price",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "view_priceKuga",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "view_pricePuma",
         "eventCount": 1
       }
     ]
@@ -18210,281 +18215,6 @@
     "campaign_name": "Hyundai",
     "campaign_id": "389930422",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 313
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 181
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 178
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 170
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 128
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 26
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "price",
-        "eventCount": 25
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "sklad_click",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "заход_в_контакты",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "booklet",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "авто_с_пробегом",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "credit_form",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "video_progress",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "video_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 379
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 232
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 232
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 201
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 149
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 38
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "price",
-        "eventCount": 35
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "авто_с_пробегом",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "заход_в_контакты",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "sklad_click",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "запись_на_сервис",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "booklet",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click_instagram",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "video_progress",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "video_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 395
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 277
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 213
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 186
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 183
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "price",
-        "eventCount": 47
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 46
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "sklad_click",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "заход_в_контакты",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_progress",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "авто_с_пробегом",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "booklet",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "запись_на_сервис",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -20668,57 +20398,57 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 211
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "user_engagement",
-        "eventCount": 128
+        "eventCount": 335
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 126
+        "eventCount": 205
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 121
+        "eventCount": 200
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "user_engagement",
+        "eventCount": 188
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 100
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "file_download",
-        "eventCount": 12
+        "eventCount": 170
       },
       {
         "date": "2026-02-06",
         "eventName": "price",
-        "eventCount": 11
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "file_download",
+        "eventCount": 13
       },
       {
         "date": "2026-02-06",
         "eventName": "заход_в_контакты",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "запись_на_сервис",
-        "eventCount": 3
+        "eventCount": 12
       },
       {
         "date": "2026-02-06",
         "eventName": "click",
-        "eventCount": 2
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "запись_на_сервис",
+        "eventCount": 4
       },
       {
         "date": "2026-02-06",
         "eventName": "sklad_click",
-        "eventCount": 2
+        "eventCount": 3
       },
       {
         "date": "2026-02-06",
@@ -20742,7 +20472,227 @@
       },
       {
         "date": "2026-02-06",
+        "eventName": "click_facebook",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-06",
         "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 416
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 265
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 242
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 221
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 210
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 33
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "price",
+        "eventCount": 33
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "авто_с_пробегом",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "запись_на_сервис",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "sklad_click",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "booklet",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "переход_на_страницу_тест_драйв",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 367
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 253
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 229
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 189
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 186
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "price",
+        "eventCount": 33
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 32
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "sklad_click",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "авто_с_пробегом",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "video_progress",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "заход_в_контакты",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "video_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "запись_на_сервис",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 150
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 100
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 93
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 85
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 74
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "price",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "sklad_click",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "заход_в_контакты",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "авто_с_пробегом",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "запись_на_сервис",
         "eventCount": 1
       }
     ]
@@ -20751,56 +20701,6 @@
     "campaign_name": "Шинний готель",
     "campaign_id": "464508955",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "first_visit",
@@ -21269,12 +21169,22 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 2
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "user_engagement",
+        "eventCount": 3
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 1
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "session_start",
+        "eventCount": 2
       },
       {
         "date": "2026-02-06",
@@ -21287,12 +21197,22 @@
         "eventCount": 1
       },
       {
-        "date": "2026-02-06",
-        "eventName": "session_start",
-        "eventCount": 1
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 3
       },
       {
-        "date": "2026-02-06",
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
         "eventName": "user_engagement",
         "eventCount": 1
       }
@@ -21307,111 +21227,6 @@
     "campaign_name": "Kia Автоград",
     "campaign_id": "435896090",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 151
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 125
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 89
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 86
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 57
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 155
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 124
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 86
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 77
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 50
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 194
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 147
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 120
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 81
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 68
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -22580,42 +22395,192 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 164
+        "eventCount": 344
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 114
+        "eventCount": 233
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 111
+        "eventCount": 214
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 80
+        "eventCount": 182
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 77
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
+        "eventCount": 134
       },
       {
         "date": "2026-02-06",
         "eventName": "binotel_ct_call_details",
-        "eventCount": 3
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 7
       },
       {
         "date": "2026-02-06",
         "eventName": "click",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "file_download",
         "eventCount": 2
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 339
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 253
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 196
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 147
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 116
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "service_form",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_submit",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 603
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 384
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 360
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 303
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 165
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Get_call",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 100
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 76
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 60
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 39
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 32
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 1
       }
     ]
   },
@@ -22623,156 +22588,6 @@
     "campaign_name": "LTS (Лидер Тех Стандарт)",
     "campaign_id": "435894081",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 30
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 20
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "G-TBXB6K1YLG",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "all_forms",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 53
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 35
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 31
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 29
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 25
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "G-TBXB6K1YLG",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "all_forms",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 50
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 39
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 20
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "form_start",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "G-TBXB6K1YLG",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "all_forms",
-        "eventCount": 2
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -23861,27 +23676,27 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 30
+        "eventCount": 51
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 24
+        "eventCount": 43
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "scroll",
-        "eventCount": 13
+        "eventCount": 28
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 11
+        "eventCount": 23
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "scroll",
+        "eventCount": 20
       },
       {
         "date": "2026-02-06",
@@ -23907,6 +23722,101 @@
         "date": "2026-02-06",
         "eventName": "all_forms",
         "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 30
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 25
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 19
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click_tel",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
       }
     ]
   },
@@ -23914,116 +23824,6 @@
     "campaign_name": "ЛТС Грушевского",
     "campaign_id": "465870779",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "G-CC1R83M03Z",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "all_forms_grusha",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 17
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 11
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -24827,26 +24627,111 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 10
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "first_visit",
-        "eventCount": 8
+        "eventCount": 25
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 8
+        "eventCount": 23
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "first_visit",
+        "eventCount": 19
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 6
+        "eventCount": 17
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 22
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 19
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 17
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 22
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 17
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
         "eventCount": 1
       }
     ]
@@ -24855,126 +24740,6 @@
     "campaign_name": "MG-GA4",
     "campaign_id": "294153596",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 87
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 37
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 20
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "view_item",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 251
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 125
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 29
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 10
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "view_item",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 356
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 143
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 88
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 74
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "view_item",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "add_to_cart",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -26058,26 +25823,31 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 154
+        "eventCount": 253
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 59
+        "eventCount": 100
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 38
+        "eventCount": 70
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 17
+        "eventCount": 32
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "view_item",
         "eventCount": 5
       },
       {
@@ -26087,13 +25857,128 @@
       },
       {
         "date": "2026-02-06",
-        "eventName": "view_item",
+        "eventName": "binotel_gc_opened_passive_form",
         "eventCount": 2
       },
       {
-        "date": "2026-02-06",
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 478
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 167
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 131
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 100
+      },
+      {
+        "date": "2026-02-07",
         "eventName": "binotel_gc_opened_passive_form",
+        "eventCount": 35
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "view_item",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 290
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 119
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 92
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 50
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "binotel_gc_opened_passive_form",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "view_item",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "add_to_cart",
         "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 226
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 65
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 59
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 45
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_gc_opened_passive_form",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "view_item",
+        "eventCount": 5
       }
     ]
   },
@@ -26101,181 +25986,6 @@
     "campaign_name": "Mitsubishi АВТОГРАД",
     "campaign_id": "358646982",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 92
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 48
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 38
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 36
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click_price_list",
-        "eventCount": 11
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "video_progress",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "form_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "video_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 125
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 62
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 46
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 37
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click_price_list",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click_catalog",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "form_start",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "zapis_na_service",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 159
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 101
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 70
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 39
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click_price_list",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_progress",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "video_start",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click_catalog",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -27639,37 +27349,42 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 78
+        "eventCount": 136
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 52
+        "eventCount": 98
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 38
+        "eventCount": 72
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 19
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "file_download",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "scroll",
-        "eventCount": 4
+        "eventCount": 28
       },
       {
         "date": "2026-02-06",
         "eventName": "click_price_list",
-        "eventCount": 3
+        "eventCount": 13
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "file_download",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "scroll",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "click_catalog",
+        "eventCount": 2
       },
       {
         "date": "2026-02-06",
@@ -27677,9 +27392,154 @@
         "eventCount": 1
       },
       {
-        "date": "2026-02-06",
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 144
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 100
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 68
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 30
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click_price_list",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "video_progress",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
         "eventName": "click_catalog",
         "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "video_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 152
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 101
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 71
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click_price_list",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click_catalog",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 64
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 38
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 21
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 17
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click_price_list",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_progress",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_start",
+        "eventCount": 2
       }
     ]
   },
@@ -27687,156 +27547,6 @@
     "campaign_name": "NISSAN СКАЙ",
     "campaign_id": "358911296",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 212
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 163
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 117
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 114
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 30
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "прайс_лист_все_модели",
-        "eventCount": 26
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 7
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 509
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 355
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 259
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 257
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 48
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "прайс_лист_все_модели",
-        "eventCount": 32
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 25
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 195
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 123
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 104
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 76
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 33
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "прайс_лист_все_модели",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -29285,47 +28995,197 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 164
+        "eventCount": 331
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 108
+        "eventCount": 201
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 70
+        "eventCount": 166
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 41
+        "eventCount": 106
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 30
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "click",
-        "eventCount": 10
+        "eventCount": 50
       },
       {
         "date": "2026-02-06",
         "eventName": "прайс_лист_все_модели",
-        "eventCount": 9
+        "eventCount": 29
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "click",
+        "eventCount": 18
       },
       {
         "date": "2026-02-06",
         "eventName": "file_download",
-        "eventCount": 7
+        "eventCount": 15
       },
       {
         "date": "2026-02-06",
         "eventName": "click_facebook",
         "eventCount": 2
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 210
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 149
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 102
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 102
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "прайс_лист_все_модели",
+        "eventCount": 35
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 28
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "form_start",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 305
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 232
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 175
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 118
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "прайс_лист_все_модели",
+        "eventCount": 68
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 33
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 44
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 33
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 18
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "прайс_лист_все_модели",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 3
       }
     ]
   },
@@ -29333,116 +29193,6 @@
     "campaign_name": "Peugeot ДЦ",
     "campaign_id": "508557505",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 1106
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 910
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 833
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 513
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 31
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 25
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 24
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 2089
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 1776
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 1496
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 988
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 47
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 36
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 18
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 1942
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 1675
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 1313
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 942
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 43
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 32
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 28
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "serivce_form",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -30516,37 +30266,142 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 69
+        "eventCount": 126
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 49
+        "eventCount": 90
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 39
+        "eventCount": 75
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 30
+        "eventCount": 57
       },
       {
         "date": "2026-02-06",
         "eventName": "click",
-        "eventCount": 13
+        "eventCount": 19
       },
       {
         "date": "2026-02-06",
         "eventName": "file_download",
-        "eventCount": 11
+        "eventCount": 17
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 7
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 54
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 37
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 37
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 34
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 100
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 81
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 47
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 32
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 16
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 16
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 30
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 17
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 16
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 1
       }
     ]
   },
@@ -30569,196 +30424,6 @@
     "campaign_name": "Renault ДЦ Аналитика",
     "campaign_id": "283486031",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 109
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 100
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 45
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 20
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "Banner Auto Close",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "click",
-        "eventCount": 11
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "file_download",
-        "eventCount": 10
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "Banner Accept Cookies",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "посетил_калькулятор_то",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "посетил_страницу__связаться_с_нами_",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "посетил_прайсы",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "посетил_страницу__записаться_на_тест_дра",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "посетил_страницу_контакты",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 63
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 54
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 41
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "click",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "file_download",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 11
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "Banner Auto Close",
-        "eventCount": 9
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "Banner Accept Cookies",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "посетил_страницу__связаться_с_нами_",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 338
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 320
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 148
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 67
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 59
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "Banner Auto Close",
-        "eventCount": 44
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "Banner Accept Cookies",
-        "eventCount": 42
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "click",
-        "eventCount": 38
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "file_download",
-        "eventCount": 28
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "посетил_страницу__связаться_с_нами_",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "посетил_страницу__записаться_на_сервис_",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "посетил_калькулятор_то",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "посетил_страницу_контакты",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "посетил_прайсы",
-        "eventCount": 1
-      },
       {
         "date": "2026-01-10",
         "eventName": "user_engagement",
@@ -32727,56 +32392,281 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 779
+        "eventCount": 1339
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 535
+        "eventCount": 941
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
-        "eventCount": 436
+        "eventCount": 740
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 429
+        "eventCount": 733
       },
       {
         "date": "2026-02-06",
         "eventName": "scroll",
-        "eventCount": 101
+        "eventCount": 158
       },
       {
         "date": "2026-02-06",
         "eventName": "click",
-        "eventCount": 38
+        "eventCount": 71
       },
       {
         "date": "2026-02-06",
         "eventName": "file_download",
-        "eventCount": 36
+        "eventCount": 61
       },
       {
         "date": "2026-02-06",
         "eventName": "Banner Auto Close",
-        "eventCount": 28
+        "eventCount": 58
       },
       {
         "date": "2026-02-06",
         "eventName": "Banner Accept Cookies",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "посетил_страницу__записаться_на_сервис_",
-        "eventCount": 3
+        "eventCount": 37
       },
       {
         "date": "2026-02-06",
         "eventName": "посетил_страницу__связаться_с_нами_",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "посетил_страницу__записаться_на_сервис_",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 795
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 538
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 482
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 402
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
+        "eventCount": 85
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Banner Auto Close",
+        "eventCount": 40
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "click",
+        "eventCount": 35
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "file_download",
+        "eventCount": 31
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 29
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "посетил_страницу__связаться_с_нами_",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "video_progress",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "посетил_страницу__записаться_на_сервис_",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "посетил_калькулятор_то",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "посетил_страницу__записаться_на_тест_дра",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "Floating Cookie Settings Open Button",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "video_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 823
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 640
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 427
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 291
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 83
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "click",
+        "eventCount": 51
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 44
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Banner Auto Close",
+        "eventCount": 42
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "file_download",
+        "eventCount": 41
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "посетил_страницу__связаться_с_нами_",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "посетил_прайсы",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "посетил_страницу__записаться_на_сервис_",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "Floating Cookie Settings Open Button",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "посетил_калькулятор_то",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "посетил_страницу__записаться_на_тест_дра",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 316
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 253
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 169
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 110
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 35
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 17
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "Banner Auto Close",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 15
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_progress",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "посетил_страницу__записаться_на_сервис_",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "посетил_страницу__связаться_с_нами_",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "посетил_страницу_контакты",
         "eventCount": 1
       }
     ]
@@ -32785,126 +32675,6 @@
     "campaign_name": "Vag Service",
     "campaign_id": "436943438",
     "data": [
-      {
-        "date": "2026-01-07",
-        "eventName": "page_view",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "session_start",
-        "eventCount": 12
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "first_visit",
-        "eventCount": 10
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "user_engagement",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "scroll",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-07",
-        "eventName": "G-3WLWZYJN52",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "page_view",
-        "eventCount": 27
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "session_start",
-        "eventCount": 26
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "first_visit",
-        "eventCount": 21
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "user_engagement",
-        "eventCount": 16
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "scroll",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "G-3WLWZYJN52",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-08",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 2
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "page_view",
-        "eventCount": 37
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "session_start",
-        "eventCount": 31
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "first_visit",
-        "eventCount": 25
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "user_engagement",
-        "eventCount": 15
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "scroll",
-        "eventCount": 10
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-01-09",
-        "eventName": "G-3WLWZYJN52",
-        "eventCount": 2
-      },
       {
         "date": "2026-01-10",
         "eventName": "page_view",
@@ -33833,27 +33603,122 @@
       {
         "date": "2026-02-06",
         "eventName": "page_view",
-        "eventCount": 11
+        "eventCount": 20
       },
       {
         "date": "2026-02-06",
         "eventName": "session_start",
-        "eventCount": 9
+        "eventCount": 15
       },
       {
         "date": "2026-02-06",
         "eventName": "user_engagement",
-        "eventCount": 8
-      },
-      {
-        "date": "2026-02-06",
-        "eventName": "scroll",
-        "eventCount": 6
+        "eventCount": 12
       },
       {
         "date": "2026-02-06",
         "eventName": "first_visit",
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-06",
+        "eventName": "scroll",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "page_view",
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "session_start",
+        "eventCount": 16
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "first_visit",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "user_engagement",
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "scroll",
         "eventCount": 5
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-07",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "page_view",
+        "eventCount": 19
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 13
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "first_visit",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "user_engagement",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "scroll",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "G-3WLWZYJN52",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "form_start",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "page_view",
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 9
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 3
       }
     ]
   }

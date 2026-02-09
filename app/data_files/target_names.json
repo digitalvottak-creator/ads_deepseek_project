@@ -1,0 +1,97 @@
+[
+  {
+    "vehicle_name": "avatr",
+    "ads_target": "AVATR",
+    "analyst_target": "Avatr Одесса"
+  },
+  {
+    "vehicle_name": "electro",
+    "ads_target": "Електро",
+    "analyst_target": "Autogroup Electro"
+  },
+  {
+    "vehicle_name": "bosh-service",
+    "ads_target": "Bosch Service",
+    "analyst_target": "Бош Сервис Измаил"
+  },
+  {
+    "vehicle_name": "autogroup-used-cars",
+    "ads_target": "Autogroup с пробегом",
+    "analyst_target": "Cars Autogroup c пробегом"
+  },
+  {
+    "vehicle_name": "ds",
+    "ads_target": "DS Automobiles",
+    "analyst_target": "DS Одесса"
+  },
+  {
+    "vehicle_name": "ford",
+    "ads_target": "Ford ДЦ",
+    "analyst_target": "Ford Mustang"
+  },
+  {
+    "vehicle_name": "hyundai",
+    "ads_target": "Hyundai ДЦ",
+    "analyst_target": "Hyundai"
+  },
+  {
+    "vehicle_name": "kia",
+    "ads_target": "KIA ДЦ",
+    "analyst_target": "Kia Автоград"
+  },
+  {
+    "vehicle_name": "mg",
+    "ads_target": "MG ДЦ",
+    "analyst_target": "MG-GA4"
+  },
+  {
+    "vehicle_name": "mitsubishi",
+    "ads_target": "Mitsubishi Автоград Одесса",
+    "analyst_target": "Mitsubishi АВТОГРАД"
+  },
+  {
+    "vehicle_name": "nissan",
+    "ads_target": "Nissan ДЦ",
+    "analyst_target": "NISSAN СКАЙ"
+  },
+  {
+    "vehicle_name": "peugeot",
+    "ads_target": "Peugeot ДЦ",
+    "analyst_target": "Peugeot ДЦ"
+  },
+  {
+    "vehicle_name": "renault",
+    "ads_target": "Renault ДЦ",
+    "analyst_target": "Renault ДЦ Аналитика"
+  },
+  {
+    "vehicle_name": "skoda",
+    "ads_target": "Skoda ДЦ",
+    "analyst_target": "Scoda"
+  },
+  {
+    "vehicle_name": "vag-service",
+    "ads_target": "VAG Service",
+    "analyst_target": "VAG Service"
+  },
+  {
+    "vehicle_name": "autogroup-service",
+    "ads_target": "АВТОГРУПП СЕРВИС",
+    "analyst_target": "Autogroup.ua"
+  },
+  {
+    "vehicle_name": "autogroup-e-service",
+    "ads_target": "Autogroup E-Service",
+    "analyst_target": "Autogroup E-Service"
+  },
+  {
+    "vehicle_name": "chery",
+    "ads_target": "Сhery ДЦ",
+    "analyst_target": "Сhery АВТОГРУП МОТОРС"
+  },
+  {
+    "vehicle_name": "lts",
+    "ads_target": "ТОВ \"ЛІДЕР ТЕХСТАНДАРТ\"",
+    "analyst_target": "LTS (Лидер Тех Стандарт)"
+  }
+]

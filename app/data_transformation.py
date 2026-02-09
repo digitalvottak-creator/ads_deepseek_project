@@ -14,20 +14,20 @@ class Data:
         self.GOOGLE_ANALYST_DURATION_FILE = os.getenv("GOOGLE_ANALYST_DURATION_FILE")
         self.GOOGLE_ANALYST_EVENTS_FILE = os.getenv("GOOGLE_ANALYST_EVENTS_FILE")
         self.GOOGLE_ANALYST_TRAFFIC_FILE = os.getenv("GOOGLE_ANALYST_TRAFFIC_FILE")
+        self.TARGET_NAMES_FILE = os.getenv("TARGET_NAMES_FILE")
 
         self.data = None
 
     async def get_page_info(self, car_name: str) -> dict:
-        match car_name:
-            case "avatr":
-                ads_target = "AVATR"
-                analyst_target = "Avatr Одесса"
-            case "electro":
-                ads_target = "Електро"
-                analyst_target = "Autogroup Electro"
-            case _:
-                ads_target = "AVATR"
-                analyst_target = "Avatr Одесса"
+        all_targets = await Other.get_data(self.TARGET_NAMES_FILE)
+        for target in all_targets:
+            if target['vehicle_name'] == car_name:
+                all_targets = target
+                break
+        else:
+            all_targets = {'ads_target': 'AVATR', 'analyst_target': 'Avatr Одесса', 'vehicle_name': 'avatr'}
+        ads_target = all_targets['ads_target']
+        analyst_target = all_targets['analyst_target']
         async def get_info(file: str, target: str = analyst_target) -> dict | list:
             temp_data = await Other.get_data(file)
             return next((c for c in temp_data if c["campaign_name"] == target), None)
@@ -62,8 +62,13 @@ class Data:
         return total_clicks, total_impressions, fresh_date
 
     async def chill_info(self, curr_info_name: str) -> (list, list):
-        graph = [{"label": await Other.get_current_day(d["date"]), "v": d[curr_info_name]} for d in
-                          self.data[curr_info_name]["data"]]
+        match curr_info_name:
+            case "clicks":
+                graph = [{"label": await Other.get_current_day(d["date"]), "v": d['clicks'], "imp": d['impressions']}
+                         for d in self.data[curr_info_name]["data"]]
+            case _:
+                graph = [{"label": await Other.get_current_day(d["date"]), "v": d[curr_info_name]} for d in
+                                  self.data[curr_info_name]["data"]]
         points = [dur['v'] for dur in graph]
         points = [int(min(points)) - 10 if min(points) - 10 >= 0 else 0,
                           int(average(points)), int(max(points)) + 10]
