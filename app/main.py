@@ -1,4 +1,5 @@
 import asyncio
+import sys
 from contextlib import asynccontextmanager
 from zoneinfo import ZoneInfo
 
@@ -29,6 +30,11 @@ async def lifespan(app: FastAPI):
 async def refresh_data():
     print("Запуск обновления данных")
     await refresh_data_func()
+
+write_lock = asyncio.Lock()
+
+if sys.platform.startswith("win") and sys.version_info >= (3, 12):
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 app = FastAPI(lifespan=lifespan)
 
