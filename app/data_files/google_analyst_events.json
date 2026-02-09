@@ -1191,32 +1191,52 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 51
+        "eventCount": 79
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 45
+        "eventCount": 63
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 31
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "scroll",
-        "eventCount": 8
+        "eventCount": 47
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 6
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 15
       },
       {
         "date": "2026-02-09",
         "eventName": "form_start",
-        "eventCount": 3
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "G-MSGH2BB72V",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "all_forms",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 1
       }
     ]
   },
@@ -2027,17 +2047,17 @@
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 7
+        "eventCount": 13
       },
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 7
+        "eventCount": 13
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 7
+        "eventCount": 13
       }
     ]
   },
@@ -2898,27 +2918,27 @@
       {
         "date": "2026-02-08",
         "eventName": "page_view",
-        "eventCount": 94
-      },
-      {
-        "date": "2026-02-08",
-        "eventName": "session_start",
-        "eventCount": 47
+        "eventCount": 102
       },
       {
         "date": "2026-02-08",
         "eventName": "user_engagement",
-        "eventCount": 47
+        "eventCount": 55
+      },
+      {
+        "date": "2026-02-08",
+        "eventName": "session_start",
+        "eventCount": 51
       },
       {
         "date": "2026-02-08",
         "eventName": "first_visit",
-        "eventCount": 34
+        "eventCount": 37
       },
       {
         "date": "2026-02-08",
         "eventName": "scroll",
-        "eventCount": 22
+        "eventCount": 24
       },
       {
         "date": "2026-02-08",
@@ -2928,27 +2948,27 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 42
+        "eventCount": 49
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 20
+        "eventCount": 24
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 19
+        "eventCount": 23
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 13
+        "eventCount": 15
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 6
+        "eventCount": 8
       }
     ]
   },
@@ -4169,22 +4189,27 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 6
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "first_visit",
-        "eventCount": 5
+        "eventCount": 12
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 5
+        "eventCount": 10
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 9
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 3
+        "eventCount": 7
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 4
       },
       {
         "date": "2026-02-09",
@@ -4193,13 +4218,8 @@
       },
       {
         "date": "2026-02-09",
-        "eventName": "click",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 1
+        "eventCount": 2
       }
     ]
   },
@@ -5985,32 +6005,32 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 119
+        "eventCount": 158
       },
       {
         "date": "2026-02-09",
         "eventName": "gtm.dom",
-        "eventCount": 98
+        "eventCount": 134
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 62
+        "eventCount": 89
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 55
+        "eventCount": 79
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 39
+        "eventCount": 61
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 10
+        "eventCount": 13
       },
       {
         "date": "2026-02-09",
@@ -8236,57 +8256,67 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 303
+        "eventCount": 502
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 241
+        "eventCount": 401
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 164
+        "eventCount": 251
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 103
+        "eventCount": 157
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 34
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "file_download",
-        "eventCount": 18
+        "eventCount": 57
       },
       {
         "date": "2026-02-09",
         "eventName": "click",
-        "eventCount": 15
+        "eventCount": 28
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 28
       },
       {
         "date": "2026-02-09",
         "eventName": "Banner Accept Cookies",
-        "eventCount": 14
+        "eventCount": 22
       },
       {
         "date": "2026-02-09",
         "eventName": "Banner Auto Close",
-        "eventCount": 12
+        "eventCount": 20
       },
       {
         "date": "2026-02-09",
         "eventName": "video_progress",
-        "eventCount": 4
+        "eventCount": 13
       },
       {
         "date": "2026-02-09",
         "eventName": "G-Z2ZJQ9C2DZ",
-        "eventCount": 1
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_start",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
+        "eventCount": 3
       },
       {
         "date": "2026-02-09",
@@ -8295,12 +8325,22 @@
       },
       {
         "date": "2026-02-09",
-        "eventName": "form_start",
+        "eventName": "all_forms",
         "eventCount": 1
       },
       {
         "date": "2026-02-09",
-        "eventName": "video_start",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "service_form_all_brands",
         "eventCount": 1
       }
     ]
@@ -9406,27 +9446,37 @@
       },
       {
         "date": "2026-02-09",
-        "eventName": "session_start",
-        "eventCount": 3
-      },
-      {
-        "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 2
+        "eventCount": 12
       },
       {
         "date": "2026-02-09",
-        "eventName": "user_engagement",
-        "eventCount": 2
+        "eventName": "session_start",
+        "eventCount": 9
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 1
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 4
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
         "eventCount": 1
       }
     ]
@@ -10883,31 +10933,41 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 124
+        "eventCount": 219
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 80
+        "eventCount": 147
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 40
+        "eventCount": 78
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 37
+        "eventCount": 71
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 11
+        "eventCount": 20
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "G-1PWQE2PSVL",
+        "eventCount": 2
       },
       {
         "date": "2026-02-09",
         "eventName": "form_start",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "all_forms",
         "eventCount": 1
       }
     ]
@@ -12184,37 +12244,37 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 56
+        "eventCount": 85
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 38
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "user_engagement",
-        "eventCount": 23
+        "eventCount": 58
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 21
+        "eventCount": 41
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 38
       },
       {
         "date": "2026-02-09",
         "eventName": "click",
-        "eventCount": 5
+        "eventCount": 11
       },
       {
         "date": "2026-02-09",
         "eventName": "file_download",
-        "eventCount": 5
+        "eventCount": 8
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 4
+        "eventCount": 7
       }
     ]
   },
@@ -13365,22 +13425,22 @@
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 3
+        "eventCount": 10
       },
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 3
+        "eventCount": 10
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 3
+        "eventCount": 10
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 1
+        "eventCount": 3
       }
     ]
   },
@@ -16100,42 +16160,52 @@
       },
       {
         "date": "2026-02-09",
-        "eventName": "view_item_list",
-        "eventCount": 14
+        "eventName": "page_view",
+        "eventCount": 23
       },
       {
         "date": "2026-02-09",
-        "eventName": "page_view",
-        "eventCount": 13
+        "eventName": "view_item_list",
+        "eventCount": 22
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll_down",
-        "eventCount": 13
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "session_start",
-        "eventCount": 7
+        "eventCount": 20
       },
       {
         "date": "2026-02-09",
         "eventName": "button_click",
-        "eventCount": 5
+        "eventCount": 14
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "session_start",
+        "eventCount": 12
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "view_promotion",
+        "eventCount": 12
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 5
+        "eventCount": 9
       },
       {
         "date": "2026-02-09",
         "eventName": "cookie_manager_accept_all",
-        "eventCount": 4
+        "eventCount": 8
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
+        "eventCount": 8
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
         "eventCount": 4
       },
       {
@@ -16145,12 +16215,27 @@
       },
       {
         "date": "2026-02-09",
-        "eventName": "form_start",
+        "eventName": "download",
         "eventCount": 2
       },
       {
         "date": "2026-02-09",
-        "eventName": "download",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "orientation_change",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "select_item",
+        "eventCount": 1
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "select_promotion",
         "eventCount": 1
       }
     ]
@@ -18152,51 +18237,51 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 81
+        "eventCount": 110
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 67
+        "eventCount": 87
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 53
+        "eventCount": 70
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 26
+        "eventCount": 40
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 17
+        "eventCount": 21
       },
       {
         "date": "2026-02-09",
         "eventName": "download_price",
-        "eventCount": 6
+        "eventCount": 8
       },
       {
         "date": "2026-02-09",
         "eventName": "file_download",
-        "eventCount": 5
+        "eventCount": 6
       },
       {
         "date": "2026-02-09",
         "eventName": "view_priceKuga",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
         "eventCount": 4
       },
       {
         "date": "2026-02-09",
         "eventName": "binotel_ct_call_details",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "click",
         "eventCount": 1
       },
       {
@@ -20628,62 +20713,67 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 150
+        "eventCount": 209
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 100
+        "eventCount": 136
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 93
+        "eventCount": 128
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 85
+        "eventCount": 125
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 74
+        "eventCount": 101
       },
       {
         "date": "2026-02-09",
         "eventName": "file_download",
-        "eventCount": 14
+        "eventCount": 19
       },
       {
         "date": "2026-02-09",
         "eventName": "price",
-        "eventCount": 14
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "binotel_ct_call_details",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "binotel_ct_call_received",
-        "eventCount": 4
+        "eventCount": 18
       },
       {
         "date": "2026-02-09",
         "eventName": "click",
-        "eventCount": 4
+        "eventCount": 6
       },
       {
         "date": "2026-02-09",
         "eventName": "sklad_click",
-        "eventCount": 4
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 5
       },
       {
         "date": "2026-02-09",
         "eventName": "заход_в_контакты",
         "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "booklet",
+        "eventCount": 1
       },
       {
         "date": "2026-02-09",
@@ -22545,37 +22635,37 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 100
+        "eventCount": 136
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 76
+        "eventCount": 107
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 60
+        "eventCount": 75
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 39
+        "eventCount": 48
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 32
+        "eventCount": 45
       },
       {
         "date": "2026-02-09",
         "eventName": "binotel_ct_call_details",
-        "eventCount": 3
+        "eventCount": 6
       },
       {
         "date": "2026-02-09",
         "eventName": "binotel_ct_call_received",
-        "eventCount": 3
+        "eventCount": 6
       },
       {
         "date": "2026-02-09",
@@ -23786,27 +23876,27 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 12
+        "eventCount": 17
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 10
+        "eventCount": 15
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 9
+        "eventCount": 12
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 7
+        "eventCount": 9
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 4
+        "eventCount": 7
       },
       {
         "date": "2026-02-09",
@@ -24717,12 +24807,12 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 4
+        "eventCount": 8
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 4
+        "eventCount": 5
       },
       {
         "date": "2026-02-09",
@@ -24732,7 +24822,7 @@
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 1
+        "eventCount": 2
       }
     ]
   },
@@ -25948,27 +26038,27 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 226
+        "eventCount": 334
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 65
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "user_engagement",
-        "eventCount": 59
+        "eventCount": 112
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 45
+        "eventCount": 89
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 72
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 12
+        "eventCount": 15
       },
       {
         "date": "2026-02-09",
@@ -25978,7 +26068,7 @@
       {
         "date": "2026-02-09",
         "eventName": "view_item",
-        "eventCount": 5
+        "eventCount": 6
       }
     ]
   },
@@ -27499,46 +27589,56 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 64
+        "eventCount": 112
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 38
+        "eventCount": 66
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 21
+        "eventCount": 40
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
+        "eventCount": 34
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_progress",
         "eventCount": 17
       },
       {
         "date": "2026-02-09",
         "eventName": "file_download",
-        "eventCount": 7
+        "eventCount": 13
       },
       {
         "date": "2026-02-09",
         "eventName": "click_price_list",
-        "eventCount": 5
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "video_progress",
-        "eventCount": 4
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "scroll",
-        "eventCount": 3
+        "eventCount": 10
       },
       {
         "date": "2026-02-09",
         "eventName": "video_start",
+        "eventCount": 6
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "scroll",
+        "eventCount": 5
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click_catalog",
+        "eventCount": 3
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
         "eventCount": 2
       }
     ]
@@ -29150,42 +29250,57 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 44
+        "eventCount": 153
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 33
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "first_visit",
-        "eventCount": 20
+        "eventCount": 108
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 18
+        "eventCount": 82
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "first_visit",
+        "eventCount": 73
       },
       {
         "date": "2026-02-09",
         "eventName": "прайс_лист_все_модели",
-        "eventCount": 10
+        "eventCount": 22
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 6
+        "eventCount": 20
       },
       {
         "date": "2026-02-09",
         "eventName": "click",
-        "eventCount": 3
+        "eventCount": 11
       },
       {
         "date": "2026-02-09",
         "eventName": "file_download",
-        "eventCount": 3
+        "eventCount": 11
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_details",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "binotel_ct_call_received",
+        "eventCount": 2
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "form_start",
+        "eventCount": 1
       }
     ]
   },
@@ -30371,37 +30486,37 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 30
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "user_engagement",
-        "eventCount": 17
+        "eventCount": 48
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 16
+        "eventCount": 29
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "user_engagement",
+        "eventCount": 25
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 12
+        "eventCount": 23
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "click",
+        "eventCount": 4
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "file_download",
+        "eventCount": 4
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
         "eventCount": 3
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "click",
-        "eventCount": 1
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "file_download",
-        "eventCount": 1
       }
     ]
   },
@@ -32602,51 +32717,56 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 316
+        "eventCount": 525
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 253
+        "eventCount": 421
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 169
+        "eventCount": 258
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 110
+        "eventCount": 172
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 35
+        "eventCount": 61
       },
       {
         "date": "2026-02-09",
         "eventName": "file_download",
-        "eventCount": 20
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "Banner Accept Cookies",
-        "eventCount": 17
-      },
-      {
-        "date": "2026-02-09",
-        "eventName": "Banner Auto Close",
-        "eventCount": 15
+        "eventCount": 35
       },
       {
         "date": "2026-02-09",
         "eventName": "click",
-        "eventCount": 15
+        "eventCount": 28
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "Banner Accept Cookies",
+        "eventCount": 24
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "Banner Auto Close",
+        "eventCount": 23
       },
       {
         "date": "2026-02-09",
         "eventName": "video_progress",
+        "eventCount": 13
+      },
+      {
+        "date": "2026-02-09",
+        "eventName": "video_start",
         "eventCount": 4
       },
       {
@@ -32656,7 +32776,7 @@
       },
       {
         "date": "2026-02-09",
-        "eventName": "video_start",
+        "eventName": "посетил_страницу__записаться_на_тест_дра",
         "eventCount": 1
       },
       {
@@ -33663,22 +33783,22 @@
       {
         "date": "2026-02-08",
         "eventName": "page_view",
-        "eventCount": 19
+        "eventCount": 21
       },
       {
         "date": "2026-02-08",
         "eventName": "session_start",
-        "eventCount": 13
+        "eventCount": 14
       },
       {
         "date": "2026-02-08",
         "eventName": "first_visit",
-        "eventCount": 11
+        "eventCount": 12
       },
       {
         "date": "2026-02-08",
         "eventName": "user_engagement",
-        "eventCount": 9
+        "eventCount": 10
       },
       {
         "date": "2026-02-08",
@@ -33698,27 +33818,27 @@
       {
         "date": "2026-02-09",
         "eventName": "page_view",
-        "eventCount": 11
+        "eventCount": 14
       },
       {
         "date": "2026-02-09",
         "eventName": "user_engagement",
-        "eventCount": 9
+        "eventCount": 13
       },
       {
         "date": "2026-02-09",
         "eventName": "session_start",
-        "eventCount": 7
+        "eventCount": 10
       },
       {
         "date": "2026-02-09",
         "eventName": "first_visit",
-        "eventCount": 5
+        "eventCount": 8
       },
       {
         "date": "2026-02-09",
         "eventName": "scroll",
-        "eventCount": 3
+        "eventCount": 4
       }
     ]
   }

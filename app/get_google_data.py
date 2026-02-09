@@ -20,17 +20,24 @@ load_dotenv()
 class Google:
     def __init__(self):
         self.manager_id = "5109744025"
-        self.storage_name = os.getenv("GOOGLE_ADS_LOGIN_FILE")
         self.service_name = "GoogleAdsService"
 
-        self.ads_client = GoogleAdsClient.load_from_storage(self.storage_name)
+        self.ads_client = GoogleAdsClient.load_from_dict(
+            {
+                "developer_token": os.getenv("GOOGLE_ADS_DEVELOPER_TOKEN"),
+                "client_id": os.getenv("GOOGLE_ADS_CLIENT_ID"),
+                "client_secret": os.getenv("GOOGLE_ADS_CLIENT_SECRET"),
+                "refresh_token": os.getenv("GOOGLE_ADS_REFRESH_TOKEN"),
+                "use_proto_plus": "true",
+            }
+        )
 
         self.analytics_credentials = Credentials(
             token=None,
-            refresh_token=os.getenv("GOOGLE_REFRESH_TOKEN"),
+            refresh_token=os.getenv("GOOGLE_ANALYTICS_REFRESH_TOKEN"),
             token_uri="https://oauth2.googleapis.com/token",
-            client_id=os.getenv("GOOGLE_CLIENT_ID"),
-            client_secret=os.getenv("GOOGLE_CLIENT_SECRET"),
+            client_id=os.getenv("GOOGLE_ANALYTICS_CLIENT_ID"),
+            client_secret=os.getenv("GOOGLE_ANALYTICS_CLIENT_SECRET"),
             scopes=["https://www.googleapis.com/auth/analytics.readonly"],
         )
         self.analytics_client = BetaAnalyticsDataClient(credentials=self.analytics_credentials)
