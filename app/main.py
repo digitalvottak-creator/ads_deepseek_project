@@ -10,7 +10,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from app.get_google_data import refresh_data_func
+from get_google_data import refresh_data_func
 from data_transformation import Data
 
 @asynccontextmanager
