@@ -570,6 +570,7 @@ canvas {
     border-collapse: collapse;
     font-size: 12.5px;
     color: var(--text);
+    table-layout: fixed;
 }
 
 .data-table thead th {
@@ -699,3 +700,15 @@ canvas {
     }
 }
 
+.data-table th:first-child,
+.data-table td:first-child { width: 70px; }      /* День */
+
+.data-table .col-traffic { width: 110px; }
+.data-table .col-delta   { width: 120px; }
+.data-table .col-diff    { width: 140px; }
+
+.data-table thead th.col-traffic,
+.data-table thead th.col-delta,
+.data-table thead th.col-diff{
+  text-align: right;
+}
