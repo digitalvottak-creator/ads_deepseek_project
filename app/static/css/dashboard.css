@@ -700,13 +700,3 @@ canvas {
     }
 }
 
-/* Итого — как обычная строка, но чуть жирнее */
-.data-table tr.total-row td {
-  background: transparent;          /* как у обычных */
-  border-top: 1px solid #f0f2f6;    /* как разделение */
-  font-weight: 700;                 /* можно 800 если хочешь */
-}
-
-.data-table tr.total-row td:first-child {
-  color: var(--text);
-}

@@ -1808,15 +1808,15 @@ function renderTrafficTable(tbodyEl, rowsSelected, rowsCurrent) {
     }
   }
 
-const totalTr = document.createElement("tr");
-totalTr.className = "total-row"; // <-- НЕ week-row
-totalTr.innerHTML = `
-  <td>Итого</td>
-  <td class="col-traffic">${totalSum.toLocaleString("ru-RU")}</td>
-  <td class="col-delta"></td>
-  <td class="col-diff"></td>
-`;
-tbodyEl.appendChild(totalTr);
+  const итог = document.createElement("tr");
+  итог.className = "week-row";
+  итог.innerHTML = `
+    <td>Итого</td>
+    <td class="col-traffic">${totalSum.toLocaleString("ru-RU")}</td>
+    <td class="col-delta"></td>
+    <td class="col-diff"></td>
+  `;
+  tbodyEl.appendChild(итог);
 }
 
 /* ====== Привязка таблиц к данным графиков ====== */
