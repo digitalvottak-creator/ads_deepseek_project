@@ -700,15 +700,13 @@ canvas {
     }
 }
 
-.data-table th:first-child,
-.data-table td:first-child { width: 70px; }      /* День */
+/* Итого — как обычная строка, но чуть жирнее */
+.data-table tr.total-row td {
+  background: transparent;          /* как у обычных */
+  border-top: 1px solid #f0f2f6;    /* как разделение */
+  font-weight: 700;                 /* можно 800 если хочешь */
+}
 
-.data-table .col-traffic { width: 110px; }
-.data-table .col-delta   { width: 120px; }
-.data-table .col-diff    { width: 140px; }
-
-.data-table thead th.col-traffic,
-.data-table thead th.col-delta,
-.data-table thead th.col-diff{
-  text-align: right;
+.data-table tr.total-row td:first-child {
+  color: var(--text);
 }
