@@ -62,6 +62,11 @@ async def get_full_data(data_class: Data) -> dict:
             "traffic_all_graph_percent": traffic_all_graph_percent}
 
 
+@app.get("/refresh", response_class=HTMLResponse)
+async def refresh():
+    await refresh_data_func()
+    return "<h1>Refresh OK</h1>"
+
 @app.get("/", response_class=HTMLResponse)
 async def avatr(request: Request):
     data_class = Data()
@@ -99,7 +104,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/bosh-service", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def bosh(request: Request):
     data_class = Data()
 
     car_name = "bosh-service"
@@ -117,7 +122,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/autogroup-e-service", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def autogroup_e_service(request: Request):
     data_class = Data()
 
     car_name = "autogroup-e-service"
@@ -135,7 +140,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/autogroup-used-cars", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def autogroup_used_cars(request: Request):
     data_class = Data()
 
     car_name = "autogroup-used-cars"
@@ -153,7 +158,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/citroen", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def citroen(request: Request):
     data_class = Data()
 
     car_name = "citroen"
@@ -171,7 +176,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/ds", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def ds(request: Request):
     data_class = Data()
 
     car_name = "ds"
@@ -189,7 +194,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/ford", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def ford(request: Request):
     data_class = Data()
 
     car_name = "ford"
@@ -207,7 +212,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/hyundai", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def hyundai(request: Request):
     data_class = Data()
 
     car_name = "hyundai"
@@ -225,7 +230,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/kia", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def kia(request: Request):
     data_class = Data()
 
     car_name = "kia"
@@ -243,7 +248,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/mg", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def mg(request: Request):
     data_class = Data()
 
     car_name = "mg"
@@ -261,7 +266,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/mitsubishi", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def mitsubishi(request: Request):
     data_class = Data()
 
     car_name = "mitsubishi"
@@ -279,7 +284,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/nissan", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def nissan(request: Request):
     data_class = Data()
 
     car_name = "nissan"
@@ -297,7 +302,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/peugeot", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def peugeot(request: Request):
     data_class = Data()
 
     car_name = "peugeot"
@@ -315,7 +320,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/renault", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def renault(request: Request):
     data_class = Data()
 
     car_name = "renault"
@@ -333,7 +338,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/skoda", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def skoda(request: Request):
     data_class = Data()
 
     car_name = "skoda"
@@ -351,7 +356,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/vag-service", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def vag_service(request: Request):
     data_class = Data()
 
     car_name = "vag-service"
@@ -369,7 +374,7 @@ async def ag_electro(request: Request):
 
 
 @app.get("/autogroup-service", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def autogroup(request: Request):
     data_class = Data()
 
     car_name = "autogroup-service"
@@ -386,26 +391,8 @@ async def ag_electro(request: Request):
     )
 
 
-@app.get("/electro", response_class=HTMLResponse)
-async def ag_electro(request: Request):
-    data_class = Data()
-
-    car_name = "electro"
-
-    data_class.data = await data_class.get_page_info(car_name=car_name)
-
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-
-    return templates.TemplateResponse(
-        "index.html",
-        full_data
-    )
-
-
 @app.get("/chery", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def chery(request: Request):
     data_class = Data()
 
     car_name = "chery"
@@ -422,7 +409,7 @@ async def ag_electro(request: Request):
     )
 
 @app.get("/lts", response_class=HTMLResponse)
-async def ag_electro(request: Request):
+async def lts(request: Request):
     data_class = Data()
 
     car_name = "lts"

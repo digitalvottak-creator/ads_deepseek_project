@@ -4,10 +4,6 @@
     "campaign_id": "435894686",
     "data": [
       {
-        "date": "2025-10-12",
-        "totalUsers": 17
-      },
-      {
         "date": "2025-10-13",
         "totalUsers": 20
       },
@@ -485,7 +481,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 60
+        "totalUsers": 79
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 13
       }
     ]
   },
@@ -493,10 +493,6 @@
     "campaign_name": "Сервис АГМ",
     "campaign_id": "452965891",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 41
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 49
@@ -787,7 +783,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 13
+        "totalUsers": 45
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 5
       }
     ]
   },
@@ -795,10 +795,6 @@
     "campaign_name": "Сhery АВТОГРУП МОТОРС",
     "campaign_id": "472232563",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 73
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 71
@@ -1277,7 +1273,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 24
+        "totalUsers": 48
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 8
       }
     ]
   },
@@ -1290,10 +1290,6 @@
     "campaign_name": "Autogroup E-Service",
     "campaign_id": "499578401",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 20
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 18
@@ -1772,7 +1768,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 10
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 2
       }
     ]
   },
@@ -1780,10 +1780,6 @@
     "campaign_name": "Autogroup Electro",
     "campaign_id": "436806123",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 259
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 263
@@ -2262,7 +2258,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 112
+        "totalUsers": 241
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 50
       }
     ]
   },
@@ -2270,10 +2270,6 @@
     "campaign_name": "Autogroup.ua",
     "campaign_id": "359106592",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 694
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 876
@@ -2752,7 +2748,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 254
+        "totalUsers": 442
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 80
       }
     ]
   },
@@ -3098,7 +3098,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 10
+        "totalUsers": 28
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 9
       }
     ]
   },
@@ -3111,10 +3115,6 @@
     "campaign_name": "Cars Autogroup c пробегом",
     "campaign_id": "359065252",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 598
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 1011
@@ -3593,7 +3593,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 141
+        "totalUsers": 533
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 90
       }
     ]
   },
@@ -3601,10 +3605,6 @@
     "campaign_name": "Citroen АВТОГРАД",
     "campaign_id": "358944685",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 147
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 121
@@ -4083,7 +4083,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 57
+        "totalUsers": 101
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 26
       }
     ]
   },
@@ -4349,7 +4353,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 11
+        "totalUsers": 41
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 8
       }
     ]
   },
@@ -4357,10 +4365,6 @@
     "campaign_name": "Scoda",
     "campaign_id": "399285460",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 73
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 78
@@ -4839,7 +4843,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 22
+        "totalUsers": 28
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 3
       }
     ]
   },
@@ -4847,10 +4855,6 @@
     "campaign_name": "Ford Mustang",
     "campaign_id": "358979732",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 209
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 257
@@ -5329,7 +5333,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 93
+        "totalUsers": 192
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 40
       }
     ]
   },
@@ -5342,10 +5350,6 @@
     "campaign_name": "Hyundai",
     "campaign_id": "389930422",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 187
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 182
@@ -5824,7 +5828,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 138
+        "totalUsers": 181
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 50
       }
     ]
   },
@@ -5832,10 +5840,6 @@
     "campaign_name": "Шинний готель",
     "campaign_id": "464508955",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 6
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 10
@@ -6267,6 +6271,10 @@
       {
         "date": "2026-02-08",
         "totalUsers": 3
+      },
+      {
+        "date": "2026-02-09",
+        "totalUsers": 1
       }
     ]
   },
@@ -6279,10 +6287,6 @@
     "campaign_name": "Kia Автоград",
     "campaign_id": "435896090",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 148
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 114
@@ -6761,7 +6765,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 80
+        "totalUsers": 149
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 39
       }
     ]
   },
@@ -6769,10 +6777,6 @@
     "campaign_name": "LTS (Лидер Тех Стандарт)",
     "campaign_id": "435894081",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 21
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 39
@@ -7251,7 +7255,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 17
+        "totalUsers": 27
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 5
       }
     ]
   },
@@ -7259,10 +7267,6 @@
     "campaign_name": "ЛТС Грушевского",
     "campaign_id": "465870779",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 10
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 28
@@ -7741,7 +7745,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 4
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 1
       }
     ]
   },
@@ -7749,10 +7757,6 @@
     "campaign_name": "MG-GA4",
     "campaign_id": "294153596",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 105
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 69
@@ -8231,7 +8235,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 112
+        "totalUsers": 182
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 29
       }
     ]
   },
@@ -8239,10 +8247,6 @@
     "campaign_name": "Mitsubishi АВТОГРАД",
     "campaign_id": "358646982",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 241
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 222
@@ -8721,7 +8725,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 65
+        "totalUsers": 119
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 22
       }
     ]
   },
@@ -8729,10 +8737,6 @@
     "campaign_name": "NISSAN СКАЙ",
     "campaign_id": "358911296",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 326
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 230
@@ -9211,7 +9215,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 103
+        "totalUsers": 213
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 16
       }
     ]
   },
@@ -9409,7 +9417,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 30
+        "totalUsers": 67
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 19
       }
     ]
   },
@@ -9498,10 +9510,6 @@
     "campaign_name": "Renault ДЦ Аналитика",
     "campaign_id": "283486031",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 230
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 225
@@ -9980,7 +9988,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 253
+        "totalUsers": 451
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 95
       }
     ]
   },
@@ -9988,10 +10000,6 @@
     "campaign_name": "Vag Service",
     "campaign_id": "436943438",
     "data": [
-      {
-        "date": "2025-10-12",
-        "totalUsers": 15
-      },
       {
         "date": "2025-10-13",
         "totalUsers": 25
@@ -10470,7 +10478,11 @@
       },
       {
         "date": "2026-02-09",
-        "totalUsers": 11
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-02-10",
+        "totalUsers": 3
       }
     ]
   }

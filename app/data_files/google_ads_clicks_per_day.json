@@ -4,11 +4,6 @@
     "campaign_id": "1346938215",
     "data": [
       {
-        "date": "2026-01-09",
-        "clicks": 125,
-        "impressions": 3777
-      },
-      {
         "date": "2026-01-10",
         "clicks": 119,
         "impressions": 3000
@@ -146,7 +141,7 @@
       {
         "date": "2026-02-06",
         "clicks": 67,
-        "impressions": 10152
+        "impressions": 10150
       },
       {
         "date": "2026-02-07",
@@ -155,13 +150,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 40,
+        "clicks": 39,
         "impressions": 3858
       },
       {
         "date": "2026-02-09",
         "clicks": 0,
-        "impressions": 89
+        "impressions": 92
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 1,
+        "impressions": 66
       }
     ]
   },
@@ -169,11 +169,6 @@
     "campaign_name": "Autogroup E-Service",
     "campaign_id": "2643327827",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 25,
-        "impressions": 214
-      },
       {
         "date": "2026-01-10",
         "clicks": 17,
@@ -321,8 +316,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 10,
-        "impressions": 96
+        "clicks": 19,
+        "impressions": 155
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 1,
+        "impressions": 33
       }
     ]
   },
@@ -330,11 +330,6 @@
     "campaign_name": "Autogroup с пробегом",
     "campaign_id": "4169872872",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 120,
-        "impressions": 2904
-      },
       {
         "date": "2026-01-10",
         "clicks": 135,
@@ -487,8 +482,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 78,
-        "impressions": 3074
+        "clicks": 85,
+        "impressions": 3243
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 17,
+        "impressions": 750
       }
     ]
   },
@@ -496,11 +496,6 @@
     "campaign_name": "Bosch Service",
     "campaign_id": "5225293272",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 122,
-        "impressions": 3325
-      },
       {
         "date": "2026-01-10",
         "clicks": 90,
@@ -653,8 +648,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 79,
-        "impressions": 1836
+        "clicks": 89,
+        "impressions": 2044
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 36,
+        "impressions": 1247
       }
     ]
   },
@@ -662,11 +662,6 @@
     "campaign_name": "Citroen ДЦ",
     "campaign_id": "8035807835",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 40,
-        "impressions": 452
-      },
       {
         "date": "2026-01-10",
         "clicks": 42,
@@ -819,8 +814,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 18,
-        "impressions": 2354
+        "clicks": 32,
+        "impressions": 2467
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 5,
+        "impressions": 41
       }
     ]
   },
@@ -828,11 +828,6 @@
     "campaign_name": "DS Automobiles",
     "campaign_id": "6837485242",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 1376,
-        "impressions": 15300
-      },
       {
         "date": "2026-01-10",
         "clicks": 1232,
@@ -981,12 +976,17 @@
       {
         "date": "2026-02-08",
         "clicks": 38,
-        "impressions": 14972
+        "impressions": 14974
       },
       {
         "date": "2026-02-09",
-        "clicks": 15,
-        "impressions": 15046
+        "clicks": 23,
+        "impressions": 15152
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 9,
+        "impressions": 7966
       }
     ]
   },
@@ -994,11 +994,6 @@
     "campaign_name": "Ford ДЦ",
     "campaign_id": "6922687176",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 46,
-        "impressions": 326
-      },
       {
         "date": "2026-01-10",
         "clicks": 43,
@@ -1146,13 +1141,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 88,
+        "clicks": 86,
         "impressions": 28233
       },
       {
         "date": "2026-02-09",
-        "clicks": 72,
-        "impressions": 23917
+        "clicks": 101,
+        "impressions": 27389
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 25,
+        "impressions": 10593
       }
     ]
   },
@@ -1160,11 +1160,6 @@
     "campaign_name": "Hyundai ДЦ",
     "campaign_id": "5897993852",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 126,
-        "impressions": 1723
-      },
       {
         "date": "2026-01-10",
         "clicks": 122,
@@ -1312,13 +1307,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 166,
+        "clicks": 165,
         "impressions": 20963
       },
       {
         "date": "2026-02-09",
-        "clicks": 118,
-        "impressions": 15304
+        "clicks": 145,
+        "impressions": 19709
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 38,
+        "impressions": 7124
       }
     ]
   },
@@ -1326,11 +1326,6 @@
     "campaign_name": "KIA ДЦ",
     "campaign_id": "8434180413",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 69,
-        "impressions": 940
-      },
       {
         "date": "2026-01-10",
         "clicks": 88,
@@ -1444,7 +1439,7 @@
       {
         "date": "2026-02-03",
         "clicks": 329,
-        "impressions": 32560
+        "impressions": 32561
       },
       {
         "date": "2026-02-04",
@@ -1473,8 +1468,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 99,
-        "impressions": 7619
+        "clicks": 165,
+        "impressions": 14861
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 47,
+        "impressions": 4713
       }
     ]
   },
@@ -1482,11 +1482,6 @@
     "campaign_name": "MG ДЦ",
     "campaign_id": "7755473425",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 15,
-        "impressions": 189
-      },
       {
         "date": "2026-01-10",
         "clicks": 17,
@@ -1634,13 +1629,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 112,
+        "clicks": 113,
         "impressions": 4137
       },
       {
         "date": "2026-02-09",
-        "clicks": 68,
-        "impressions": 2855
+        "clicks": 78,
+        "impressions": 2946
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 33,
+        "impressions": 1097
       }
     ]
   },
@@ -1648,11 +1648,6 @@
     "campaign_name": "Mitsubishi Автоград Одесса",
     "campaign_id": "6751259696",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 78,
-        "impressions": 3557
-      },
       {
         "date": "2026-01-10",
         "clicks": 78,
@@ -1795,8 +1790,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 59,
-        "impressions": 11839
+        "clicks": 113,
+        "impressions": 23499
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 13,
+        "impressions": 5591
       }
     ]
   },
@@ -1804,11 +1804,6 @@
     "campaign_name": "Nissan ДЦ",
     "campaign_id": "8443184321",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 64,
-        "impressions": 999
-      },
       {
         "date": "2026-01-10",
         "clicks": 362,
@@ -1956,13 +1951,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 214,
+        "clicks": 215,
         "impressions": 6985
       },
       {
         "date": "2026-02-09",
-        "clicks": 140,
-        "impressions": 4685
+        "clicks": 158,
+        "impressions": 4846
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 13,
+        "impressions": 408
       }
     ]
   },
@@ -1970,11 +1970,6 @@
     "campaign_name": "Peugeot ДЦ",
     "campaign_id": "5831284192",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 3578,
-        "impressions": 64059
-      },
       {
         "date": "2026-01-10",
         "clicks": 3381,
@@ -2117,8 +2112,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 27,
-        "impressions": 297
+        "clicks": 52,
+        "impressions": 518
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 13,
+        "impressions": 161
       }
     ]
   },
@@ -2126,11 +2126,6 @@
     "campaign_name": "Renault ДЦ",
     "campaign_id": "9241730184",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 270,
-        "impressions": 7118
-      },
       {
         "date": "2026-01-10",
         "clicks": 240,
@@ -2274,7 +2269,7 @@
       {
         "date": "2026-02-07",
         "clicks": 293,
-        "impressions": 102894
+        "impressions": 102889
       },
       {
         "date": "2026-02-08",
@@ -2283,8 +2278,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 224,
-        "impressions": 83410
+        "clicks": 325,
+        "impressions": 94966
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 62,
+        "impressions": 19466
       }
     ]
   },
@@ -2292,11 +2292,6 @@
     "campaign_name": "Skoda ДЦ",
     "campaign_id": "9630430696",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 119,
-        "impressions": 26170
-      },
       {
         "date": "2026-01-10",
         "clicks": 145,
@@ -2444,13 +2439,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 116,
+        "clicks": 115,
         "impressions": 36652
       },
       {
         "date": "2026-02-09",
-        "clicks": 70,
-        "impressions": 44212
+        "clicks": 102,
+        "impressions": 50556
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 48,
+        "impressions": 31189
       }
     ]
   },
@@ -2458,11 +2458,6 @@
     "campaign_name": "VAG Service",
     "campaign_id": "4577777980",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 28,
-        "impressions": 274
-      },
       {
         "date": "2026-01-10",
         "clicks": 23,
@@ -2615,8 +2610,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 15,
-        "impressions": 239
+        "clicks": 26,
+        "impressions": 417
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 6,
+        "impressions": 44
       }
     ]
   },
@@ -2624,11 +2624,6 @@
     "campaign_name": "АВТОГРУПП СЕРВИС",
     "campaign_id": "5063006337",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 53,
-        "impressions": 1415
-      },
       {
         "date": "2026-01-10",
         "clicks": 42,
@@ -2776,13 +2771,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 72,
+        "clicks": 71,
         "impressions": 2365
       },
       {
         "date": "2026-02-09",
-        "clicks": 40,
-        "impressions": 778
+        "clicks": 58,
+        "impressions": 920
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 13,
+        "impressions": 379
       }
     ]
   },
@@ -2790,11 +2790,6 @@
     "campaign_name": "Електро",
     "campaign_id": "3517647715",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 146,
-        "impressions": 3205
-      },
       {
         "date": "2026-01-10",
         "clicks": 465,
@@ -2942,13 +2937,18 @@
       },
       {
         "date": "2026-02-08",
-        "clicks": 383,
+        "clicks": 382,
         "impressions": 23612
       },
       {
         "date": "2026-02-09",
-        "clicks": 120,
-        "impressions": 14358
+        "clicks": 231,
+        "impressions": 26041
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 40,
+        "impressions": 5589
       }
     ]
   },
@@ -2956,11 +2956,6 @@
     "campaign_name": "Сhery ДЦ",
     "campaign_id": "8945982690",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 98,
-        "impressions": 2360
-      },
       {
         "date": "2026-01-10",
         "clicks": 150,
@@ -3104,7 +3099,7 @@
       {
         "date": "2026-02-07",
         "clicks": 67,
-        "impressions": 1188
+        "impressions": 1187
       },
       {
         "date": "2026-02-08",
@@ -3113,8 +3108,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 29,
-        "impressions": 1116
+        "clicks": 42,
+        "impressions": 1588
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 10,
+        "impressions": 194
       }
     ]
   },
@@ -3122,11 +3122,6 @@
     "campaign_name": "ТОВ \"ЛІДЕР ТЕХСТАНДАРТ\"",
     "campaign_id": "1373003358",
     "data": [
-      {
-        "date": "2026-01-09",
-        "clicks": 34,
-        "impressions": 261
-      },
       {
         "date": "2026-01-10",
         "clicks": 20,
@@ -3279,8 +3274,13 @@
       },
       {
         "date": "2026-02-09",
-        "clicks": 18,
-        "impressions": 118
+        "clicks": 27,
+        "impressions": 193
+      },
+      {
+        "date": "2026-02-10",
+        "clicks": 9,
+        "impressions": 93
       }
     ]
   }
