@@ -599,6 +599,11 @@ canvas {
     white-space: nowrap;
 }
 
+.data-table .col-diff {
+  text-align: right;
+  white-space: nowrap;
+}
+
 /* Week separator row */
 .data-table tr.week-row td {
     background: #f6f8fb;
