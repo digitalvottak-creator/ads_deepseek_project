@@ -1,0 +1,696 @@
+/* ==========================================================================
+   Design system: colors, layout, shadows
+   ========================================================================== */
+:root {
+    /* Palette */
+    --bg: #f7f8fa;
+    --text: #1f2937;
+    --muted: #6b7280;
+
+    /* UI */
+    --card-border: #e6e8eb;
+    --grid: #eceff3;
+    --axis: #aeb5bf;
+    --blue: #1a73e8;
+
+    /* Layout */
+    --container-w: 1100px;
+    --sidebar-w: 280px;
+    --app-gap: 18px;
+
+    /* Cards */
+    --radius: 10px;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .06);
+    --card-w: 760px;
+
+    /* Series colors (events) */
+    --s1: #1a73e8;
+    --s2: #34a853;
+    --s3: #fbbc04;
+    --s4: #ea4335;
+    --s5: #a142f4;
+    --s6: #00acc1; /* teal */
+    --s7: #8e24aa; /* deep purple */
+    --s8: #fb8c00; /* orange */
+    --s9: #6d4c41; /* brown */
+    --s10: #546e7a; /* blue grey */
+}
+
+/* ==========================================================================
+   Base / reset
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* ==========================================================================
+   Topbar (title + brand strip)
+   ========================================================================== */
+.topbar {
+    width: min(var(--container-w), 96vw);
+    margin: 0 auto 14px;
+    background: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 10px 12px;
+}
+
+.topbar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar-title {
+    flex: 0 0 auto;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    padding: 6px 8px;
+    border-radius: 8px;
+    background: #fafbfc;
+    border: 1px solid #eef1f5;
+}
+
+/* Horizontal brand strip (scrollable chips) */
+.brand-strip {
+    flex: 1 1 auto;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 2px;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #d7dce5 transparent;
+}
+
+.brand-strip::-webkit-scrollbar {
+    height: 10px;
+}
+
+.brand-strip::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.brand-strip::-webkit-scrollbar-thumb {
+    background: #d7dce5;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.brand-list {
+    display: inline-flex;
+    align-items: stretch;
+    gap: 8px;
+    padding: 2px;
+}
+
+.brand-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: 1px solid #eef1f5;
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+    cursor: pointer;
+    user-select: none;
+    transition: transform .06s ease, border-color .06s ease, background .06s ease;
+}
+
+.brand-chip:hover {
+    border-color: #dfe5ee;
+    background: #fafbfc;
+    transform: translateY(-1px);
+}
+
+.brand-chip.active {
+    border-color: rgba(26, 115, 232, .35);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 0 0 3px rgba(26, 115, 232, .10);
+}
+
+.brand-name {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.brand-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.brand-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid #eef1f5;
+    background: #fafbfc;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.brand-pill .b {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, .10);
+}
+
+/* ==========================================================================
+   App layout (sidebar + content)
+   ========================================================================== */
+.app {
+    width: min(var(--container-w), 96vw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: var(--sidebar-w) 1fr;
+    gap: var(--app-gap);
+    align-items: start;
+}
+
+.content {
+    display: block;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+.sidebar-col {
+    position: relative;
+}
+
+.sidebar {
+    background: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 14px;
+
+    /* Sticky sidebar */
+    position: sticky;
+    top: 24px;
+    z-index: 1; /* ниже events-card */
+}
+
+.side-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    letter-spacing: .1px;
+}
+
+.side-section {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eef1f5;
+}
+
+/* Sidebar metrics blocks */
+.metric {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+    border: 1px solid #eef1f5;
+    background: #fafbfc;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.metric .k {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.2;
+}
+
+.metric .v {
+    font-size: 13px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    color: var(--text);
+}
+
+/* ==========================================================================
+   Pills (filters/toggles)
+   ========================================================================== */
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 10px;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    background: #fff;
+    font-size: 12px;
+    margin: 6px 6px 0 0;
+    user-select: none;
+    cursor: pointer;
+
+    transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+.pill:hover {
+    background: #f6f8fb;
+}
+
+.pill.active {
+    background: rgba(26, 115, 232, .06);
+    border-color: rgba(26, 115, 232, .35);
+    box-shadow: 0 0 0 1px rgba(26, 115, 232, .15) inset;
+}
+
+.pill .b {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px currentColor;
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+.card {
+    background: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px 16px 16px; /* базово */
+    position: relative;
+    width: 100%;
+}
+
+/* Default cards: centered and max-width constrained */
+.cards > .card {
+    max-width: var(--card-w);
+    margin-left: auto;
+    margin-right: auto;
+
+    /* текущий визуал: у прямых детей уменьшен нижний паддинг */
+    padding: 16px 16px 10px;
+}
+
+/* Events card: expands into sidebar area */
+.cards > .card--events {
+    max-width: none;
+    z-index: 2; /* above sidebar */
+    margin-left: calc(-1 * (var(--sidebar-w) + var(--app-gap)));
+    width: calc(100% + var(--sidebar-w) + var(--app-gap));
+}
+
+/* ==========================================================================
+   Row with 2 charts under Events (same wide width as Events)
+   ========================================================================== */
+.cards-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* Make the row "wide" (overlaps sidebar) */
+.cards-row--wide {
+    margin-left: calc(-1 * (var(--sidebar-w) + var(--app-gap)));
+    width: calc(100% + var(--sidebar-w) + var(--app-gap));
+    position: relative;
+    z-index: 2;
+    overflow: visible; /* чтобы тени не "резались" */
+}
+
+/* Cards inside rows must NOT be centered like .cards > .card */
+.cards-row > .card {
+    margin: 0;
+    max-width: none;
+    width: 100%;
+}
+
+/* ==========================================================================
+   Chart UI (canvas, titles, tooltip)
+   ========================================================================== */
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: .1px;
+}
+
+/* Chart canvas container */
+.chart-wrap {
+    position: relative;
+    height: 260px;
+    user-select: none;
+}
+
+/* Taller charts in wide row */
+.cards-row--wide .chart-wrap {
+    height: 420px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    pointer-events: none;
+    min-width: 190px;
+    background: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+    padding: 10px 12px;
+    transform: translate(-50%, -100%);
+    opacity: 0;
+    transition: opacity .08s ease;
+    font-size: 13px;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.tip-date {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+.tip-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tip-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, .15);
+}
+
+.tip-val {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.hint {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* ==========================================================================
+   Title controls for Chart 4 (select + muted label)
+   ========================================================================== */
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 8px;
+}
+
+.title--with-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0; /* чтобы не удваивать отступы */
+}
+
+.title-muted {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Select styled like your pills */
+.title-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 7px 30px 7px 10px;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+
+    transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+
+    /* dropdown arrow */
+    background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%),
+    linear-gradient(to right, transparent, transparent);
+    background-position: calc(100% - 16px) 52%,
+    calc(100% - 11px) 52%,
+    0 0;
+    background-size: 5px 5px, 5px 5px, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.title-select:hover {
+    background: #f6f8fb;
+    border-color: #dfe5ee;
+}
+
+.title-select:focus {
+    outline: none;
+    border-color: rgba(26, 115, 232, .35);
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, .10);
+}
+
+/* Tooltip: extra rows styling */
+.tooltip .tip-row.tip-extra {
+    margin-top: 6px;
+}
+
+.tooltip .dot.dot--extra {
+    background: rgba(107, 114, 128, .65);
+    box-shadow: 0 0 0 3px rgba(107, 114, 128, .12);
+}
+
+.tooltip .tip-row.tip-extra .tip-left span {
+    color: var(--muted);
+}
+
+.tooltip .tip-row.tip-extra .tip-val {
+    color: #111827;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   Only row with Charts 4–5: shift cards outward + bring closer
+   ========================================================================== */
+
+.cards-row--wide{
+  gap: 10px;          /* как было */
+  overflow: visible;
+}
+
+.cards-row--wide > .card:first-child{
+  margin-left: -40px; /* вынос влево */
+  margin-right: 40px; /* “расширение” к центру */
+}
+
+.cards-row--wide > .card:last-child{
+  margin-right: -40px; /* вынос вправо */
+  margin-left: 40px;   /* “расширение” к центру */
+}
+
+.cards-row{
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.card,
+.cards,
+.content {
+  min-width: 0;
+}
+
+/* ==========================================================================
+   Tables under charts (Chart 4/5)
+   ========================================================================== */
+.table-wrap {
+    margin-top: 12px;
+    border: 1px solid #eef1f5;
+    border-radius: 12px;
+    overflow: hidden; /* чтобы скругление работало */
+    background: #fff;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    color: var(--text);
+}
+
+.data-table thead th {
+    text-align: left;
+    padding: 10px 12px;
+    background: #fafbfc;
+    border-bottom: 1px solid #eef1f5;
+    color: var(--muted);
+    font-weight: 700;
+    letter-spacing: .1px;
+}
+
+.data-table tbody td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #f0f2f6;
+    font-variant-numeric: tabular-nums;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Numbers alignment */
+.data-table .col-traffic,
+.data-table .col-delta {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Week separator row */
+.data-table tr.week-row td {
+    background: #f6f8fb;
+    border-top: 1px solid #e8edf5;
+    border-bottom: 1px solid #e8edf5;
+    font-weight: 800;
+}
+
+.data-table tr.week-row td:first-child {
+    color: var(--text);
+}
+
+.data-table tr.week-row td.col-traffic {
+    color: var(--text);
+}
+
+/* Row hover (except week rows) */
+.data-table tbody tr:not(.week-row):hover td {
+    background: #fbfcfe;
+}
+
+/* Compact table variation */
+.table-wrap--compact {
+    margin-top: 12px;
+}
+
+.table-title {
+    padding: 10px 12px;
+    background: #fafbfc;
+    border-bottom: 1px solid #eef1f5;
+    font-size: 12.5px;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.data-table--compact td {
+    padding: 10px 12px;
+}
+
+.data-table--compact td:first-child {
+    color: var(--muted);
+    font-weight: 700;
+    width: 48%;
+}
+
+.data-table--compact td:last-child {
+    text-align: right;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   Responsive (<= 920px)
+   ========================================================================== */
+@media (max-width: 920px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sticky often gets in the way on mobile */
+    .sidebar {
+        position: static;
+        top: auto;
+    }
+
+    /* Events card should not overlap */
+    .cards > .card--events {
+        margin-left: auto;
+        width: 100%;
+    }
+
+    /* Charts 4–5 row: stack + reset offsets */
+    .cards-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-row--wide {
+        margin-left: 0;
+        width: 100%;
+        gap: 18px; /* вернуть исходный gap на мобилке */
+    }
+
+    .cards-row--wide > .card:first-child,
+    .cards-row--wide > .card:last-child {
+        transform: none;
+        width: 100%;
+    }
+
+    /* Table: slightly tighter padding */
+    .data-table thead th,
+    .data-table tbody td {
+        padding: 9px 10px;
+    }
+}
+
