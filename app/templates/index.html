@@ -18,9 +18,9 @@
                     <div class="brand-chip {% if active_tab == 'avatr' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Avatr</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.avatr.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.avatr.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.avatr.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -30,9 +30,9 @@
                     <div class="brand-chip {% if active_tab == 'electro' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Autogroup Electro</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.electro.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.electro.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.electro.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -42,9 +42,9 @@
                     <div class="brand-chip {% if active_tab == 'bosh-service' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Bosh Service</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.bosh_service.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.bosh_service.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.bosh_service.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -54,9 +54,9 @@
                     <div class="brand-chip {% if active_tab == 'autogroup-e-service' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Autogroup E-Service</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.autogroup_e_service.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.autogroup_e_service.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.autogroup_e_service.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -66,9 +66,9 @@
                     <div class="brand-chip {% if active_tab == 'autogroup-used-cars' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Autogroup с пробегом</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.autogroup_used_cars.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.autogroup_used_cars.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.autogroup_used_cars.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -78,9 +78,9 @@
                     <div class="brand-chip {% if active_tab == 'citroen' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Citroen</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.citroen.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.citroen.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.citroen.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -90,9 +90,9 @@
                     <div class="brand-chip {% if active_tab == 'ds' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">DS</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.ds.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.ds.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.ds.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -102,9 +102,9 @@
                     <div class="brand-chip {% if active_tab == 'ford' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Ford</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.ford.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.ford.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.ford.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -114,9 +114,9 @@
                     <div class="brand-chip {% if active_tab == 'hyundai' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Hyundai</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.hyundai.ctr }} %</span>
+                            <span class="brand-pill">>CLICK {{ top_data.hyundai.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.hyundai.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -126,9 +126,9 @@
                     <div class="brand-chip {% if active_tab == 'kia' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">KIA</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.kia.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.kia.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.kia.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -138,9 +138,9 @@
                     <div class="brand-chip {% if active_tab == 'mg' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">MG</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.mg.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.mg.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.mg.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -150,9 +150,9 @@
                     <div class="brand-chip {% if active_tab == 'mitsubishi' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Mitsubishi</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.mitsubishi.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.mitsubishi.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.mitsubishi.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -162,9 +162,9 @@
                     <div class="brand-chip {% if active_tab == 'nissan' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Nissan</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.nissan.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.nissan.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.nissan.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -174,9 +174,9 @@
                     <div class="brand-chip {% if active_tab == 'peugeot' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Peugeot</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.peugeot.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.peugeot.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.peugeot.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -186,9 +186,9 @@
                     <div class="brand-chip {% if active_tab == 'renault' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Renault</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.renault.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.renault.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.renault.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -198,9 +198,9 @@
                     <div class="brand-chip {% if active_tab == 'skoda' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Skoda</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.skoda.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.skoda.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.skoda.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -210,9 +210,9 @@
                     <div class="brand-chip {% if active_tab == 'vag-service' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Vag Service</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.vag_service.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.vag_service.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.vag_service.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -222,9 +222,9 @@
                     <div class="brand-chip {% if active_tab == 'autogroup-service' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">АВТОГРУПП СЕРВИС</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.autogroup_service.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.autogroup_service.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.autogroup_service.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -234,9 +234,9 @@
                     <div class="brand-chip {% if active_tab == 'chery' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">Chery</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.chery.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.chery.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.chery.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -246,9 +246,9 @@
                     <div class="brand-chip {% if active_tab == 'lts' %} active {% endif %}" role="button" tabindex="0">
                         <span class="brand-name">LTS</span>
                         <span class="brand-meta">
-                            <span class="brand-pill"><span class="b"></span>77</span>
-                            <span class="brand-pill">CTR 5</span>
-                            <span class="brand-pill">25 000 UAH</span>
+                            <span class="brand-pill"><span class="b"></span>CTR {{ top_data.lts.ctr }} %</span>
+                            <span class="brand-pill">CLICK {{ top_data.lts.average_cpc }} UAH</span>
+                            <span class="brand-pill">COST {{ top_data.lts.cost_micros }} UAH</span>
                         </span>
                     </div>
                 </div>
@@ -311,7 +311,7 @@
         <div class="cards">
             <!-- Chart 1 -->
             <div class="card">
-                <h3 class="title">Cреднее время пребывания пользователей на сайте</h3>
+                <h3 class="title">Cреднее время пребывания пользователей на сайте за последних 3 месяца</h3>
 
                 <div class="chart-wrap js-chart">
                     <canvas class="js-canvas"></canvas>
@@ -334,7 +334,7 @@
 
             <!-- Chart 2 -->
             <div class="card">
-                <h3 class="title">Количество кликов по рекламе</h3>
+                <h3 class="title">Количество кликов по рекламе за последних 3 месяца</h3>
 
                 <div class="chart-wrap js-chart">
                     <canvas class="js-canvas"></canvas>
@@ -364,7 +364,7 @@
 
             <!-- Chart 3 (Multi): Events -->
             <div class="card card--events">
-                <h3 class="title">Ивенты</h3>
+                <h3 class="title">Ивенты за последние 3 месяца</h3>
 
                 <div class="chart-wrap js-multichart">
                     <canvas class="js-canvas"></canvas>
@@ -697,7 +697,6 @@
 </div>
 
 <script>
-    const fresh_date = {{ fresh_date | tojson }};
     // ====== Общая функция инициализации графика (каждый график независим) ======
     function initChart(rootEl, cfg) {
         const data = cfg.data;
@@ -796,31 +795,7 @@ if (seriesNameEl2 && cfg.seriesName2) seriesNameEl2.textContent = cfg.seriesName
         }
 
 function drawXAxis(plot) {
-  const n = data.length;
-
-  // 1) Пытаемся взять marks из fresh_date или cfg.marks
-  let marks = (Array.isArray(fresh_date) && fresh_date.length)
-    ? fresh_date
-    : (cfg.marks ?? []);
-
-  // 2) Оставляем только валидные индексы
-  marks = marks.filter(m => m && Number.isFinite(m.i) && m.i >= 0 && m.i < n);
-
-  // 3) Если меток нет (типичный кейс при n=4) — генерим сами
-  if (!marks.length) {
-    if (n <= 7) {
-      // показываем подпись каждой точки
-      marks = data.map((p, i) => ({ i, text: p.label }));
-    } else {
-      // показываем 3 метки: начало/середина/конец
-      const mid = Math.floor((n - 1) / 2);
-      marks = [
-        { i: 0, text: data[0].label },
-        { i: mid, text: data[mid].label },
-        { i: n - 1, text: data[n - 1].label }
-      ];
-    }
-  }
+  const marks = buildMarksFromData(data, 4); // 4 метки максимум (или все, если точек мало)
 
   ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
   ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
@@ -1401,30 +1376,24 @@ function shiftDayInText(text, delta = 1) {
   }
 
   function drawXAxis(plot) {
-const marks = (Array.isArray(fresh_date) && fresh_date.length)
-  ? fresh_date.map(m => ({
-      ...m,
-      text: shiftDayInText(m.text, 1)
-    }))
-  : (cfg.marks ?? [
-      { i: 10, text: "11\nянв." },
-      { i: 17, text: "18" },
-      { i: 22, text: "23\nянв." },
-      { i: 31, text: "01\nфев." }
-    ]);
+  const n = labels.length;
+  if (!n) return;
 
-    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
-    ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "top";
+  // строим временный data-like массив для buildMarksFromData
+  const pseudo = labels.map(l => ({ label: l }));
+  const marks = buildMarksFromData(pseudo, 4);
 
-    marks.forEach(m => {
-      if (m.i < 0 || m.i >= labels.length) return;
-      const x = xForIndex(m.i, plot);
-      const y0 = plot.y + plot.h + 10;
-      m.text.split("\n").forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
-    });
-  }
+  ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+  ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "top";
+
+  marks.forEach(m => {
+    const x = xForIndex(m.i, plot);
+    const y0 = plot.y + plot.h + 10;
+    String(m.text).split("\n").forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
+  });
+}
 
   function drawSeries(plot) {
     const visible = getVisibleSeries();
@@ -1955,6 +1924,57 @@ monthSel?.removeEventListener("change", updateChart4AndTable);
 yearSel?.addEventListener("change", updateChart4AndTablesAll);
 monthSel?.addEventListener("change", updateChart4AndTablesAll);
 
+
+function normalizeLabelToDayMonth(label) {
+  const s = String(label || "").toLowerCase();
+
+  // 1) день (1-2 цифры)
+  const mDay = s.match(/\b(\d{1,2})\b/);
+  const day = mDay ? mDay[1] : "";
+
+  // 2) месяц (ищем русское сокращение)
+  const months = ["янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"];
+  let mon = "";
+  for (const mm of months) {
+    if (s.includes(mm)) { mon = mm; break; }
+  }
+
+  // fallback: если вдруг label уже "15\nянв."
+  if (!mon) {
+    const mMon = s.match(/\b(янв\.?|фев\.?|мар\.?|апр\.?|мая?|июн\.?|июл\.?|авг\.?|сен\.?|окт\.?|ноя\.?|дек\.?)\b/);
+    mon = mMon ? mMon[1].replace(".", "") : "";
+  }
+
+  if (!day && !mon) return String(label || "");
+
+  return `${day} ${mon}`.trim();
+}
+
+function buildMarksFromData(data, maxMarks = 4) {
+  const n = data.length;
+  if (!n) return [];
+
+  // если точек мало — подписываем каждую
+  if (n <= maxMarks) {
+    return data.map((p, i) => ({
+      i,
+      text: normalizeLabelToDayMonth(p.label).replace(" ", "\n") // "15\nянв"
+    }));
+  }
+
+  // иначе 4 метки: 1/3/2/3/последняя
+  const i0 = 0;
+  const i1 = Math.round((n - 1) / 3);
+  const i2 = Math.round((2 * (n - 1)) / 3);
+  const i3 = n - 1;
+
+  const idxs = Array.from(new Set([i0, i1, i2, i3])).sort((a, b) => a - b);
+
+  return idxs.map(i => ({
+    i,
+    text: normalizeLabelToDayMonth(data[i].label).replace(" ", "\n")
+  }));
+}
 </script>
 
 </body>

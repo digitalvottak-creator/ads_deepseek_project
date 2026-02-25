@@ -89,6 +89,11 @@
     "ads_target": "Сhery ДЦ",
     "analyst_target": "Сhery АВТОГРУП МОТОРС"
   },
+    {
+    "vehicle_name": "citroen",
+    "ads_target": "Citroen ДЦ",
+    "analyst_target": "Citroen АВТОГРАД"
+  },
   {
     "vehicle_name": "lts",
     "ads_target": "ТОВ \"ЛІДЕР ТЕХСТАНДАРТ\"",

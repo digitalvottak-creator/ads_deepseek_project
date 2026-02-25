@@ -9,3 +9,4 @@ APScheduler
 google-ads
 google-analytics-data
 google-auth
+asyncpg

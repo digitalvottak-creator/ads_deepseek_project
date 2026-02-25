@@ -43,7 +43,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 async def get_full_data(data_class: Data) -> dict:
-    total_clicks, total_impressions, fresh_date = await data_class.get_additional_information()
+    total_clicks, total_impressions = await data_class.get_additional_information()
 
     duration_graph, duration_graph_points = await data_class.chill_info("duration")
     clicks_graph, clicks_graph_points = await data_class.chill_info("clicks")
@@ -53,13 +53,14 @@ async def get_full_data(data_class: Data) -> dict:
     traffic_current_graph, traffic_current_graph_percent = await data_class.get_traffic(events_by_date)
     traffic_all_graph, traffic_all_graph_percent = await data_class.get_traffic(events_by_date, is_all=True)
 
-    return {"impressions": total_impressions, "clicks": total_clicks,
-            "fresh_date": fresh_date, "clicks_graph": clicks_graph, "clicks_graph_points": clicks_graph_points,
+    top_data = await data_class.get_top_info()
+
+    return {"impressions": total_impressions, "clicks": total_clicks, "top_data": top_data,
+            "clicks_graph": clicks_graph, "clicks_graph_points": clicks_graph_points,
             "duration_graph": duration_graph, "duration_graph_points": duration_graph_points,
-            "events_graph": events_graph,
-            "events_graph_points": events_graph_points, "traffic_current_graph": traffic_current_graph,
-            "traffic_current_graph_percent": traffic_current_graph_percent, "traffic_all_graph": traffic_all_graph,
-            "traffic_all_graph_percent": traffic_all_graph_percent}
+            "events_graph": events_graph, "events_graph_points": events_graph_points,
+            "traffic_current_graph": traffic_current_graph, "traffic_current_graph_percent": traffic_current_graph_percent,
+            "traffic_all_graph": traffic_all_graph, "traffic_all_graph_percent": traffic_all_graph_percent}
 
 
 @app.get("/refresh", response_class=HTMLResponse)
