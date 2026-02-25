@@ -10,3 +10,4 @@ google-ads
 google-analytics-data
 google-auth
 asyncpg
+python-dateutil
