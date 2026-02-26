@@ -245,7 +245,7 @@ class SQL:
         where_sql = f" WHERE {where}" if where else ""
         limit_sql = f" LIMIT {int(limit)}" if limit is not None else ""
 
-        sql = f"SELECT {cols_sql} FROM {table}{where_sql}{limit_sql};"
+        sql = f"SELECT {cols_sql} FROM {table}{where_sql} ORDER BY date {limit_sql};"
 
         conn: Optional[asyncpg.Connection] = None
         try:
