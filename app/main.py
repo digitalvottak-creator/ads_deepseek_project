@@ -79,6 +79,9 @@ async def avatr(request: Request):
     full_data = await get_full_data(data_class)
     full_data["request"] = request
     full_data["active_tab"] = car_name
+    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
+    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
+    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
 
     return templates.TemplateResponse(
         "index.html",
