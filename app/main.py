@@ -53,7 +53,8 @@ async def get_full_data(data_class: Data, request, car_name: str) -> dict:
     traffic_current_graph, traffic_current_graph_percent = await data_class.get_traffic(events_by_date)
     traffic_all_graph, traffic_all_graph_percent = await data_class.get_traffic(events_by_date, is_all=True)
 
-    top_data = await data_class.get_top_info()
+    top_data_all = await data_class.get_top_info()
+    top_data = {k: v[0] for k, v in top_data_all.items()}
 
     full_data = {"impressions": total_impressions, "clicks": total_clicks, "top_data": top_data,
             "clicks_graph": clicks_graph, "clicks_graph_points": clicks_graph_points,
@@ -62,11 +63,16 @@ async def get_full_data(data_class: Data, request, car_name: str) -> dict:
             "traffic_current_graph": traffic_current_graph, "traffic_current_graph_percent": traffic_current_graph_percent,
             "traffic_all_graph": traffic_all_graph, "traffic_all_graph_percent": traffic_all_graph_percent}
 
+    current_car_data = top_data_all[car_name.replace("-", "_")]
+    current_ctr = round(sum([price["ctr"] for price in current_car_data]) / len(current_car_data), 2)
+    current_cost_micros = round(sum([price['cost_micros'] for price in current_car_data]), 2)
+    current_average_cpc = round(sum([price["average_cpc"] for price in current_car_data]) / len(current_car_data), 2)
+
     full_data["request"] = request
     full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name.replace("-", "_")]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name.replace("-", "_")]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name.replace("-", "_")]['average_cpc']
+    full_data["page_ctr"] = current_ctr
+    full_data["page_cost_micros"] = current_cost_micros
+    full_data["page_average_cpc"] = current_average_cpc
 
 
     return full_data

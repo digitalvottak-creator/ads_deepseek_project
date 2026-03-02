@@ -2,7 +2,7 @@ import asyncio
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
 from typing import Sequence, Any, Optional, List, Dict
 
@@ -59,7 +59,7 @@ class Data:
 
         sem = asyncio.Semaphore(10)
 
-        async def fetch_one(table: str):
+        async def fetch_month(table: str):
             async with sem:
                 try:
                     async with pool.acquire() as conn:
@@ -69,7 +69,7 @@ class Data:
                     print(f"Ошибка получения верхних данных ({table}): {e}")
                     return table, {}
 
-        results = await asyncio.gather(*(fetch_one(t) for t in tables))
+        results = await asyncio.gather(*(fetch_month(t) for t in tables))
 
         await pool.close()
         return {table: data for table, data in results}
@@ -262,17 +262,41 @@ class SQL:
             raise ValueError(f"Unsafe table name: {table!r}")
         return table
 
-    async def get_last_ctr_cost_cpc(self, conn: asyncpg.Connection, table: str) -> Dict:
+    async def get_last_ctr_cost_cpc(
+            self,
+            conn: asyncpg.Connection,
+            table: str
+    ) -> List:
+
+        now = datetime.now()
+        current_year = now.year
+        current_month = now.month
+
+        # начало текущего месяца
+        start_date = date(current_year, current_month, 1)
+
+        # начало следующего месяца
+        if current_month == 12:
+            end_date = date(current_year + 1, 1, 1)
+        else:
+            end_date = date(current_year, current_month + 1, 1)
+
         table = self._sanitize_table_name(table)
-        row = await conn.fetchrow(
+
+        table = await conn.fetch(
             f"""
             SELECT ctr, cost_micros, average_cpc
             FROM {table}
+            WHERE date >= $1
+              AND date < $2
             ORDER BY date DESC
-            LIMIT 1
-            """
+            LIMIT 32
+            """,
+            start_date,
+            end_date
         )
-        return dict(row) if row else {}
+
+        return [dict(row) for row in table] if table else {}
 
 
 class Other:
