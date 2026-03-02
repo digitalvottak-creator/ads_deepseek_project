@@ -534,16 +534,21 @@ canvas {
   overflow: visible;
 }
 
+/* Только для пары графиков 4–5: ближе друг к другу, внешний вынос сохраняем */
+.cards-row--wide{
+  gap: 8px;          /* было 10px */
+  overflow: visible;
+}
+
 .cards-row--wide > .card:first-child{
-  margin-left: -40px; /* вынос влево */
-  margin-right: 40px; /* “расширение” к центру */
+  margin-left: -40px; /* внешний вынос влево — оставляем */
+  margin-right: 1px;
 }
 
 .cards-row--wide > .card:last-child{
-  margin-right: -40px; /* вынос вправо */
-  margin-left: 40px;   /* “расширение” к центру */
+  margin-right: -40px;
+  margin-left: 1px;
 }
-
 .cards-row{
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
