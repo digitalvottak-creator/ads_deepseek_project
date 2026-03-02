@@ -42,7 +42,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
-async def get_full_data(data_class: Data) -> dict:
+async def get_full_data(data_class: Data, request, car_name: str) -> dict:
     total_clicks, total_impressions = await data_class.get_additional_information()
 
     duration_graph, duration_graph_points = await data_class.chill_info("duration")
@@ -55,12 +55,21 @@ async def get_full_data(data_class: Data) -> dict:
 
     top_data = await data_class.get_top_info()
 
-    return {"impressions": total_impressions, "clicks": total_clicks, "top_data": top_data,
+    full_data = {"impressions": total_impressions, "clicks": total_clicks, "top_data": top_data,
             "clicks_graph": clicks_graph, "clicks_graph_points": clicks_graph_points,
             "duration_graph": duration_graph, "duration_graph_points": duration_graph_points,
             "events_graph": events_graph, "events_graph_points": events_graph_points,
             "traffic_current_graph": traffic_current_graph, "traffic_current_graph_percent": traffic_current_graph_percent,
             "traffic_all_graph": traffic_all_graph, "traffic_all_graph_percent": traffic_all_graph_percent}
+
+    full_data["request"] = request
+    full_data["active_tab"] = car_name
+    full_data["page_cost_micros"] = full_data["top_data"][car_name.replace("-", "_")]['cost_micros']
+    full_data["page_ctr"] = full_data["top_data"][car_name.replace("-", "_")]["ctr"]
+    full_data["page_average_cpc"] = full_data["top_data"][car_name.replace("-", "_")]['average_cpc']
+
+
+    return full_data
 
 
 @app.get("/refresh", response_class=HTMLResponse)
@@ -76,12 +85,7 @@ async def avatr(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -97,12 +101,7 @@ async def ag_electro(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -118,12 +117,7 @@ async def bosh(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -139,12 +133,7 @@ async def autogroup_e_service(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -160,12 +149,7 @@ async def autogroup_used_cars(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -181,12 +165,7 @@ async def citroen(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -202,12 +181,7 @@ async def ds(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -223,12 +197,7 @@ async def ford(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -244,12 +213,7 @@ async def hyundai(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -265,12 +229,7 @@ async def kia(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -286,12 +245,7 @@ async def mg(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -307,12 +261,7 @@ async def mitsubishi(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -328,12 +277,7 @@ async def nissan(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -349,12 +293,7 @@ async def peugeot(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -370,12 +309,7 @@ async def renault(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -391,12 +325,7 @@ async def skoda(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -412,12 +341,7 @@ async def vag_service(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -433,12 +357,7 @@ async def autogroup(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -454,12 +373,7 @@ async def chery(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
@@ -474,12 +388,7 @@ async def lts(request: Request):
 
     data_class.data = await data_class.get_page_info(car_name=car_name)
 
-    full_data = await get_full_data(data_class)
-    full_data["request"] = request
-    full_data["active_tab"] = car_name
-    full_data["page_cost_micros"] = full_data["top_data"][car_name]['cost_micros']
-    full_data["page_ctr"] = full_data["top_data"][car_name]["ctr"]
-    full_data["page_average_cpc"] = full_data["top_data"][car_name]['average_cpc']
+    full_data = await get_full_data(data_class, request=request, car_name=car_name)
 
     return templates.TemplateResponse(
         "index.html",
