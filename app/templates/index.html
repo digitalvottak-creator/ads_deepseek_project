@@ -697,6 +697,43 @@
 </div>
 
 <script>
+(function () {
+  const strip = document.getElementById('brandStrip');
+  if (!strip) return;
+
+  const KEY = 'brandStripScrollLeft:v1';
+
+  // 1) Восстановление после загрузки
+  const saved = sessionStorage.getItem(KEY);
+  if (saved !== null) {
+    strip.scrollLeft = parseInt(saved, 10) || 0;
+  }
+
+  // 2) Сохраняем при любой прокрутке (на случай F5 / назад / вперед)
+  let rafId = null;
+  strip.addEventListener('scroll', () => {
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(() => {
+      sessionStorage.setItem(KEY, String(strip.scrollLeft));
+    });
+  }, { passive: true });
+
+  // 3) Сохраняем прямо перед переходом по ссылке (клик по бренду)
+  strip.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    // если клик по ссылке внутри полосы брендов — сохраняем
+    sessionStorage.setItem(KEY, String(strip.scrollLeft));
+  });
+
+  // 4) Дополнительно: при уходе со страницы (если клик был не по ссылке)
+  window.addEventListener('pagehide', () => {
+    sessionStorage.setItem(KEY, String(strip.scrollLeft));
+  });
+})();
+</script>
+
+<script>
     // ====== Общая функция инициализации графика (каждый график независим) ======
     function initChart(rootEl, cfg) {
         const data = cfg.data;
