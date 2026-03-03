@@ -9,6 +9,20 @@
 <body>
 <!-- ====== Top menu with many brands ====== -->
 <div class="topbar">
+        <div class="topbar-search" role="search">
+        <input
+            class="topbar-search__input"
+            id="brandSearch"
+            type="search"
+            placeholder="Поиск бренда…"
+            aria-label="Поиск по брендам"
+            autocomplete="off"
+        />
+        <button class="topbar-search__clear" type="button" aria-label="Очистить поиск" hidden>
+            ×
+        </button>
+    </div>
+
     <div class="topbar-row">
         <div class="topbar-title">Бренды</div>
 
@@ -697,6 +711,70 @@
 </div>
 
 <script>
+    // Search logic
+(() => {
+  const input = document.getElementById('brandSearch');
+  const strip = document.getElementById('brandStrip');
+  if (!input || !strip) return;
+
+  const clearBtn = document.querySelector('.topbar-search__clear');
+  const links = Array.from(strip.querySelectorAll(':scope > a')); // каждый бренд = <a>
+
+  const norm = (s) =>
+    (s || '')
+      .toLowerCase()
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const apply = () => {
+    const q = norm(input.value);
+
+    if (clearBtn) clearBtn.hidden = (q.length === 0);
+
+    let firstVisible = null;
+
+    links.forEach(a => {
+      const nameEl = a.querySelector('.brand-name');
+      const name = norm(nameEl ? nameEl.textContent : a.textContent);
+
+      const show = (q.length === 0) || name.includes(q);
+      a.style.display = show ? '' : 'none';
+
+      if (show && !firstVisible) firstVisible = a;
+    });
+
+    // опционально: если есть совпадения — прокрутить к первому
+    if (q.length && firstVisible) {
+      firstVisible.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+    }
+  };
+
+  // Ввод в реальном времени
+  input.addEventListener('input', apply);
+
+  // ESC очищает
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      input.value = '';
+      apply();
+    }
+  });
+
+  // Кнопка очистки
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      apply();
+      input.focus();
+    });
+  }
+
+  // первичная инициализация
+  apply();
+})();
+</script>
+<script>
+    // Сохранение текущего положения прокрутки topbar-а
 (function () {
   const strip = document.getElementById('brandStrip');
   if (!strip) return;
@@ -732,7 +810,6 @@
   });
 })();
 </script>
-
 <script>
     // ====== Общая функция инициализации графика (каждый график независим) ======
     function initChart(rootEl, cfg) {

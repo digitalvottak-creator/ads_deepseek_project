@@ -81,6 +81,72 @@ body {
     border: 1px solid #eef1f5;
 }
 
+.topbar-search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;     /* сверху в topbar */
+    padding: 6px 8px;
+    border-radius: 12px;
+    background: #fafbfc;
+    border: 1px solid #eef1f5;
+}
+
+.topbar-search__input{
+    width: 100%;
+    height: 32px;         /* небольшая */
+    padding: 0 10px;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--text);
+    font-size: 12.5px;
+    outline: none;
+}
+
+.topbar-search__input::placeholder{
+    color: var(--muted);
+}
+
+.topbar-search__input:focus{
+    border-color: rgba(26, 115, 232, .35);
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, .10);
+}
+
+.topbar-search__clear{
+    flex: 0 0 auto;
+    height: 30px;
+    width: 30px;
+    border-radius: 999px;
+    border: 1px solid #eef1f5;
+    background: #fff;
+    color: var(--muted);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.topbar-search__clear:hover{
+    background: #f6f8fb;
+    border-color: #dfe5ee;
+}
+
+/* Убираем встроенную кнопку очистки у input[type="search"] (Chrome/Safari/Edge) */
+.topbar-search__input::-webkit-search-cancel-button,
+.topbar-search__input::-webkit-search-decoration,
+.topbar-search__input::-webkit-search-results-button,
+.topbar-search__input::-webkit-search-results-decoration{
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+/* На очень узких экранах оставляем компактно */
+@media (max-width: 920px){
+    .topbar-search{
+        margin-bottom: 10px;
+    }
+}
+
 /* Horizontal brand strip (scrollable chips) */
 .brand-strip {
     flex: 1 1 auto;
