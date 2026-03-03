@@ -148,15 +148,26 @@ body {
 }
 
 /* Horizontal brand strip (scrollable chips) */
-.brand-strip {
-    flex: 1 1 auto;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 2px;
+/* strip становится flex-лентой без "щелей" от пробелов в HTML */
+.brand-strip{
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: normal; /* больше не нужно nowrap */
+  padding: 2px;
+}
 
-    /* Firefox */
-    scrollbar-width: thin;
-    scrollbar-color: #d7dce5 transparent;
+/* ссылки как элементы ленты */
+.brand-strip > a{
+  flex: 0 0 auto;
+  text-decoration: none;
+}
+
+/* внутренний wrapper больше не нужен для gap/padding */
+.brand-list{
+  display: flex;
+  padding: 0;
+  gap: 0;
 }
 
 .brand-strip::-webkit-scrollbar {
