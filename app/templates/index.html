@@ -341,9 +341,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="hint">Наведите курсор на график — появится подсказка, вертикальная линия и маркер точки.
-                </div>
             </div>
 
             <!-- Chart 2 -->
@@ -370,9 +367,6 @@
                             <div class="tip-val js-tipVal2">0</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="hint">Наведите курсор на график — появится подсказка, вертикальная линия и маркер точки.
                 </div>
             </div>
 
@@ -448,10 +442,6 @@
                             <div class="tip-val js-tipVal" data-s="9">0</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="hint">Пять линий — разные типы событий. Наведите курсор, чтобы увидеть значения по каждой
-                    линии.
                 </div>
             </div>
 
@@ -592,7 +582,6 @@
 </div>
 
 
-    <div class="hint">Наведите курсор на график — появится подсказка.</div>
   </div>
 
   <!-- Chart 5 -->
@@ -698,7 +687,6 @@
   </table>
 </div>
 
-    <div class="hint">Наведите курсор на график — появится подсказка.</div>
   </div>
 </div>
 
@@ -1189,7 +1177,8 @@ return { setData, setHoverByDayKey, clearHover, getHoverDayKey };
 });
 
     /* ==== Chart 4 (Показы) — независимые данные ==== */
-    const traffic_all_graph = {{ (traffic_all_graph or []) | tojson }};
+/* ==== Chart 4 (Показы) — независимые данные ==== */
+const traffic_all_graph = {{ (traffic_all_graph or []) | tojson }};
 const traffic_all_graph_percent = {{ (traffic_all_graph_percent or []) | tojson }};
 
 // Надёжный парсинг "YYYY-MM-DD" без таймзоны
@@ -1212,6 +1201,20 @@ function filterByYearMonth(arr, year, month) {
   });
 }
 
+// 0) Текущие год/месяц (локально)
+function getCurrentYM() {
+  const now = new Date();
+  let y = now.getFullYear();
+  let m = now.getMonth(); // уже предыдущий месяц, потому что getMonth() = 0..11
+
+  if (m === 0) {   // если сейчас январь
+    m = 12;        // берем декабрь
+    y -= 1;        // прошлого года
+  }
+
+  return { y, m }; // m: 1..12
+}
+
 // 1) Нормализуем данные
 const allTraffic = traffic_all_graph.map(p => ({
   date: p.date,
@@ -1220,7 +1223,7 @@ const allTraffic = traffic_all_graph.map(p => ({
 }));
 
 const allPercent = traffic_all_graph_percent.map(p => ({
-  ...p,                          // <-- сохраняем новые поля!
+  ...p,                          // сохраняем новые поля!
   date: p.date,
   label: p.label,
   v: Number(p.v) || 0
@@ -1229,10 +1232,28 @@ const allPercent = traffic_all_graph_percent.map(p => ({
 const yearSel = document.querySelector(".js-imprYear");
 const monthSel = document.querySelector(".js-imprMonth");
 
+// 1.5) Поставим селекты на текущий месяц/год (если они есть и в них есть такие опции)
+(function setDefaultYM() {
+  const { y, m } = getCurrentYM();
+
+  if (yearSel) {
+    const yStr = String(y);
+    const hasYear = Array.from(yearSel.options || []).some(o => String(o.value) === yStr);
+    if (hasYear) yearSel.value = yStr;
+  }
+
+  if (monthSel) {
+    const mStr = String(m); // у вас месяц хранится как "2", "11" и т.д.
+    const hasMonth = Array.from(monthSel.options || []).some(o => String(o.value) === mStr);
+    if (hasMonth) monthSel.value = mStr;
+  }
+})();
+
 // 2) Строим данные для выбранного месяца
 function buildChart4Data() {
-  const year = yearSel?.value || "2026";
-  const month = monthSel?.value || "2";
+  const cur = getCurrentYM();
+  const year = yearSel?.value ?? String(cur.y);
+  const month = monthSel?.value ?? String(cur.m);
 
   const trafficMonth = filterByYearMonth(allTraffic, year, month);
   const percentMonth = filterByYearMonth(allPercent, year, month);
@@ -1251,10 +1272,10 @@ function buildChart4Data() {
 
   const data = trafficMonth.slice(0, n).map(p => ({ label: p.label, v: p.v }));
   const data2 = percentMonth.slice(0, n).map(p => ({
-  ...p,                 // сохраняем Звонки/Заявки/...
-  label: p.label,
-  v: Number(p.v) || 0
-}));
+    ...p,                 // сохраняем Звонки/Заявки/...
+    label: p.label,
+    v: Number(p.v) || 0
+  }));
 
   // === ШКАЛА КАК В 5 ГРАФИКЕ (ПО ТРАФИКУ) ===
   const maxV = Math.max(1, ...data.map(p => p.v));
