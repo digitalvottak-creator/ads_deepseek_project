@@ -586,7 +586,31 @@
 
   <!-- Chart 5 -->
   <div class="card">
-    <h3 class="title">Трафик за последний месяц</h3>
+    <div class="title-row">
+  <h3 class="title title--with-controls">
+    Трафик за
+    <select class="title-select js-curYear" aria-label="Год">
+      <option value="2025">2025</option>
+      <option value="2026" selected>2026</option>
+    </select>
+    год
+    <select class="title-select js-curMonth" aria-label="Месяц">
+      <option value="1">январь</option>
+      <option value="2">февраль</option>
+      <option value="3">март</option>
+      <option value="4">апрель</option>
+      <option value="5">май</option>
+      <option value="6">июнь</option>
+      <option value="7">июль</option>
+      <option value="8">август</option>
+      <option value="9">сентябрь</option>
+      <option value="10">октябрь</option>
+      <option value="11">ноябрь</option>
+      <option value="12">декабрь</option>
+    </select>
+    месяц
+  </h3>
+</div>
 
     <div class="chart-wrap js-chart">
       <canvas class="js-canvas"></canvas>
@@ -1251,42 +1275,11 @@ const monthSel = document.querySelector(".js-imprMonth");
 
 // 2) Строим данные для выбранного месяца
 function buildChart4Data() {
-  const cur = getCurrentYM();
+  const cur = getCurrentYM(); // у тебя это "предыдущий месяц" — оставляем как было
   const year = yearSel?.value ?? String(cur.y);
   const month = monthSel?.value ?? String(cur.m);
 
-  const trafficMonth = filterByYearMonth(allTraffic, year, month);
-  const percentMonth = filterByYearMonth(allPercent, year, month);
-
-  // выровняем длины (на всякий случай)
-  const n = Math.min(trafficMonth.length, percentMonth.length);
-
-  if (!n) {
-    return {
-      data: [{ label: "нет данных", v: 0 }],
-      data2: [{ label: "нет данных", v: 0 }],
-      yMax: 10,
-      ticks: [3, 7, 10]
-    };
-  }
-
-  const data = trafficMonth.slice(0, n).map(p => ({ label: p.label, v: p.v }));
-  const data2 = percentMonth.slice(0, n).map(p => ({
-    ...p,                 // сохраняем Звонки/Заявки/...
-    label: p.label,
-    v: Number(p.v) || 0
-  }));
-
-  // === ШКАЛА КАК В 5 ГРАФИКЕ (ПО ТРАФИКУ) ===
-  const maxV = Math.max(1, ...data.map(p => p.v));
-  const yMax = Math.ceil(maxV / 10) * 10;
-  const ticks = [
-    Math.round(yMax / 3),
-    Math.round((2 * yMax) / 3),
-    yMax
-  ];
-
-  return { data, data2, yMax, ticks };
+  return buildMonthData(year, month, allTraffic, allPercent);
 }
 
 // 3) init один раз
@@ -1318,39 +1311,129 @@ yearSel?.addEventListener("change", updateChart4);
 monthSel?.addEventListener("change", updateChart4);
 
     /* ==== Chart 5 (Конверсии) — независимые данные ==== */
+
+    function getNowYM() {
+  const now = new Date();
+  return { y: now.getFullYear(), m: now.getMonth() + 1 }; // m: 1..12
+}
+
+// Универсальная сборка данных за месяц (трафик + percent с доп. полями)
+function buildMonthData(year, month, trafficArr, percentArr) {
+  const trafficMonth = filterByYearMonth(trafficArr, year, month);
+  const percentMonth = filterByYearMonth(percentArr, year, month);
+
+  const n = Math.min(trafficMonth.length, percentMonth.length);
+
+  if (!n) {
+    return {
+      data: [{ label: "нет данных", v: 0 }],
+      data2: [{ label: "нет данных", v: 0 }],
+      yMax: 10,
+      ticks: [3, 7, 10]
+    };
+  }
+
+  const data = trafficMonth.slice(0, n).map(p => ({ label: p.label, v: Number(p.v) || 0 }));
+  const data2 = percentMonth.slice(0, n).map(p => ({
+    ...p,                       // сохраняем Звонки/Заявки/...
+    label: p.label,
+    v: Number(p.v) || 0
+  }));
+
+  const maxV = Math.max(1, ...data.map(p => p.v));
+  const yMax = Math.ceil(maxV / 10) * 10;
+  const ticks = [Math.round(yMax / 3), Math.round((2 * yMax) / 3), yMax];
+
+  return { data, data2, yMax, ticks };
+}
+
+/* ==== Chart 5 (Трафик) — с выбором месяца, по умолчанию текущий ==== */
 const traffic_current_graph = {{ traffic_current_graph | tojson }};
 const traffic_current_graph_percent = {{ traffic_current_graph_percent | tojson }};
-const dataConversions = traffic_current_graph.map(p => ({
+
+// нормализуем "текущий месяц" (как запасной источник, если вдруг allTraffic не содержит текущий месяц)
+const dataConversions = (traffic_current_graph || []).map(p => ({
+  label: p.label,
+  v: Number(p.v) || 0
+}));
+const dataConversionsPercent = (traffic_current_graph_percent || []).map(p => ({
+  ...p,
   label: p.label,
   v: Number(p.v) || 0
 }));
 
-// процентное соотношение (доля каждой точки от суммы за период)
-const dataConversionsPercent = traffic_current_graph_percent.map(p => ({
-  ...p,                          // <-- сохраняем новые поля!
-  label: p.label,
-  v: Number(p.v) || 0
-}));
+// селекты Chart 5
+const curYearSel = document.querySelector(".js-curYear");
+const curMonthSel = document.querySelector(".js-curMonth");
 
-const maxV = Math.max(1, ...dataConversions.map(p => p.v));
-const yMaxTraffic = Math.ceil(maxV / 10) * 10;          // округление вверх до десятков
-const yTicksTraffic = [
-  Math.round(yMaxTraffic / 3),
-  Math.round((2 * yMaxTraffic) / 3),
-  yMaxTraffic
-];
+// ставим дефолт: реальный текущий месяц/год
+(function setDefaultNowYMForChart5() {
+  const { y, m } = getNowYM();
 
+  if (curYearSel) {
+    const yStr = String(y);
+    const hasYear = Array.from(curYearSel.options || []).some(o => String(o.value) === yStr);
+    if (hasYear) curYearSel.value = yStr;
+  }
+
+  if (curMonthSel) {
+    const mStr = String(m);
+    const hasMonth = Array.from(curMonthSel.options || []).some(o => String(o.value) === mStr);
+    if (hasMonth) curMonthSel.value = mStr;
+  }
+})();
+
+// сборщик для Chart 5: если выбран текущий месяц и есть traffic_current_graph — используем его,
+// иначе берём из allTraffic/allPercent (история)
+function buildChart5Data() {
+  const now = getNowYM();
+  const year = curYearSel?.value ?? String(now.y);
+  const month = curMonthSel?.value ?? String(now.m);
+
+  const isNow = (Number(year) === now.y && Number(month) === now.m);
+
+  if (isNow && dataConversions.length) {
+    // шкала по трафику текущего месяца
+    const maxV = Math.max(1, ...dataConversions.map(p => p.v));
+    const yMax = Math.ceil(maxV / 10) * 10;
+    const ticks = [Math.round(yMax / 3), Math.round((2 * yMax) / 3), yMax];
+
+    return {
+      data: dataConversions,
+      data2: dataConversionsPercent.length ? dataConversionsPercent : dataConversions.map(p => ({ ...p })),
+      yMax,
+      ticks
+    };
+  }
+
+  // любой другой месяц — из общей истории
+  return buildMonthData(year, month, allTraffic, allPercent);
+}
+
+// init Chart 5
+const init5 = buildChart5Data();
 const chart5 = initChart(chartEls[3], {
-  data: dataConversions,
-  data2: dataConversionsPercent,        // <-- второй показатель в тултипе
+  data: init5.data,
+  data2: init5.data2,
   yMin: 0,
-  yMax: yMaxTraffic,
-  yTicks: yTicksTraffic,
+  yMax: init5.yMax,
+  yTicks: init5.ticks,
   seriesName: "Трафик",
   seriesName2: "Процент",
   formatValue: (v) => v.toLocaleString("ru-RU"),
-  formatValue2: (v) => `${v.toFixed(1).replace(".", ",")}%`
+  formatValue2: (v) => `${Number(v).toFixed(1).replace(".", ",")}%`
 });
+
+// update Chart 5
+function updateChart5() {
+  const next = buildChart5Data();
+  chart5.setData(next.data, {
+    data2: next.data2,
+    yMin: 0,
+    yMax: next.yMax,
+    yTicks: next.ticks
+  });
+}
 
 let isSyncing = false;
 
@@ -1928,42 +2011,26 @@ const tbody4 = document.querySelector(".js-tableBody4");
 const tbody5 = document.querySelector(".js-tableBody5");
 
 function getSelectedMonthTraffic() {
-  return buildChart4Data().data; // [{label, v}]
+  return buildChart4Data().data; // месяц из селектов Chart 4
 }
 
-function getCurrentMonthTraffic() {
-  return dataConversions; // [{label, v}] текущий месяц
+function getBaseMonthTraffic() {
+  return buildChart5Data().data; // месяц из селектов Chart 5 (по умолчанию текущий)
 }
 
-/** Таблица 4: строки выбранного месяца, diff = selected vs current */
+/** Таблица 4: выбранный месяц (Chart4) vs базовый месяц (Chart5) */
 function updateTable4() {
   const selected = getSelectedMonthTraffic();
-  const current = getCurrentMonthTraffic();
-  renderTrafficTable(tbody4, selected, current);
+  const base = getBaseMonthTraffic();
+  renderTrafficTable(tbody4, selected, base);
 }
 
-/** Таблица 5: строки текущего месяца, но diff всё равно = selected vs current */
+/** Таблица 5: базовый месяц (Chart5) vs выбранный месяц (Chart4) */
 function updateTable5() {
   const selected = getSelectedMonthTraffic();
-  const current = getCurrentMonthTraffic();
-
-  // базовая отрисовка
-  renderTrafficTable(tbody5, current, current);
-
-  // инвертируем проценты
-  const trs = tbody5.querySelectorAll("tr:not(.week-row)");
-  trs.forEach((tr, i) => {
-    const tdDiff = tr.querySelector(".col-diff");
-    if (!tdDiff) return;
-
-    const selV = selected?.[i]?.v ?? null;
-    const curV = current?.[i]?.v ?? null;
-
-    const basePct = fmtDiffVsCurrentPct(selV, curV);
-    tdDiff.textContent = invertPctString(basePct);
-  });
+  const base = getBaseMonthTraffic();
+  renderTrafficTable(tbody5, base, selected);
 }
-
 
 /* первичная отрисовка */
 updateTable4();
@@ -2037,7 +2104,8 @@ function updateLeads4() {
 
 /* График 5: берём из dataConversionsPercent (traffic_current_graph_percent) */
 function updateLeads5() {
-  const last = pickLastRow(dataConversionsPercent);
+  const built = buildChart5Data();
+  const last = pickLastRow(built.data2);
   renderLeadsTable(leadsBody5, last);
 }
 
@@ -2046,18 +2114,24 @@ updateLeads4();
 updateLeads5();
 
 /* чтобы “Заявки” у графика 4 менялись вместе с месяцем/годом */
-function updateChart4AndTablesAll() {
+function updateAllForBothCards() {
   updateChart4();
+  updateChart5();
+
   updateTable4();
-  updateTable5(); // <-- ДОБАВЬ
+  updateTable5();
+
   updateLeads4();
+  updateLeads5();
 }
 
 yearSel?.removeEventListener("change", updateChart4AndTable);
 monthSel?.removeEventListener("change", updateChart4AndTable);
 
-yearSel?.addEventListener("change", updateChart4AndTablesAll);
-monthSel?.addEventListener("change", updateChart4AndTablesAll);
+yearSel?.addEventListener("change", updateAllForBothCards);
+monthSel?.addEventListener("change", updateAllForBothCards);
+curYearSel?.addEventListener("change", updateAllForBothCards);
+curMonthSel?.addEventListener("change", updateAllForBothCards);
 
 
 function normalizeLabelToDayMonth(label) {
