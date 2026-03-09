@@ -1392,13 +1392,13 @@
     return { setData, setHoverByDayKey, clearHover, getHoverDayKey };
   }
 
-  function initMultiChart(rootEl, cfg) {
+function initMultiChart(rootEl, cfg) {
     const allSeries = cfg.series;
     const labels = allSeries[0].data.map(p => p.label);
 
-    const yMin = cfg.yMin ?? 0;
-    const yMax = cfg.yMax ?? 30;
-    const yTicks = cfg.yTicks ?? [10, 20, 30];
+    let yMin = cfg.yMin ?? 0;
+    let yMax = cfg.yMax ?? 30;
+    let yTicks = cfg.yTicks ?? [10, 20, 30];
 
     const canvas = rootEl.querySelector(".js-canvas");
     const ctx = canvas.getContext("2d");
@@ -1427,6 +1427,60 @@
       return allSeries.filter(s => state.activeNames.has(s.name));
     }
 
+    function roundTick(v) {
+      if (!Number.isFinite(v)) return 0;
+      if (Math.abs(v) >= 100) return Math.round(v);
+      if (Math.abs(v) >= 10) return Math.round(v * 10) / 10;
+      return Math.round(v * 100) / 100;
+    }
+
+    function applyScaleFromVisibleSeries() {
+      const visible = getVisibleSeries();
+
+      if (!visible.length) {
+        yMin = cfg.yMin ?? 0;
+        yMax = cfg.yMax ?? 30;
+        yTicks = cfg.yTicks ?? [10, 20, 30];
+        return;
+      }
+
+      const values = visible.flatMap(s => s.data.map(p => Number(p.v) || 0));
+
+      if (!values.length) {
+        yMin = cfg.yMin ?? 0;
+        yMax = cfg.yMax ?? 30;
+        yTicks = cfg.yTicks ?? [10, 20, 30];
+        return;
+      }
+
+      const minVal = Math.min(...values);
+      const maxVal = Math.max(...values);
+      const avgVal = values.reduce((sum, v) => sum + v, 0) / values.length;
+
+      if (minVal === maxVal) {
+        const pad = minVal === 0 ? 1 : Math.abs(minVal) * 0.1;
+        yMin = minVal - pad;
+        yMax = maxVal + pad;
+        yTicks = [roundTick(yMin), roundTick((yMin + yMax) / 2), roundTick(yMax)];
+        return;
+      }
+
+      const range = maxVal - minVal;
+      const pad = range * 0.08;
+
+      yMin = Math.max(0, minVal - pad);
+      yMax = maxVal + pad;
+
+      const ticks = [roundTick(yMin), roundTick(avgVal), roundTick(yMax)];
+      yTicks = Array.from(new Set(ticks)).sort((a, b) => a - b);
+
+      if (yTicks.length === 1) {
+        yTicks = [roundTick(yMin), roundTick((yMin + yMax) / 2), roundTick(yMax)];
+      } else if (yTicks.length === 2) {
+        yTicks = [yTicks[0], roundTick((yTicks[0] + yTicks[1]) / 2), yTicks[1]];
+      }
+    }
+
     function layout() {
       const w = rootEl.clientWidth;
       const h = rootEl.clientHeight;
@@ -1442,6 +1496,7 @@
     }
 
     function yForValue(v, plot) {
+      if (yMax === yMin) return plot.y + plot.h / 2;
       const t = (v - yMin) / (yMax - yMin);
       return plot.y + plot.h - (t * plot.h);
     }
@@ -1553,6 +1608,8 @@
     }
 
     function draw() {
+      applyScaleFromVisibleSeries();
+
       const { w, h, plot } = layout();
       ctx.clearRect(0, 0, w, h);
       ctx.fillStyle = "#fff";
