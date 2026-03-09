@@ -823,1367 +823,1197 @@
 })();
 </script>
 <script>
-    // ====== Общая функция инициализации графика (каждый график независим) ======
-    function initChart(rootEl, cfg) {
-        const data = cfg.data;
-        let yMin = cfg.yMin ?? 0;
-let yMax = cfg.yMax ?? 6;
-let yTicks = cfg.yTicks ?? [2, 4, 6];
-
-function applyScaleFromCfg() {
-  yMin = cfg.yMin ?? 0;
-  yMax = cfg.yMax ?? 6;
-  yTicks = cfg.yTicks ?? [2, 4, 6];
-}
-
-        const canvas = rootEl.querySelector(".js-canvas");
-        const ctx = canvas.getContext("2d");
-
-        const tip = rootEl.querySelector(".js-tip");
-        const tipDate = rootEl.querySelector(".js-tipDate");
-        const tipVal = rootEl.querySelector(".js-tipVal");
-        const seriesNameEl = rootEl.querySelector(".js-seriesName");
-        if (seriesNameEl && cfg.seriesName) seriesNameEl.textContent = cfg.seriesName;
-
-        // (опционально) вторая строка в тултипе — для второго показателя
-const tipVal2 = rootEl.querySelector(".js-tipVal2");
-
-const extraVal1 = rootEl.querySelector(".js-extraVal1");
-const extraVal2 = rootEl.querySelector(".js-extraVal2");
-const extraVal3 = rootEl.querySelector(".js-extraVal3");
-const extraVal4 = rootEl.querySelector(".js-extraVal4");
-const extraVal5 = rootEl.querySelector(".js-extraVal5");
-
-const seriesNameEl2 = rootEl.querySelector(".js-seriesName2");
-if (seriesNameEl2 && cfg.seriesName2) seriesNameEl2.textContent = cfg.seriesName2;
-
-        const state = {hoverIndex: null};
-
-        function layout() {
-            const w = rootEl.clientWidth;
-            const h = rootEl.clientHeight;
-
-            const pad = {top: 10, right: 42, bottom: 34, left: 10};
-            const plot = {
-                x: pad.left,
-                y: pad.top,
-                w: w - pad.left - pad.right,
-                h: h - pad.top - pad.bottom
-            };
-            return {w, h, pad, plot};
-        }
-
-        function xForIndex(i, plot) {
-            const n = data.length;
-            if (n === 1) return plot.x + plot.w / 2;
-            return plot.x + (i * (plot.w / (n - 1)));
-        }
-
-        function yForValue(v, plot) {
-            const t = (v - yMin) / (yMax - yMin);
-            return plot.y + plot.h - (t * plot.h);
-        }
-
-        function nearestIndex(mx, plot) {
-            const n = data.length;
-            const rel = Math.max(0, Math.min(plot.w, mx - plot.x));
-            const i = Math.round(rel / (plot.w / (n - 1)));
-            return Math.max(0, Math.min(n - 1, i));
-        }
-
-        function drawGrid(plot) {
-            ctx.lineWidth = 1;
-
-            ctx.strokeStyle = "#e3e7ee";
-            ctx.beginPath();
-            ctx.moveTo(plot.x, plot.y + plot.h);
-            ctx.lineTo(plot.x + plot.w, plot.y + plot.h);
-            ctx.stroke();
-
-            ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--grid").trim() || "#eceff3";
-            yTicks.forEach(t => {
-                const y = yForValue(t, plot);
-                ctx.beginPath();
-                ctx.moveTo(plot.x, y);
-                ctx.lineTo(plot.x + plot.w, y);
-                ctx.stroke();
-            });
-
-            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
-            ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
-            ctx.textAlign = "left";
-            ctx.textBaseline = "middle";
-
-            yTicks.forEach(t => {
-                const y = yForValue(t, plot);
-                ctx.fillText(String(t), plot.x + plot.w + 10, y);
-            });
-        }
-
-function drawXAxis(plot) {
-  const marks = buildMarksFromData(data, 4); // 4 метки максимум (или все, если точек мало)
-
-  ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
-  ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
-  ctx.textAlign = "center";
-  ctx.textBaseline = "top";
-
-  marks.forEach(m => {
-    const x = xForIndex(m.i, plot);
-    const lines = String(m.text).split("\n");
-    const y0 = plot.y + plot.h + 10;
-    lines.forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
-  });
-}
-
-
-        function drawLine(plot) {
-            const blue = getComputedStyle(document.documentElement).getPropertyValue("--blue").trim() || "#1a73e8";
-            ctx.strokeStyle = blue;
-            ctx.lineWidth = 2.2;
-            ctx.lineJoin = "round";
-            ctx.lineCap = "round";
-
-            ctx.beginPath();
-            data.forEach((p, i) => {
-                const x = xForIndex(i, plot);
-                const y = yForValue(p.v, plot);
-                if (i === 0) ctx.moveTo(x, y);
-                else ctx.lineTo(x, y);
-            });
-            ctx.stroke();
-        }
-
-        function drawHover(plot) {
-            if (state.hoverIndex == null) return;
-
-            const i = state.hoverIndex;
-            const blue = getComputedStyle(document.documentElement).getPropertyValue("--blue").trim() || "#1a73e8";
-            const x = xForIndex(i, plot);
-            const y = yForValue(data[i].v, plot);
-
-            ctx.strokeStyle = "#d6dbe3";
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(x, plot.y);
-            ctx.lineTo(x, plot.y + plot.h);
-            ctx.stroke();
-
-            ctx.fillStyle = "#fff";
-            ctx.strokeStyle = blue;
-            ctx.lineWidth = 2;
-            ctx.beginPath();
-            ctx.arc(x, y, 5, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.stroke();
-
-            ctx.fillStyle = "rgba(26,115,232,.15)";
-            ctx.beginPath();
-            ctx.arc(x, y, 10, 0, Math.PI * 2);
-            ctx.fill();
-        }
-
-        function draw() {
-            const {w, h, plot} = layout();
-            ctx.clearRect(0, 0, w, h);
-
-            ctx.fillStyle = "#fff";
-            ctx.fillRect(0, 0, w, h);
-
-            drawGrid(plot);
-            drawLine(plot);
-            drawHover(plot);
-            drawXAxis(plot);
-        }
-
-        function showTooltip(i, plot) {
-  const x = xForIndex(i, plot);
-  const y = yForValue(data[i].v, plot);
-
-  tipDate.textContent = data[i].label;
-
-  // основное значение
-  tipVal.textContent = cfg.formatValue ? cfg.formatValue(data[i].v) : String(Math.round(data[i].v));
-
-  // второе значение (если передано и есть DOM-элементы)
-  if (cfg.data2 && tipVal2) {
-    const v2 = cfg.data2[i]?.v;
-    if (v2 != null) {
-      tipVal2.textContent = cfg.formatValue2 ? cfg.formatValue2(v2) : String(Math.round(v2));
-    }
+  function dayKeyFromLabel(label) {
+    const m = String(label).match(/\b(\d{1,2})\b/);
+    return m ? m[1] : null;
   }
 
-  if (cfg.data2 && cfg.data2[i]) {
-  const row = cfg.data2[i];
+  function dayKeyFromLabelSafe(label) {
+    const m = String(label).match(/\b(\d{1,2})\b/);
+    return m ? Number(m[1]) : null;
+  }
 
-  if (extraVal1) extraVal1.textContent = (row["Звонки"] ?? 0).toLocaleString("ru-RU");
-  if (extraVal2) extraVal2.textContent = (row["Звонки с начала месяца"] ?? 0).toLocaleString("ru-RU");
-  if (extraVal3) extraVal3.textContent = (row["Заявки"] ?? 0).toLocaleString("ru-RU");
-  if (extraVal4) extraVal4.textContent = (row["Заявки с начала месяца"] ?? 0).toLocaleString("ru-RU");
-  if (extraVal5) extraVal5.textContent = (row["Общая конверсия"] ?? 0).toLocaleString("ru-RU");
-}
-  const extraRows = rootEl.querySelectorAll(".tip-row.tip-extra");
-const hasExtras = cfg.data2 && cfg.data2[i] && ("Звонки" in cfg.data2[i] || "Заявки" in cfg.data2[i]);
-extraRows.forEach(r => r.style.display = hasExtras ? "" : "none");
+  function ymFromISO(dateStr) {
+    if (!dateStr) return null;
+    const parts = String(dateStr).split("-");
+    if (parts.length < 2) return null;
 
+    const y = Number(parts[0]);
+    const m = Number(parts[1]);
 
-  tip.classList.add("show");
-  tip.setAttribute("aria-hidden", "false");
+    if (!Number.isFinite(y) || !Number.isFinite(m)) return null;
+    return { y, m };
+  }
 
-  tip.style.left = x + "px";
-  tip.style.top = y + "px";
+  function filterByYearMonth(arr, year, month) {
+    const y = Number(year);
+    const m = Number(month);
 
-  const rect = rootEl.getBoundingClientRect();
-  const tipRect = tip.getBoundingClientRect();
-  const pad = 10;
-
-  let left = x;
-  let top = y;
-
-  const minTop = pad + tipRect.height;
-  const maxTop = rect.height - pad;
-
-  left = Math.max(pad + tipRect.width / 2, Math.min(rect.width - pad - tipRect.width / 2, left));
-  top = Math.max(minTop, Math.min(maxTop, top));
-
-  tip.style.left = left + "px";
-  tip.style.top = top + "px";
-}
-
-
-        function hideTooltip() {
-            tip.classList.remove("show");
-            tip.setAttribute("aria-hidden", "true");
-        }
-
-        function onMove(e) {
-            const {plot} = layout();
-            const r = rootEl.getBoundingClientRect();
-            const mx = e.clientX - r.left;
-            const my = e.clientY - r.top;
-
-            const inside =
-                mx >= plot.x && mx <= plot.x + plot.w &&
-                my >= plot.y && my <= plot.y + plot.h;
-
-            if (!inside) {
-                state.hoverIndex = null;
-                hideTooltip();
-                draw();
-                return;
-            }
-
-            const i = nearestIndex(mx, plot);
-            state.hoverIndex = i;
-            showTooltip(i, plot);
-            draw();
-        }
-
-        function onLeave() {
-            state.hoverIndex = null;
-            hideTooltip();
-            draw();
-        }
-
-        function resize() {
-            const rect = rootEl.getBoundingClientRect();
-            const dpr = Math.max(1, window.devicePixelRatio || 1);
-
-            canvas.width = Math.floor(rect.width * dpr);
-            canvas.height = Math.floor(rect.height * dpr);
-            canvas.style.width = rect.width + "px";
-            canvas.style.height = rect.height + "px";
-
-            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-            draw();
-        }
-
-        rootEl.addEventListener("mousemove", onMove);
-        rootEl.addEventListener("mouseleave", onLeave);
-        window.addEventListener("resize", resize);
-
-        function setData(newData, overrides = {}) {
-  cfg = { ...cfg, ...overrides };
-  applyScaleFromCfg(); // <-- ВОТ ЭТО делает yMax динамическим
-
-  data.length = 0;
-  newData.forEach(x => data.push(x));
-
-  state.hoverIndex = null;
-  hideTooltip();
-  draw();
-}
-
-// вернуть API наружу
-applyScaleFromCfg();
-resize();
-function findIndexByDayKey(dayKey) {
-  if (!dayKey) return null;
-  const idx = data.findIndex(p => dayKeyFromLabel(p.label) === String(dayKey));
-  return idx >= 0 ? idx : null;
-}
-
-function setHoverIndex(i) {
-  const { plot } = layout();
-  state.hoverIndex = i;
-  showTooltip(i, plot);
-  draw();
-}
-
-function clearHover() {
-  state.hoverIndex = null;
-  hideTooltip();
-  draw();
-}
-
-// Публичный метод: подсветить по dayKey (числу дня)
-function setHoverByDayKey(dayKey) {
-  const i = findIndexByDayKey(dayKey);
-  if (i == null) return false;
-  setHoverIndex(i);
-  return true;
-}
-
-// Публичный метод: получить dayKey текущего hover
-function getHoverDayKey() {
-  if (state.hoverIndex == null) return null;
-  return dayKeyFromLabel(data[state.hoverIndex]?.label);
-}
-
-return { setData, setHoverByDayKey, clearHover, getHoverDayKey };
-    }
-
-    function dayKeyFromLabel(label) {
-  // "ср 4 фев." -> "4"
-  const m = String(label).match(/\b(\d{1,2})\b/);
-  return m ? m[1] : null;
-}
-
-
-    // ====== Данные для Графика 1: среднее время (пример) ======
-    const duration_graph = {{ duration_graph | tojson }};
-    const dataTime = duration_graph;
-
-    // ====== Данные для Графика 2: клики (независимо от первого) ======
-    const clicks_graph = {{ clicks_graph | tojson }};
-    const dataClicks = clicks_graph;
-    const dataClicksImpressions = dataClicks.map(p => ({
-  label: p.label,
-  v:  p.imp ?? 0
-}));
-
-    // Инициализируем оба графика
-    const chartEls = document.querySelectorAll(".js-chart");
-
-    /* Chart 1 */
-    const duration_graph_points = {{ duration_graph_points | tojson }};
-    initChart(chartEls[0], {
-        data: dataTime,
-        yMin: duration_graph_points[0],
-        yMax: duration_graph_points[2],
-        yTicks: duration_graph_points,
-        seriesName: "Среднее время",
-        formatValue: (v) => v.toFixed(1)
+    return arr.filter(p => {
+      const ym = ymFromISO(p.date);
+      return ym && ym.y === y && ym.m === m;
     });
-
-    /* Chart 2 */
-    const clicks_graph_points = {{ clicks_graph_points | tojson }};
-    initChart(chartEls[1], {
-  data: dataClicks,
-  data2: dataClicksImpressions,      // <-- второе значение в тултипе
-  yMin: clicks_graph_points[0],
-  yMax: clicks_graph_points[2],
-  yTicks: clicks_graph_points,
-  seriesName: "Клики",
-  seriesName2: "Показы",             // <-- подпись второй строки
-  formatValue: (v) => String(Math.round(v)),
-  formatValue2: (v) => v.toLocaleString("ru-RU")
-});
-
-    /* ==== Chart 4 (Показы) — независимые данные ==== */
-/* ==== Chart 4 (Показы) — независимые данные ==== */
-const traffic_all_graph = {{ (traffic_all_graph or []) | tojson }};
-const traffic_all_graph_percent = {{ (traffic_all_graph_percent or []) | tojson }};
-
-// Надёжный парсинг "YYYY-MM-DD" без таймзоны
-function ymFromISO(dateStr) {
-  if (!dateStr) return null;
-  const parts = String(dateStr).split("-");
-  if (parts.length < 2) return null;
-  const y = Number(parts[0]);
-  const m = Number(parts[1]);
-  if (!Number.isFinite(y) || !Number.isFinite(m)) return null;
-  return { y, m };
-}
-
-function filterByYearMonth(arr, year, month) {
-  const y = Number(year);
-  const m = Number(month);
-  return arr.filter(p => {
-    const ym = ymFromISO(p.date);
-    return ym && ym.y === y && ym.m === m;
-  });
-}
-
-// 0) Текущие год/месяц (локально)
-function getCurrentYM() {
-  const now = new Date();
-  let y = now.getFullYear();
-  let m = now.getMonth(); // уже предыдущий месяц, потому что getMonth() = 0..11
-
-  if (m === 0) {   // если сейчас январь
-    m = 12;        // берем декабрь
-    y -= 1;        // прошлого года
   }
 
-  return { y, m }; // m: 1..12
-}
+  function getCurrentYM() {
+    const now = new Date();
+    let y = now.getFullYear();
+    let m = now.getMonth();
 
-// 1) Нормализуем данные
-const allTraffic = traffic_all_graph.map(p => ({
-  date: p.date,
-  label: p.label,
-  v: Number(p.v) || 0
-}));
+    if (m === 0) {
+      m = 12;
+      y -= 1;
+    }
 
-const allPercent = traffic_all_graph_percent.map(p => ({
-  ...p,                          // сохраняем новые поля!
-  date: p.date,
-  label: p.label,
-  v: Number(p.v) || 0
-}));
-
-const yearSel = document.querySelector(".js-imprYear");
-const monthSel = document.querySelector(".js-imprMonth");
-
-// 1.5) Поставим селекты на текущий месяц/год (если они есть и в них есть такие опции)
-(function setDefaultYM() {
-  const { y, m } = getCurrentYM();
-
-  if (yearSel) {
-    const yStr = String(y);
-    const hasYear = Array.from(yearSel.options || []).some(o => String(o.value) === yStr);
-    if (hasYear) yearSel.value = yStr;
+    return { y, m };
   }
 
-  if (monthSel) {
-    const mStr = String(m); // у вас месяц хранится как "2", "11" и т.д.
-    const hasMonth = Array.from(monthSel.options || []).some(o => String(o.value) === mStr);
-    if (hasMonth) monthSel.value = mStr;
-  }
-})();
-
-// 2) Строим данные для выбранного месяца
-function buildChart4Data() {
-  const cur = getCurrentYM(); // у тебя это "предыдущий месяц" — оставляем как было
-  const year = yearSel?.value ?? String(cur.y);
-  const month = monthSel?.value ?? String(cur.m);
-
-  return buildMonthData(year, month, allTraffic, allPercent);
-}
-
-// 3) init один раз
-const init4 = buildChart4Data();
-const chart4 = initChart(chartEls[2], {
-  data: init4.data,
-  data2: init4.data2,
-  yMin: 0,
-  yMax: init4.yMax,
-  yTicks: init4.ticks,
-  seriesName: "Трафик",
-  seriesName2: "Процент",
-  formatValue: (v) => v.toLocaleString("ru-RU"),
-  formatValue2: (v) => `${Number(v).toFixed(1).replace(".", ",")}%`
-});
-
-// 4) update по селектам
-function updateChart4() {
-  const next = buildChart4Data();
-  chart4.setData(next.data, {
-    data2: next.data2,
-    yMin: 0,
-    yMax: next.yMax,
-    yTicks: next.ticks
-  });
-}
-
-yearSel?.addEventListener("change", updateChart4);
-monthSel?.addEventListener("change", updateChart4);
-
-    /* ==== Chart 5 (Конверсии) — независимые данные ==== */
-
-    function getNowYM() {
-  const now = new Date();
-  return { y: now.getFullYear(), m: now.getMonth() + 1 }; // m: 1..12
-}
-
-// Универсальная сборка данных за месяц (трафик + percent с доп. полями)
-function buildMonthData(year, month, trafficArr, percentArr) {
-  const trafficMonth = filterByYearMonth(trafficArr, year, month);
-  const percentMonth = filterByYearMonth(percentArr, year, month);
-
-  const n = Math.min(trafficMonth.length, percentMonth.length);
-
-  if (!n) {
-    return {
-      data: [{ label: "нет данных", v: 0 }],
-      data2: [{ label: "нет данных", v: 0 }],
-      yMax: 10,
-      ticks: [3, 7, 10]
-    };
+  function getNowYM() {
+    const now = new Date();
+    return { y: now.getFullYear(), m: now.getMonth() + 1 };
   }
 
-  const data = trafficMonth.slice(0, n).map(p => ({ label: p.label, v: Number(p.v) || 0 }));
-  const data2 = percentMonth.slice(0, n).map(p => ({
-    ...p,                       // сохраняем Звонки/Заявки/...
-    label: p.label,
-    v: Number(p.v) || 0
-  }));
+  function normalizeLabelToDayMonth(label) {
+    const s = String(label || "").toLowerCase();
+    const mDay = s.match(/\b(\d{1,2})\b/);
+    const day = mDay ? mDay[1] : "";
 
-  const maxV = Math.max(1, ...data.map(p => p.v));
-  const yMax = Math.ceil(maxV / 10) * 10;
-  const ticks = [Math.round(yMax / 3), Math.round((2 * yMax) / 3), yMax];
+    const months = ["янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"];
+    let mon = "";
 
-  return { data, data2, yMax, ticks };
-}
+    for (const mm of months) {
+      if (s.includes(mm)) {
+        mon = mm;
+        break;
+      }
+    }
 
-/* ==== Chart 5 (Трафик) — с выбором месяца, по умолчанию текущий ==== */
-const traffic_current_graph = {{ traffic_current_graph | tojson }};
-const traffic_current_graph_percent = {{ traffic_current_graph_percent | tojson }};
+    if (!mon) {
+      const mMon = s.match(/\b(янв\.?|фев\.?|мар\.?|апр\.?|мая?|июн\.?|июл\.?|авг\.?|сен\.?|окт\.?|ноя\.?|дек\.?)\b/);
+      mon = mMon ? mMon[1].replace(".", "") : "";
+    }
 
-// нормализуем "текущий месяц" (как запасной источник, если вдруг allTraffic не содержит текущий месяц)
-const dataConversions = (traffic_current_graph || []).map(p => ({
-  label: p.label,
-  v: Number(p.v) || 0
-}));
-const dataConversionsPercent = (traffic_current_graph_percent || []).map(p => ({
-  ...p,
-  label: p.label,
-  v: Number(p.v) || 0
-}));
-
-// селекты Chart 5
-const curYearSel = document.querySelector(".js-curYear");
-const curMonthSel = document.querySelector(".js-curMonth");
-
-// ставим дефолт: реальный текущий месяц/год
-(function setDefaultNowYMForChart5() {
-  const { y, m } = getNowYM();
-
-  if (curYearSel) {
-    const yStr = String(y);
-    const hasYear = Array.from(curYearSel.options || []).some(o => String(o.value) === yStr);
-    if (hasYear) curYearSel.value = yStr;
+    if (!day && !mon) return String(label || "");
+    return `${day} ${mon}`.trim();
   }
 
-  if (curMonthSel) {
-    const mStr = String(m);
-    const hasMonth = Array.from(curMonthSel.options || []).some(o => String(o.value) === mStr);
-    if (hasMonth) curMonthSel.value = mStr;
+  function buildMarksFromData(data, maxMarks = 4) {
+    const n = data.length;
+    if (!n) return [];
+
+    if (n <= maxMarks) {
+      return data.map((p, i) => ({
+        i,
+        text: normalizeLabelToDayMonth(p.label).replace(" ", "\n")
+      }));
+    }
+
+    const i0 = 0;
+    const i1 = Math.round((n - 1) / 3);
+    const i2 = Math.round((2 * (n - 1)) / 3);
+    const i3 = n - 1;
+
+    const idxs = Array.from(new Set([i0, i1, i2, i3])).sort((a, b) => a - b);
+
+    return idxs.map(i => ({
+      i,
+      text: normalizeLabelToDayMonth(data[i].label).replace(" ", "\n")
+    }));
   }
-})();
 
-// сборщик для Chart 5: если выбран текущий месяц и есть traffic_current_graph — используем его,
-// иначе берём из allTraffic/allPercent (история)
-function buildChart5Data() {
-  const now = getNowYM();
-  const year = curYearSel?.value ?? String(now.y);
-  const month = curMonthSel?.value ?? String(now.m);
+  function fmtDeltaPct(curr, prev) {
+    if (prev == null || prev === 0) return "";
+    const pct = ((curr - prev) / prev) * 100;
+    const sign = pct > 0 ? "+" : "";
+    return `${sign}${pct.toFixed(1).replace(".", ",")}%`;
+  }
 
-  const isNow = (Number(year) === now.y && Number(month) === now.m);
+  function fmtDiffVsCurrentPct(selectedDayVal, currentDayVal) {
+    if (currentDayVal == null || Number(currentDayVal) === 0) return "—";
+    const pct = ((Number(selectedDayVal) - Number(currentDayVal)) / Number(currentDayVal)) * 100;
+    const sign = pct > 0 ? "+" : "";
+    return `${sign}${pct.toFixed(1).replace(".", ",")}%`;
+  }
 
-  if (isNow && dataConversions.length) {
-    // шкала по трафику текущего месяца
-    const maxV = Math.max(1, ...dataConversions.map(p => p.v));
+  function pickLastRow(arr) {
+    if (!Array.isArray(arr) || !arr.length) return null;
+    for (let i = arr.length - 1; i >= 0; i--) {
+      if (arr[i]) return arr[i];
+    }
+    return null;
+  }
+
+  function fmtAny(v) {
+    if (v == null) return "—";
+    if (typeof v === "number") return v.toLocaleString("ru-RU");
+    return String(v);
+  }
+
+  function buildMonthData(year, month, trafficArr, percentArr) {
+    const trafficMonth = filterByYearMonth(trafficArr, year, month);
+    const percentMonth = filterByYearMonth(percentArr, year, month);
+    const n = Math.min(trafficMonth.length, percentMonth.length);
+
+    if (!n) {
+      return {
+        data: [{ label: "нет данных", v: 0 }],
+        data2: [{ label: "нет данных", v: 0 }],
+        yMax: 10,
+        ticks: [3, 7, 10]
+      };
+    }
+
+    const data = trafficMonth.slice(0, n).map(p => ({
+      label: p.label,
+      v: Number(p.v) || 0
+    }));
+
+    const data2 = percentMonth.slice(0, n).map(p => ({
+      ...p,
+      label: p.label,
+      v: Number(p.v) || 0
+    }));
+
+    const maxV = Math.max(1, ...data.map(p => p.v));
     const yMax = Math.ceil(maxV / 10) * 10;
     const ticks = [Math.round(yMax / 3), Math.round((2 * yMax) / 3), yMax];
 
-    return {
-      data: dataConversions,
-      data2: dataConversionsPercent.length ? dataConversionsPercent : dataConversions.map(p => ({ ...p })),
-      yMax,
-      ticks
-    };
+    return { data, data2, yMax, ticks };
   }
 
-  // любой другой месяц — из общей истории
-  return buildMonthData(year, month, allTraffic, allPercent);
-}
+  function renderTrafficTable(tbodyEl, rowsSelected, rowsCurrent) {
+    if (!tbodyEl) return;
+    tbodyEl.innerHTML = "";
 
-// init Chart 5
-const init5 = buildChart5Data();
-const chart5 = initChart(chartEls[3], {
-  data: init5.data,
-  data2: init5.data2,
-  yMin: 0,
-  yMax: init5.yMax,
-  yTicks: init5.ticks,
-  seriesName: "Трафик",
-  seriesName2: "Процент",
-  formatValue: (v) => v.toLocaleString("ru-RU"),
-  formatValue2: (v) => `${Number(v).toFixed(1).replace(".", ",")}%`
-});
+    const maxWeeks = 3;
+    let totalSum = 0;
 
-// update Chart 5
-function updateChart5() {
-  const next = buildChart5Data();
-  chart5.setData(next.data, {
-    data2: next.data2,
-    yMin: 0,
-    yMax: next.yMax,
-    yTicks: next.ticks
-  });
-}
-
-let isSyncing = false;
-
-function linkHovers(a, b) {
-  const elA = a.rootEl;
-  const elB = b.rootEl;
-}
-
-// наведение на A -> подсветить B
-function syncFromTo(fromChart, toChart) {
-  if (isSyncing) return;
-  const dayKey = fromChart.getHoverDayKey?.();
-  if (!dayKey) return;
-
-  isSyncing = true;
-  toChart.setHoverByDayKey?.(dayKey);
-  isSyncing = false;
-}
-
-// уход с A -> убрать hover с B
-function clearOther(toChart) {
-  if (isSyncing) return;
-  isSyncing = true;
-  toChart.clearHover?.();
-  isSyncing = false;
-}
-
-// вешаем слушатели на DOM контейнеры графиков
-const el4 = chartEls[2]; // 4-й график
-const el5 = chartEls[3]; // 5-й график
-
-el4.addEventListener("mousemove", () => syncFromTo(chart4, chart5));
-el5.addEventListener("mousemove", () => syncFromTo(chart5, chart4));
-
-el4.addEventListener("mouseleave", () => clearOther(chart5));
-el5.addEventListener("mouseleave", () => clearOther(chart4));
-
-    // ====== Твой existing topbar код (оставь как есть) ======
-    const brandStrip = document.getElementById("brandStrip");
-
-    brandStrip.addEventListener("wheel", (e) => {
-        const absY = Math.abs(e.deltaY);
-        const absX = Math.abs(e.deltaX);
-        if (absX > absY) return;
-        e.preventDefault();
-        brandStrip.scrollLeft += e.deltaY * 1.15;
-    }, {passive: false});
-
-function shiftDayInText(text, delta = 1) {
-  const s = String(text);
-
-  // ищем первое число 1-2 цифры (в твоих метках это день)
-  const m = s.match(/\b(\d{1,2})\b/);
-  if (!m) return s;
-
-  const raw = m[1];
-  const n = Number(raw);
-  if (!Number.isFinite(n)) return s;
-
-  let next = n + delta;
-
-  // сохраним ведущий ноль, если был "01"
-  const repl = (raw.length === 2) ? String(next).padStart(2, "0") : String(next);
-
-  return s.replace(m[1], repl);
-}
-
-    function initMultiChart(rootEl, cfg) {
-  const allSeries = cfg.series; // полный список серий
-  const labels = allSeries[0].data.map(p => p.label);
-
-  const yMin = cfg.yMin ?? 0;
-  const yMax = cfg.yMax ?? 30;
-  const yTicks = cfg.yTicks ?? [10, 20, 30];
-
-  const canvas = rootEl.querySelector(".js-canvas");
-  const ctx = canvas.getContext("2d");
-
-  const tip = rootEl.querySelector(".js-tip");
-  const tipDate = rootEl.querySelector(".js-tipDate");
-  const tipVals = rootEl.querySelectorAll(".js-tipVal");
-  const seriesNameEls = rootEl.querySelectorAll(".js-seriesName");
-  const dotEls = rootEl.querySelectorAll(".js-dot");
-
-  // строка тултипа для каждой серии (удобно прятать целиком)
-  const tipRows = Array.from(tipVals).map(v => v.closest(".tip-row")).filter(Boolean);
-
-  // назначим имена/цвета в тултипе (один раз)
-  allSeries.forEach((s, i) => {
-    if (seriesNameEls[i]) seriesNameEls[i].textContent = s.name;
-    if (dotEls[i]) {
-      dotEls[i].style.background = s.color;
-      dotEls[i].style.boxShadow = `0 0 0 3px ${s.glow}`;
+    function sumRange(from, to) {
+      let s = 0;
+      for (let k = from; k <= to; k++) s += Number(rowsSelected[k]?.v || 0);
+      return s;
     }
-  });
 
-  const state = {
-    hoverIndex: null,
-    activeNames: new Set(allSeries.map(s => s.name)) // по умолчанию все видимы
-  };
+    for (let i = 0; i < rowsSelected.length; i++) {
+      const r = rowsSelected[i];
+      const day = dayKeyFromLabelSafe(r.label) ?? (i + 1);
+      const curr = Number(r.v || 0);
+      totalSum += curr;
 
-  function getVisibleSeries() {
-    return allSeries.filter(s => state.activeNames.has(s.name));
+      const prev = i > 0 ? Number(rowsSelected[i - 1].v || 0) : null;
+      const delta = fmtDeltaPct(curr, prev);
+      const currentDayVal = rowsCurrent?.[i]?.v ?? null;
+      const diffPct = fmtDiffVsCurrentPct(curr, currentDayVal);
+
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${day}</td>
+        <td class="col-traffic">${curr.toLocaleString("ru-RU")}</td>
+        <td class="col-delta">${delta}</td>
+        <td class="col-diff">${diffPct}</td>
+      `;
+      tbodyEl.appendChild(tr);
+
+      const isEndOfWeek = (i + 1) % 7 === 0;
+      const weekNum = (i + 1) / 7;
+
+      if (isEndOfWeek && weekNum <= maxWeeks) {
+        const weekSum = sumRange(0, i);
+
+        const w = document.createElement("tr");
+        w.className = "week-row";
+        w.innerHTML = `
+          <td>Неделя ${weekNum}</td>
+          <td class="col-traffic">${weekSum.toLocaleString("ru-RU")}</td>
+          <td class="col-delta"></td>
+          <td class="col-diff"></td>
+        `;
+        tbodyEl.appendChild(w);
+      }
+    }
+
+    const totalRow = document.createElement("tr");
+    totalRow.className = "week-row";
+    totalRow.innerHTML = `
+      <td>Итого</td>
+      <td class="col-traffic">${totalSum.toLocaleString("ru-RU")}</td>
+      <td class="col-delta"></td>
+      <td class="col-diff"></td>
+    `;
+    tbodyEl.appendChild(totalRow);
   }
 
-  function layout() {
-    const w = rootEl.clientWidth;
-    const h = rootEl.clientHeight;
-    const pad = { top: 10, right: 42, bottom: 34, left: 10 };
-    const plot = { x: pad.left, y: pad.top, w: w - pad.left - pad.right, h: h - pad.top - pad.bottom };
-    return { w, h, plot };
+  function renderLeadsTable(tbodyEl, rowObj) {
+    if (!tbodyEl) return;
+    tbodyEl.innerHTML = "";
+
+    const calls = rowObj?.["Звонки"];
+    const callsMtd = rowObj?.["Звонки с начала месяца"];
+    const leads = rowObj?.["Заявки"];
+    const leadsMtd = rowObj?.["Заявки с начала месяца"];
+    const conv = rowObj?.["Общая конверсия"];
+
+    tbodyEl.innerHTML = `
+      <tr>
+        <td>Звонки</td>
+        <td>${fmtAny(callsMtd ?? calls)}</td>
+      </tr>
+      <tr>
+        <td>Заявки</td>
+        <td>${fmtAny(leadsMtd ?? leads)}</td>
+      </tr>
+      <tr class="week-row">
+        <td>Итого</td>
+        <td>${fmtAny(conv)}</td>
+      </tr>
+    `;
   }
 
-  function xForIndex(i, plot) {
-    const n = labels.length;
-    if (n === 1) return plot.x + plot.w / 2;
-    return plot.x + (i * (plot.w / (n - 1)));
-  }
+  function initChart(rootEl, cfg) {
+    const data = cfg.data;
+    let yMin = cfg.yMin ?? 0;
+    let yMax = cfg.yMax ?? 6;
+    let yTicks = cfg.yTicks ?? [2, 4, 6];
 
-  function yForValue(v, plot) {
-    const t = (v - yMin) / (yMax - yMin);
-    return plot.y + plot.h - (t * plot.h);
-  }
+    function applyScaleFromCfg() {
+      yMin = cfg.yMin ?? 0;
+      yMax = cfg.yMax ?? 6;
+      yTicks = cfg.yTicks ?? [2, 4, 6];
+    }
 
-  function nearestIndex(mx, plot) {
-    const n = labels.length;
-    const rel = Math.max(0, Math.min(plot.w, mx - plot.x));
-    const i = Math.round(rel / (plot.w / (n - 1)));
-    return Math.max(0, Math.min(n - 1, i));
-  }
+    const canvas = rootEl.querySelector(".js-canvas");
+    const ctx = canvas.getContext("2d");
 
-  function drawGrid(plot) {
-    ctx.lineWidth = 1;
+    const tip = rootEl.querySelector(".js-tip");
+    const tipDate = rootEl.querySelector(".js-tipDate");
+    const tipVal = rootEl.querySelector(".js-tipVal");
+    const tipVal2 = rootEl.querySelector(".js-tipVal2");
 
-    ctx.strokeStyle = "#e3e7ee";
-    ctx.beginPath();
-    ctx.moveTo(plot.x, plot.y + plot.h);
-    ctx.lineTo(plot.x + plot.w, plot.y + plot.h);
-    ctx.stroke();
+    const extraVal1 = rootEl.querySelector(".js-extraVal1");
+    const extraVal2 = rootEl.querySelector(".js-extraVal2");
+    const extraVal3 = rootEl.querySelector(".js-extraVal3");
+    const extraVal4 = rootEl.querySelector(".js-extraVal4");
+    const extraVal5 = rootEl.querySelector(".js-extraVal5");
 
-    ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--grid").trim() || "#eceff3";
-    yTicks.forEach(t => {
-      const y = yForValue(t, plot);
+    const seriesNameEl = rootEl.querySelector(".js-seriesName");
+    const seriesNameEl2 = rootEl.querySelector(".js-seriesName2");
+
+    if (seriesNameEl && cfg.seriesName) seriesNameEl.textContent = cfg.seriesName;
+    if (seriesNameEl2 && cfg.seriesName2) seriesNameEl2.textContent = cfg.seriesName2;
+
+    const state = { hoverIndex: null };
+
+    function layout() {
+      const w = rootEl.clientWidth;
+      const h = rootEl.clientHeight;
+      const pad = { top: 10, right: 42, bottom: 34, left: 10 };
+
+      return {
+        w,
+        h,
+        pad,
+        plot: {
+          x: pad.left,
+          y: pad.top,
+          w: w - pad.left - pad.right,
+          h: h - pad.top - pad.bottom
+        }
+      };
+    }
+
+    function xForIndex(i, plot) {
+      const n = data.length;
+      if (n === 1) return plot.x + plot.w / 2;
+      return plot.x + (i * (plot.w / (n - 1)));
+    }
+
+    function yForValue(v, plot) {
+      const t = (v - yMin) / (yMax - yMin);
+      return plot.y + plot.h - (t * plot.h);
+    }
+
+    function nearestIndex(mx, plot) {
+      const n = data.length;
+      const rel = Math.max(0, Math.min(plot.w, mx - plot.x));
+      const i = Math.round(rel / (plot.w / (n - 1)));
+      return Math.max(0, Math.min(n - 1, i));
+    }
+
+    function drawGrid(plot) {
+      ctx.lineWidth = 1;
+
+      ctx.strokeStyle = "#e3e7ee";
       ctx.beginPath();
-      ctx.moveTo(plot.x, y);
-      ctx.lineTo(plot.x + plot.w, y);
+      ctx.moveTo(plot.x, plot.y + plot.h);
+      ctx.lineTo(plot.x + plot.w, plot.y + plot.h);
       ctx.stroke();
-    });
 
-    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
-    ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
-    ctx.textAlign = "left";
-    ctx.textBaseline = "middle";
-    yTicks.forEach(t => {
-      const y = yForValue(t, plot);
-      ctx.fillText(String(t), plot.x + plot.w + 10, y);
-    });
-  }
+      ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--grid").trim() || "#eceff3";
+      yTicks.forEach(t => {
+        const y = yForValue(t, plot);
+        ctx.beginPath();
+        ctx.moveTo(plot.x, y);
+        ctx.lineTo(plot.x + plot.w, y);
+        ctx.stroke();
+      });
 
-  function drawXAxis(plot) {
-  const n = labels.length;
-  if (!n) return;
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+      ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+      ctx.textAlign = "left";
+      ctx.textBaseline = "middle";
 
-  // строим временный data-like массив для buildMarksFromData
-  const pseudo = labels.map(l => ({ label: l }));
-  const marks = buildMarksFromData(pseudo, 4);
+      yTicks.forEach(t => {
+        const y = yForValue(t, plot);
+        ctx.fillText(String(t), plot.x + plot.w + 10, y);
+      });
+    }
 
-  ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
-  ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
-  ctx.textAlign = "center";
-  ctx.textBaseline = "top";
+    function drawXAxis(plot) {
+      const marks = buildMarksFromData(data, 4);
 
-  marks.forEach(m => {
-    const x = xForIndex(m.i, plot);
-    const y0 = plot.y + plot.h + 10;
-    String(m.text).split("\n").forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
-  });
-}
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+      ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "top";
 
-  function drawSeries(plot) {
-    const visible = getVisibleSeries();
-    visible.forEach(s => {
-      ctx.strokeStyle = s.color;
-      ctx.lineWidth = 2.1;
+      marks.forEach(m => {
+        const x = xForIndex(m.i, plot);
+        const lines = String(m.text).split("\n");
+        const y0 = plot.y + plot.h + 10;
+        lines.forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
+      });
+    }
+
+    function drawLine(plot) {
+      const blue = getComputedStyle(document.documentElement).getPropertyValue("--blue").trim() || "#1a73e8";
+      ctx.strokeStyle = blue;
+      ctx.lineWidth = 2.2;
       ctx.lineJoin = "round";
       ctx.lineCap = "round";
 
       ctx.beginPath();
-      s.data.forEach((p, i) => {
+      data.forEach((p, i) => {
         const x = xForIndex(i, plot);
         const y = yForValue(p.v, plot);
         if (i === 0) ctx.moveTo(x, y);
         else ctx.lineTo(x, y);
       });
       ctx.stroke();
-    });
-  }
+    }
 
-  function drawHover(plot) {
-    if (state.hoverIndex == null) return;
+    function drawHover(plot) {
+      if (state.hoverIndex == null) return;
 
-    const visible = getVisibleSeries();
-    if (!visible.length) return;
+      const i = state.hoverIndex;
+      const blue = getComputedStyle(document.documentElement).getPropertyValue("--blue").trim() || "#1a73e8";
+      const x = xForIndex(i, plot);
+      const y = yForValue(data[i].v, plot);
 
-    const i = state.hoverIndex;
-    const x = xForIndex(i, plot);
-
-    // вертикальная линия
-    ctx.strokeStyle = "#d6dbe3";
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(x, plot.y);
-    ctx.lineTo(x, plot.y + plot.h);
-    ctx.stroke();
-
-    // маркеры только видимых серий
-    visible.forEach(s => {
-      const y = yForValue(s.data[i].v, plot);
+      ctx.strokeStyle = "#d6dbe3";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x, plot.y);
+      ctx.lineTo(x, plot.y + plot.h);
+      ctx.stroke();
 
       ctx.fillStyle = "#fff";
-      ctx.strokeStyle = s.color;
+      ctx.strokeStyle = blue;
       ctx.lineWidth = 2;
       ctx.beginPath();
-      ctx.arc(x, y, 4.5, 0, Math.PI * 2);
+      ctx.arc(x, y, 5, 0, Math.PI * 2);
       ctx.fill();
       ctx.stroke();
 
-      ctx.fillStyle = s.glow;
+      ctx.fillStyle = "rgba(26,115,232,.15)";
       ctx.beginPath();
-      ctx.arc(x, y, 9, 0, Math.PI * 2);
+      ctx.arc(x, y, 10, 0, Math.PI * 2);
       ctx.fill();
-    });
-  }
-
-  function draw() {
-    const { w, h, plot } = layout();
-    ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = "#fff";
-    ctx.fillRect(0, 0, w, h);
-
-    drawGrid(plot);
-    drawSeries(plot);
-    drawHover(plot);
-    drawXAxis(plot);
-  }
-
-  function updateTooltipRowsVisibility() {
-    // прячем строки тултипа для НЕ активных серий
-    allSeries.forEach((s, idx) => {
-      const row = tipRows[idx];
-      if (!row) return;
-      row.style.display = state.activeNames.has(s.name) ? "" : "none";
-    });
-  }
-
-  function showTooltip(i, plot) {
-    const visible = getVisibleSeries();
-    if (!visible.length) {
-      hideTooltip();
-      return;
     }
 
-    tipDate.textContent = labels[i];
+    function draw() {
+      const { w, h, plot } = layout();
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#fff";
+      ctx.fillRect(0, 0, w, h);
 
-    // обновляем значения в тултипе, но выводим/прячем строками
-    allSeries.forEach((s, idx) => {
-      const v = s.data[i].v;
-      if (tipVals[idx]) {
-        tipVals[idx].textContent = cfg.formatValue ? cfg.formatValue(v, idx) : String(Math.round(v));
+      drawGrid(plot);
+      drawLine(plot);
+      drawHover(plot);
+      drawXAxis(plot);
+    }
+
+    function showTooltip(i, plot) {
+      const x = xForIndex(i, plot);
+      const y = yForValue(data[i].v, plot);
+
+      tipDate.textContent = data[i].label;
+      tipVal.textContent = cfg.formatValue ? cfg.formatValue(data[i].v) : String(Math.round(data[i].v));
+
+      if (cfg.data2 && tipVal2) {
+        const v2 = cfg.data2[i]?.v;
+        if (v2 != null) {
+          tipVal2.textContent = cfg.formatValue2 ? cfg.formatValue2(v2) : String(Math.round(v2));
+        }
       }
-    });
 
-    updateTooltipRowsVisibility();
+      if (cfg.data2 && cfg.data2[i]) {
+        const row = cfg.data2[i];
+        if (extraVal1) extraVal1.textContent = (row["Звонки"] ?? 0).toLocaleString("ru-RU");
+        if (extraVal2) extraVal2.textContent = (row["Звонки с начала месяца"] ?? 0).toLocaleString("ru-RU");
+        if (extraVal3) extraVal3.textContent = (row["Заявки"] ?? 0).toLocaleString("ru-RU");
+        if (extraVal4) extraVal4.textContent = (row["Заявки с начала месяца"] ?? 0).toLocaleString("ru-RU");
+        if (extraVal5) extraVal5.textContent = (row["Общая конверсия"] ?? 0).toLocaleString("ru-RU");
+      }
 
-    const x = xForIndex(i, plot);
-    const avgY = visible.reduce((acc, s) => acc + yForValue(s.data[i].v, plot), 0) / visible.length;
+      const extraRows = rootEl.querySelectorAll(".tip-row.tip-extra");
+      const hasExtras = cfg.data2 && cfg.data2[i] && ("Звонки" in cfg.data2[i] || "Заявки" in cfg.data2[i]);
+      extraRows.forEach(r => r.style.display = hasExtras ? "" : "none");
 
-    tip.classList.add("show");
-    tip.setAttribute("aria-hidden", "false");
-    tip.style.left = x + "px";
-    tip.style.top = avgY + "px";
+      tip.classList.add("show");
+      tip.setAttribute("aria-hidden", "false");
 
-    const rect = rootEl.getBoundingClientRect();
-    const tipRect = tip.getBoundingClientRect();
-    const pad = 10;
+      tip.style.left = x + "px";
+      tip.style.top = y + "px";
 
-    let left = x;
-    let top = avgY;
+      const rect = rootEl.getBoundingClientRect();
+      const tipRect = tip.getBoundingClientRect();
+      const pad = 10;
 
-    const minTop = pad + tipRect.height;
-    const maxTop = rect.height - pad;
+      let left = x;
+      let top = y;
 
-    left = Math.max(pad + tipRect.width / 2, Math.min(rect.width - pad - tipRect.width / 2, left));
-    top = Math.max(minTop, Math.min(maxTop, top));
+      const minTop = pad + tipRect.height;
+      const maxTop = rect.height - pad;
 
-    tip.style.left = left + "px";
-    tip.style.top = top + "px";
-  }
+      left = Math.max(pad + tipRect.width / 2, Math.min(rect.width - pad - tipRect.width / 2, left));
+      top = Math.max(minTop, Math.min(maxTop, top));
 
-  function hideTooltip() {
-    tip.classList.remove("show");
-    tip.setAttribute("aria-hidden", "true");
-  }
+      tip.style.left = left + "px";
+      tip.style.top = top + "px";
+    }
 
-  function onMove(e) {
-    const { plot } = layout();
-    const r = rootEl.getBoundingClientRect();
-    const mx = e.clientX - r.left;
-    const my = e.clientY - r.top;
+    function hideTooltip() {
+      tip.classList.remove("show");
+      tip.setAttribute("aria-hidden", "true");
+    }
 
-    const inside = mx >= plot.x && mx <= plot.x + plot.w && my >= plot.y && my <= plot.y + plot.h;
-    if (!inside) {
+    function onMove(e) {
+      const { plot } = layout();
+      const r = rootEl.getBoundingClientRect();
+      const mx = e.clientX - r.left;
+      const my = e.clientY - r.top;
+
+      const inside =
+        mx >= plot.x && mx <= plot.x + plot.w &&
+        my >= plot.y && my <= plot.y + plot.h;
+
+      if (!inside) {
+        state.hoverIndex = null;
+        hideTooltip();
+        draw();
+        return;
+      }
+
+      const i = nearestIndex(mx, plot);
+      state.hoverIndex = i;
+      showTooltip(i, plot);
+      draw();
+    }
+
+    function onLeave() {
       state.hoverIndex = null;
       hideTooltip();
       draw();
-      return;
     }
 
-    const i = nearestIndex(mx, plot);
-    state.hoverIndex = i;
-    showTooltip(i, plot);
-    draw();
-  }
+    function resize() {
+      const rect = rootEl.getBoundingClientRect();
+      const dpr = Math.max(1, window.devicePixelRatio || 1);
 
-  function onLeave() {
-    state.hoverIndex = null;
-    hideTooltip();
-    draw();
-  }
+      canvas.width = Math.floor(rect.width * dpr);
+      canvas.height = Math.floor(rect.height * dpr);
+      canvas.style.width = rect.width + "px";
+      canvas.style.height = rect.height + "px";
 
-  function resize() {
-    const rect = rootEl.getBoundingClientRect();
-    const dpr = Math.max(1, window.devicePixelRatio || 1);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      draw();
+    }
 
-    canvas.width = Math.floor(rect.width * dpr);
-    canvas.height = Math.floor(rect.height * dpr);
-    canvas.style.width = rect.width + "px";
-    canvas.style.height = rect.height + "px";
+    function setData(newData, overrides = {}) {
+      cfg = { ...cfg, ...overrides };
+      applyScaleFromCfg();
 
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    draw();
-  }
+      data.length = 0;
+      newData.forEach(x => data.push(x));
 
-  rootEl.addEventListener("mousemove", onMove);
-  rootEl.addEventListener("mouseleave", onLeave);
-  window.addEventListener("resize", resize);
-
-  // --- публичный метод для фильтра ---
-  function setActiveNames(namesSet) {
-    state.activeNames = new Set(namesSet);
-    updateTooltipRowsVisibility();
-
-    // если ничего не активно — убираем hover/tooltip
-    if (!state.activeNames.size) {
       state.hoverIndex = null;
       hideTooltip();
+      draw();
     }
-    draw();
+
+    function findIndexByDayKey(dayKey) {
+      if (!dayKey) return null;
+      const idx = data.findIndex(p => dayKeyFromLabel(p.label) === String(dayKey));
+      return idx >= 0 ? idx : null;
+    }
+
+    function setHoverIndex(i) {
+      const { plot } = layout();
+      state.hoverIndex = i;
+      showTooltip(i, plot);
+      draw();
+    }
+
+    function clearHover() {
+      state.hoverIndex = null;
+      hideTooltip();
+      draw();
+    }
+
+    function setHoverByDayKey(dayKey) {
+      const i = findIndexByDayKey(dayKey);
+      if (i == null) return false;
+      setHoverIndex(i);
+      return true;
+    }
+
+    function getHoverDayKey() {
+      if (state.hoverIndex == null) return null;
+      return dayKeyFromLabel(data[state.hoverIndex]?.label);
+    }
+
+    rootEl.addEventListener("mousemove", onMove);
+    rootEl.addEventListener("mouseleave", onLeave);
+    window.addEventListener("resize", resize);
+
+    applyScaleFromCfg();
+    resize();
+
+    return { setData, setHoverByDayKey, clearHover, getHoverDayKey };
   }
 
-  resize();
-  updateTooltipRowsVisibility();
+  function initMultiChart(rootEl, cfg) {
+    const allSeries = cfg.series;
+    const labels = allSeries[0].data.map(p => p.label);
 
-  return { setActiveNames };
-}
+    const yMin = cfg.yMin ?? 0;
+    const yMax = cfg.yMax ?? 30;
+    const yTicks = cfg.yTicks ?? [10, 20, 30];
 
+    const canvas = rootEl.querySelector(".js-canvas");
+    const ctx = canvas.getContext("2d");
 
-    // ====== Инициализация 3-го графика (5 линий) ======
-    const multiEl = document.querySelector(".js-multichart");
+    const tip = rootEl.querySelector(".js-tip");
+    const tipDate = rootEl.querySelector(".js-tipDate");
+    const tipVals = rootEl.querySelectorAll(".js-tipVal");
+    const seriesNameEls = rootEl.querySelectorAll(".js-seriesName");
+    const dotEls = rootEl.querySelectorAll(".js-dot");
+    const tipRows = Array.from(tipVals).map(v => v.closest(".tip-row")).filter(Boolean);
 
-    // ====== Реальные данные для 3-го графика (Events) ======
-const event_graph = {{ events_graph | tojson }};
+    allSeries.forEach((s, i) => {
+      if (seriesNameEls[i]) seriesNameEls[i].textContent = s.name;
+      if (dotEls[i]) {
+        dotEls[i].style.background = s.color;
+        dotEls[i].style.boxShadow = `0 0 0 3px ${s.glow}`;
+      }
+    });
 
-// labels берём из event_graph
-const baseLabels = event_graph.map(p => p.label);
+    const state = {
+      hoverIndex: null,
+      activeNames: new Set(allSeries.map(s => s.name))
+    };
 
-function seriesFromEventKey(name, colorVar, glow) {
-  const color = getComputedStyle(document.documentElement).getPropertyValue(colorVar).trim();
-  return {
-    name,
-    color,
-    glow,
-    data: event_graph.map(p => ({
-      label: p.label,
-      v: Number(p[name] ?? 0)
-    }))
-  };
-}
-
-const eventsSeries = [
-  seriesFromEventKey("page_view", "--s1", "rgba(26,115,232,.12)"),
-  seriesFromEventKey("session_start", "--s2", "rgba(52,168,83,.12)"),
-  seriesFromEventKey("first_visit", "--s3", "rgba(251,188,4,.14)"),
-  seriesFromEventKey("user_engagement", "--s4", "rgba(234,67,53,.12)"),
-  seriesFromEventKey("scroll", "--s5", "rgba(161,66,244,.12)"),
-  seriesFromEventKey("form_start", "--s6", "rgba(0,172,193,.12)"),
-  seriesFromEventKey("all_forms", "--s7", "rgba(142,36,170,.12)"),
-  seriesFromEventKey("G-MSGH2BB72V", "--s8", "rgba(251,140,0,.14)"),
-  seriesFromEventKey("binotel_ct_call_details", "--s9", "rgba(109,76,65,.12)"),
-  seriesFromEventKey("binotel_ct_call_received", "--s10", "rgba(84,110,122,.12)"),
-];
-
-const events_graph_points = {{ events_graph_points | tojson }};
-
-    const multiChart = initMultiChart(multiEl, {
-  series: eventsSeries,
-  yMin: events_graph_points[0],
-  yMax: events_graph_points[2],
-  yTicks: events_graph_points,
-  formatValue: (v) => String(Math.round(v))
-});
-
-
-    function clampSidebarToEvents() {
-        const app = document.querySelector(".app");
-        const sidebarCol = document.querySelector(".sidebar-col");
-        const eventsCard = document.querySelector(".card--events");
-        if (!app || !sidebarCol || !eventsCard) return;
-
-        const appRect = app.getBoundingClientRect();
-        const eventsRect = eventsCard.getBoundingClientRect();
-
-        // расстояние от верха .app до начала 3-го графика (внутри .app)
-        const stopAt = (eventsRect.top - appRect.top);
-
-        // делаем левую колонку высотой до начала 3-го графика
-        sidebarCol.style.height = Math.max(0, stopAt) + "px";
+    function getVisibleSeries() {
+      return allSeries.filter(s => state.activeNames.has(s.name));
     }
 
-    window.addEventListener("load", clampSidebarToEvents);
-    window.addEventListener("resize", clampSidebarToEvents);
-    window.addEventListener("scroll", clampSidebarToEvents, {passive: true});
+    function layout() {
+      const w = rootEl.clientWidth;
+      const h = rootEl.clientHeight;
+      const pad = { top: 10, right: 42, bottom: 34, left: 10 };
+      const plot = { x: pad.left, y: pad.top, w: w - pad.left - pad.right, h: h - pad.top - pad.bottom };
+      return { w, h, plot };
+    }
 
+    function xForIndex(i, plot) {
+      const n = labels.length;
+      if (n === 1) return plot.x + plot.w / 2;
+      return plot.x + (i * (plot.w / (n - 1)));
+    }
 
-    function syncPillsToMultiChart() {
-  const actives = new Set(
-    Array.from(document.querySelectorAll(".pill.active"))
-      .map(p => p.textContent.trim())
-  );
-  multiChart.setActiveNames(actives);
-}
+    function yForValue(v, plot) {
+      const t = (v - yMin) / (yMax - yMin);
+      return plot.y + plot.h - (t * plot.h);
+    }
 
-// клик по фильтру: переключили класс → обновили график
-document.querySelectorAll(".pill").forEach(pill => {
-  pill.addEventListener("click", () => {
-    pill.classList.toggle("active");
-    syncPillsToMultiChart();
+    function nearestIndex(mx, plot) {
+      const n = labels.length;
+      const rel = Math.max(0, Math.min(plot.w, mx - plot.x));
+      const i = Math.round(rel / (plot.w / (n - 1)));
+      return Math.max(0, Math.min(n - 1, i));
+    }
+
+    function drawGrid(plot) {
+      ctx.lineWidth = 1;
+
+      ctx.strokeStyle = "#e3e7ee";
+      ctx.beginPath();
+      ctx.moveTo(plot.x, plot.y + plot.h);
+      ctx.lineTo(plot.x + plot.w, plot.y + plot.h);
+      ctx.stroke();
+
+      ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--grid").trim() || "#eceff3";
+      yTicks.forEach(t => {
+        const y = yForValue(t, plot);
+        ctx.beginPath();
+        ctx.moveTo(plot.x, y);
+        ctx.lineTo(plot.x + plot.w, y);
+        ctx.stroke();
+      });
+
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+      ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+      ctx.textAlign = "left";
+      ctx.textBaseline = "middle";
+
+      yTicks.forEach(t => {
+        const y = yForValue(t, plot);
+        ctx.fillText(String(t), plot.x + plot.w + 10, y);
+      });
+    }
+
+    function drawXAxis(plot) {
+      const pseudo = labels.map(l => ({ label: l }));
+      const marks = buildMarksFromData(pseudo, 4);
+
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted").trim() || "#6b7280";
+      ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "top";
+
+      marks.forEach(m => {
+        const x = xForIndex(m.i, plot);
+        const y0 = plot.y + plot.h + 10;
+        String(m.text).split("\n").forEach((ln, k) => ctx.fillText(ln, x, y0 + k * 14));
+      });
+    }
+
+    function drawSeries(plot) {
+      const visible = getVisibleSeries();
+
+      visible.forEach(s => {
+        ctx.strokeStyle = s.color;
+        ctx.lineWidth = 2.1;
+        ctx.lineJoin = "round";
+        ctx.lineCap = "round";
+
+        ctx.beginPath();
+        s.data.forEach((p, i) => {
+          const x = xForIndex(i, plot);
+          const y = yForValue(p.v, plot);
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+      });
+    }
+
+    function drawHover(plot) {
+      if (state.hoverIndex == null) return;
+
+      const visible = getVisibleSeries();
+      if (!visible.length) return;
+
+      const i = state.hoverIndex;
+      const x = xForIndex(i, plot);
+
+      ctx.strokeStyle = "#d6dbe3";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x, plot.y);
+      ctx.lineTo(x, plot.y + plot.h);
+      ctx.stroke();
+
+      visible.forEach(s => {
+        const y = yForValue(s.data[i].v, plot);
+
+        ctx.fillStyle = "#fff";
+        ctx.strokeStyle = s.color;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(x, y, 4.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = s.glow;
+        ctx.beginPath();
+        ctx.arc(x, y, 9, 0, Math.PI * 2);
+        ctx.fill();
+      });
+    }
+
+    function draw() {
+      const { w, h, plot } = layout();
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#fff";
+      ctx.fillRect(0, 0, w, h);
+
+      drawGrid(plot);
+      drawSeries(plot);
+      drawHover(plot);
+      drawXAxis(plot);
+    }
+
+    function updateTooltipRowsVisibility() {
+      allSeries.forEach((s, idx) => {
+        const row = tipRows[idx];
+        if (!row) return;
+        row.style.display = state.activeNames.has(s.name) ? "" : "none";
+      });
+    }
+
+    function showTooltip(i, plot) {
+      const visible = getVisibleSeries();
+      if (!visible.length) {
+        hideTooltip();
+        return;
+      }
+
+      tipDate.textContent = labels[i];
+
+      allSeries.forEach((s, idx) => {
+        const v = s.data[i].v;
+        if (tipVals[idx]) {
+          tipVals[idx].textContent = cfg.formatValue ? cfg.formatValue(v, idx) : String(Math.round(v));
+        }
+      });
+
+      updateTooltipRowsVisibility();
+
+      const x = xForIndex(i, plot);
+      const avgY = visible.reduce((acc, s) => acc + yForValue(s.data[i].v, plot), 0) / visible.length;
+
+      tip.classList.add("show");
+      tip.setAttribute("aria-hidden", "false");
+      tip.style.left = x + "px";
+      tip.style.top = avgY + "px";
+
+      const rect = rootEl.getBoundingClientRect();
+      const tipRect = tip.getBoundingClientRect();
+      const pad = 10;
+
+      let left = x;
+      let top = avgY;
+
+      const minTop = pad + tipRect.height;
+      const maxTop = rect.height - pad;
+
+      left = Math.max(pad + tipRect.width / 2, Math.min(rect.width - pad - tipRect.width / 2, left));
+      top = Math.max(minTop, Math.min(maxTop, top));
+
+      tip.style.left = left + "px";
+      tip.style.top = top + "px";
+    }
+
+    function hideTooltip() {
+      tip.classList.remove("show");
+      tip.setAttribute("aria-hidden", "true");
+    }
+
+    function onMove(e) {
+      const { plot } = layout();
+      const r = rootEl.getBoundingClientRect();
+      const mx = e.clientX - r.left;
+      const my = e.clientY - r.top;
+
+      const inside = mx >= plot.x && mx <= plot.x + plot.w && my >= plot.y && my <= plot.y + plot.h;
+      if (!inside) {
+        state.hoverIndex = null;
+        hideTooltip();
+        draw();
+        return;
+      }
+
+      const i = nearestIndex(mx, plot);
+      state.hoverIndex = i;
+      showTooltip(i, plot);
+      draw();
+    }
+
+    function onLeave() {
+      state.hoverIndex = null;
+      hideTooltip();
+      draw();
+    }
+
+    function resize() {
+      const rect = rootEl.getBoundingClientRect();
+      const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+      canvas.width = Math.floor(rect.width * dpr);
+      canvas.height = Math.floor(rect.height * dpr);
+      canvas.style.width = rect.width + "px";
+      canvas.style.height = rect.height + "px";
+
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      draw();
+    }
+
+    function setActiveNames(namesSet) {
+      state.activeNames = new Set(namesSet);
+      updateTooltipRowsVisibility();
+
+      if (!state.activeNames.size) {
+        state.hoverIndex = null;
+        hideTooltip();
+      }
+
+      draw();
+    }
+
+    rootEl.addEventListener("mousemove", onMove);
+    rootEl.addEventListener("mouseleave", onLeave);
+    window.addEventListener("resize", resize);
+
+    resize();
+    updateTooltipRowsVisibility();
+
+    return { setActiveNames };
+  }
+
+  const duration_graph = {{ duration_graph | tojson }};
+  const duration_graph_points = {{ duration_graph_points | tojson }};
+
+  const clicks_graph = {{ clicks_graph | tojson }};
+  const clicks_graph_points = {{ clicks_graph_points | tojson }};
+
+  const traffic_all_graph = {{ (traffic_all_graph or []) | tojson }};
+  const traffic_all_graph_percent = {{ (traffic_all_graph_percent or []) | tojson }};
+  const traffic_current_graph = {{ traffic_current_graph | tojson }};
+  const traffic_current_graph_percent = {{ traffic_current_graph_percent | tojson }};
+
+  const events_graph = {{ events_graph | tojson }};
+  const events_graph_points = {{ events_graph_points | tojson }};
+
+  const dataTime = duration_graph;
+  const dataClicks = clicks_graph;
+  const dataClicksImpressions = dataClicks.map(p => ({
+    label: p.label,
+    v: p.imp ?? 0
+  }));
+
+  const allTraffic = traffic_all_graph.map(p => ({
+    date: p.date,
+    label: p.label,
+    v: Number(p.v) || 0
+  }));
+
+  const allPercent = traffic_all_graph_percent.map(p => ({
+    ...p,
+    date: p.date,
+    label: p.label,
+    v: Number(p.v) || 0
+  }));
+
+  const dataConversions = (traffic_current_graph || []).map(p => ({
+    label: p.label,
+    v: Number(p.v) || 0
+  }));
+
+  const dataConversionsPercent = (traffic_current_graph_percent || []).map(p => ({
+    ...p,
+    label: p.label,
+    v: Number(p.v) || 0
+  }));
+
+  const chartEls = document.querySelectorAll(".js-chart");
+  const multiEl = document.querySelector(".js-multichart");
+
+  const yearSel = document.querySelector(".js-imprYear");
+  const monthSel = document.querySelector(".js-imprMonth");
+  const curYearSel = document.querySelector(".js-curYear");
+  const curMonthSel = document.querySelector(".js-curMonth");
+
+  const tbody4 = document.querySelector(".js-tableBody4");
+  const tbody5 = document.querySelector(".js-tableBody5");
+  const leadsBody4 = document.querySelector(".js-leadsBody4");
+  const leadsBody5 = document.querySelector(".js-leadsBody5");
+
+  (function setDefaultYM() {
+    const { y, m } = getCurrentYM();
+
+    if (yearSel) {
+      const yStr = String(y);
+      const hasYear = Array.from(yearSel.options || []).some(o => String(o.value) === yStr);
+      if (hasYear) yearSel.value = yStr;
+    }
+
+    if (monthSel) {
+      const mStr = String(m);
+      const hasMonth = Array.from(monthSel.options || []).some(o => String(o.value) === mStr);
+      if (hasMonth) monthSel.value = mStr;
+    }
+  })();
+
+  (function setDefaultNowYMForChart5() {
+    const { y, m } = getNowYM();
+
+    if (curYearSel) {
+      const yStr = String(y);
+      const hasYear = Array.from(curYearSel.options || []).some(o => String(o.value) === yStr);
+      if (hasYear) curYearSel.value = yStr;
+    }
+
+    if (curMonthSel) {
+      const mStr = String(m);
+      const hasMonth = Array.from(curMonthSel.options || []).some(o => String(o.value) === mStr);
+      if (hasMonth) curMonthSel.value = mStr;
+    }
+  })();
+
+  function buildChart4Data() {
+    const cur = getCurrentYM();
+    const year = yearSel?.value ?? String(cur.y);
+    const month = monthSel?.value ?? String(cur.m);
+    return buildMonthData(year, month, allTraffic, allPercent);
+  }
+
+  function buildChart5Data() {
+    const now = getNowYM();
+    const year = curYearSel?.value ?? String(now.y);
+    const month = curMonthSel?.value ?? String(now.m);
+    const isNow = Number(year) === now.y && Number(month) === now.m;
+
+    if (isNow && dataConversions.length) {
+      const maxV = Math.max(1, ...dataConversions.map(p => p.v));
+      const yMax = Math.ceil(maxV / 10) * 10;
+      const ticks = [Math.round(yMax / 3), Math.round((2 * yMax) / 3), yMax];
+
+      return {
+        data: dataConversions,
+        data2: dataConversionsPercent.length ? dataConversionsPercent : dataConversions.map(p => ({ ...p })),
+        yMax,
+        ticks
+      };
+    }
+
+    return buildMonthData(year, month, allTraffic, allPercent);
+  }
+
+  const chart1 = initChart(chartEls[0], {
+    data: dataTime,
+    yMin: duration_graph_points[0],
+    yMax: duration_graph_points[2],
+    yTicks: duration_graph_points,
+    seriesName: "Среднее время",
+    formatValue: v => v.toFixed(1)
   });
-});
 
-// начальная инициализация (при загрузке страницы)
-syncPillsToMultiChart();
+  const chart2 = initChart(chartEls[1], {
+    data: dataClicks,
+    data2: dataClicksImpressions,
+    yMin: clicks_graph_points[0],
+    yMax: clicks_graph_points[2],
+    yTicks: clicks_graph_points,
+    seriesName: "Клики",
+    seriesName2: "Показы",
+    formatValue: v => String(Math.round(v)),
+    formatValue2: v => v.toLocaleString("ru-RU")
+  });
 
+  const init4 = buildChart4Data();
+  const chart4 = initChart(chartEls[2], {
+    data: init4.data,
+    data2: init4.data2,
+    yMin: 0,
+    yMax: init4.yMax,
+    yTicks: init4.ticks,
+    seriesName: "Трафик",
+    seriesName2: "Процент",
+    formatValue: v => v.toLocaleString("ru-RU"),
+    formatValue2: v => `${Number(v).toFixed(1).replace(".", ",")}%`
+  });
 
-document.querySelector(".js-imprYear")?.addEventListener("change", (e) => {
-  const year = e.target.value;
-  const month = document.querySelector(".js-imprMonth")?.value;
-  // TODO: загрузка/перерисовка данных показов
-});
+  const init5 = buildChart5Data();
+  const chart5 = initChart(chartEls[3], {
+    data: init5.data,
+    data2: init5.data2,
+    yMin: 0,
+    yMax: init5.yMax,
+    yTicks: init5.ticks,
+    seriesName: "Трафик",
+    seriesName2: "Процент",
+    formatValue: v => v.toLocaleString("ru-RU"),
+    formatValue2: v => `${Number(v).toFixed(1).replace(".", ",")}%`
+  });
 
-document.querySelector(".js-imprMonth")?.addEventListener("change", (e) => {
-  const month = e.target.value;
-  const year = document.querySelector(".js-imprYear")?.value;
-  // TODO: загрузка/перерисовка данных показов
-});
-
-function fmtDeltaPct(curr, prev) {
-  // изменение относительно предыдущего дня В ЭТОМ ЖЕ месяце
-  if (prev == null || prev === 0) return "";
-  const pct = ((curr - prev) / prev) * 100;
-  const sign = pct > 0 ? "+" : "";
-  return `${sign}${pct.toFixed(1).replace(".", ",")}%`;
-}
-
-// NEW: разница выбранный месяц vs текущий месяц (по конкретному дню)
-function fmtDiffVsCurrentPct(selectedDayVal, currentDayVal) {
-  // если нет базы — показываем —
-  if (currentDayVal == null || Number(currentDayVal) === 0) return "—";
-  const pct = ((Number(selectedDayVal) - Number(currentDayVal)) / Number(currentDayVal)) * 100;
-  const sign = pct > 0 ? "+" : "";
-  return `${sign}${pct.toFixed(1).replace(".", ",")}%`;
-}
-
-function invertPctString(pctStr) {
-  if (!pctStr || pctStr === "—") return pctStr;
-
-  // "+12,3%" -> -12,3%
-  if (pctStr.startsWith("+")) return "-" + pctStr.slice(1);
-  if (pctStr.startsWith("-")) return "+" + pctStr.slice(1);
-
-  // "12,3%" -> "-12,3%"
-  return "-" + pctStr;
-}
-
-function dayKeyFromLabelSafe(label) {
-  // "ср 4 фев." -> 4
-  const m = String(label).match(/\b(\d{1,2})\b/);
-  return m ? Number(m[1]) : null;
-}
-
-/**
- * Рендер таблицы с неделями 1..3 и итогом.
- * rows: [{label, v}, ...]
- */
-function renderTrafficTable(tbodyEl, rowsSelected, rowsCurrent) {
-  if (!tbodyEl) return;
-  tbodyEl.innerHTML = "";
-
-  const maxWeeks = 3;
-
-  let totalSum = 0;
-
-  function sumRange(from, to) {
-    let s = 0;
-    for (let k = from; k <= to; k++) s += Number(rowsSelected[k]?.v || 0);
-    return s;
+  function seriesFromEventKey(name, colorVar, glow) {
+    const color = getComputedStyle(document.documentElement).getPropertyValue(colorVar).trim();
+    return {
+      name,
+      color,
+      glow,
+      data: events_graph.map(p => ({
+        label: p.label,
+        v: Number(p[name] ?? 0)
+      }))
+    };
   }
 
-  for (let i = 0; i < rowsSelected.length; i++) {
-    const r = rowsSelected[i];
-    const day = dayKeyFromLabelSafe(r.label) ?? (i + 1);
+  const eventsSeries = [
+    seriesFromEventKey("page_view", "--s1", "rgba(26,115,232,.12)"),
+    seriesFromEventKey("session_start", "--s2", "rgba(52,168,83,.12)"),
+    seriesFromEventKey("first_visit", "--s3", "rgba(251,188,4,.14)"),
+    seriesFromEventKey("user_engagement", "--s4", "rgba(234,67,53,.12)"),
+    seriesFromEventKey("scroll", "--s5", "rgba(161,66,244,.12)"),
+    seriesFromEventKey("form_start", "--s6", "rgba(0,172,193,.12)"),
+    seriesFromEventKey("all_forms", "--s7", "rgba(142,36,170,.12)"),
+    seriesFromEventKey("G-MSGH2BB72V", "--s8", "rgba(251,140,0,.14)"),
+    seriesFromEventKey("binotel_ct_call_details", "--s9", "rgba(109,76,65,.12)"),
+    seriesFromEventKey("binotel_ct_call_received", "--s10", "rgba(84,110,122,.12)")
+  ];
 
-    const curr = Number(r.v || 0);
-    totalSum += curr;
+  const multiChart = initMultiChart(multiEl, {
+    series: eventsSeries,
+    yMin: events_graph_points[0],
+    yMax: events_graph_points[2],
+    yTicks: events_graph_points,
+    formatValue: v => String(Math.round(v))
+  });
 
-    // Изменение день-к-дню внутри выбранного месяца
-    const prev = i > 0 ? Number(rowsSelected[i - 1].v || 0) : null;
-    const delta = fmtDeltaPct(curr, prev);
-
-    // NEW: сравнение с текущим месяцем по этому же дню
-    const currentDayVal = rowsCurrent?.[i]?.v ?? null; // i == day-1 (если массивы дневные и одинаковой логики)
-    const diffPct = fmtDiffVsCurrentPct(curr, currentDayVal);
-
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${day}</td>
-      <td class="col-traffic">${curr.toLocaleString("ru-RU")}</td>
-      <td class="col-delta">${delta}</td>
-      <td class="col-diff">${diffPct}</td>
-    `;
-    tbodyEl.appendChild(tr);
-
-    const isEndOfWeek = (i + 1) % 7 === 0;
-    const weekNum = (i + 1) / 7;
-
-    if (isEndOfWeek && weekNum <= maxWeeks) {
-      const weekSum = sumRange(0, i);
-
-      // Для week-row diff не считаем (можно посчитать отдельно, но ты просил по дням)
-      const w = document.createElement("tr");
-      w.className = "week-row";
-      w.innerHTML = `
-        <td>Неделя ${weekNum}</td>
-        <td class="col-traffic">${weekSum.toLocaleString("ru-RU")}</td>
-        <td class="col-delta"></td>
-        <td class="col-diff"></td>
-      `;
-      tbodyEl.appendChild(w);
-    }
+  function updateChart4() {
+    const next = buildChart4Data();
+    chart4.setData(next.data, {
+      data2: next.data2,
+      yMin: 0,
+      yMax: next.yMax,
+      yTicks: next.ticks
+    });
   }
 
-  const итог = document.createElement("tr");
-  итог.className = "week-row";
-  итог.innerHTML = `
-    <td>Итого</td>
-    <td class="col-traffic">${totalSum.toLocaleString("ru-RU")}</td>
-    <td class="col-delta"></td>
-    <td class="col-diff"></td>
-  `;
-  tbodyEl.appendChild(итог);
-}
-
-/* ====== Привязка таблиц к данным графиков ====== */
-const tbody4 = document.querySelector(".js-tableBody4");
-const tbody5 = document.querySelector(".js-tableBody5");
-
-function getSelectedMonthTraffic() {
-  return buildChart4Data().data; // месяц из селектов Chart 4
-}
-
-function getBaseMonthTraffic() {
-  return buildChart5Data().data; // месяц из селектов Chart 5 (по умолчанию текущий)
-}
-
-/** Таблица 4: выбранный месяц (Chart4) vs базовый месяц (Chart5) */
-function updateTable4() {
-  const selected = getSelectedMonthTraffic();
-  const base = getBaseMonthTraffic();
-  renderTrafficTable(tbody4, selected, base);
-}
-
-/** Таблица 5: базовый месяц (Chart5) vs выбранный месяц (Chart4) */
-function updateTable5() {
-  const selected = getSelectedMonthTraffic();
-  const base = getBaseMonthTraffic();
-  renderTrafficTable(tbody5, base, selected);
-}
-
-/* первичная отрисовка */
-updateTable4();
-updateTable5();
-
-/* таблица 4 должна обновляться при смене года/месяца (вместе с графиком 4) */
-function updateChart4AndTable() {
-  updateChart4();   // твоя функция обновления графика
-  updateTable4();   // обновляем таблицу строго теми же данными
-}
-
-yearSel?.removeEventListener("change", updateChart4);   // чтобы не было двойных обработчиков
-monthSel?.removeEventListener("change", updateChart4);
-
-yearSel?.addEventListener("change", updateChart4AndTable);
-monthSel?.addEventListener("change", updateChart4AndTable);
-
-function pickLastRow(arr) {
-  if (!Array.isArray(arr) || !arr.length) return null;
-  // берём последнюю НЕ пустую (если вдруг есть)
-  for (let i = arr.length - 1; i >= 0; i--) {
-    if (arr[i]) return arr[i];
+  function updateChart5() {
+    const next = buildChart5Data();
+    chart5.setData(next.data, {
+      data2: next.data2,
+      yMin: 0,
+      yMax: next.yMax,
+      yTicks: next.ticks
+    });
   }
-  return null;
-}
 
-function fmtAny(v) {
-  if (v == null) return "—";
-  if (typeof v === "number") return v.toLocaleString("ru-RU");
-  // если приходит строка типа "12.3%" — оставляем
-  return String(v);
-}
+  function getSelectedMonthTraffic() {
+    return buildChart4Data().data;
+  }
 
-function renderLeadsTable(tbodyEl, rowObj) {
-  if (!tbodyEl) return;
-  tbodyEl.innerHTML = "";
+  function getBaseMonthTraffic() {
+    return buildChart5Data().data;
+  }
 
-  const calls = rowObj?.["Звонки"];
-  const callsMtd = rowObj?.["Звонки с начала месяца"];
-  const leads = rowObj?.["Заявки"];
-  const leadsMtd = rowObj?.["Заявки с начала месяца"];
-  const conv = rowObj?.["Общая конверсия"];
+  function updateTable4() {
+    renderTrafficTable(tbody4, getSelectedMonthTraffic(), getBaseMonthTraffic());
+  }
 
-  // Строки ровно как ты описал
-  tbodyEl.innerHTML = `
-    <tr>
-      <td>Звонки</td>
-      <td>${fmtAny(callsMtd ?? calls)}</td>
-    </tr>
-    <tr>
-      <td>Заявки</td>
-      <td>${fmtAny(leadsMtd ?? leads)}</td>
-    </tr>
-    <tr class="week-row">
-      <td>Итого</td>
-      <td>${fmtAny(conv)}</td>
-    </tr>
-  `;
-}
+  function updateTable5() {
+    renderTrafficTable(tbody5, getBaseMonthTraffic(), getSelectedMonthTraffic());
+  }
 
-/* DOM */
-const leadsBody4 = document.querySelector(".js-leadsBody4");
-const leadsBody5 = document.querySelector(".js-leadsBody5");
+  function updateLeads4() {
+    const built = buildChart4Data();
+    renderLeadsTable(leadsBody4, pickLastRow(built.data2));
+  }
 
-/* График 4: берём данные2 из buildChart4Data() (это percentMonth с доп. полями) */
-function updateLeads4() {
-  const built = buildChart4Data();
-  const last = pickLastRow(built.data2);   // <-- из traffic_all_graph_percent (после фильтра)
-  renderLeadsTable(leadsBody4, last);
-}
+  function updateLeads5() {
+    const built = buildChart5Data();
+    renderLeadsTable(leadsBody5, pickLastRow(built.data2));
+  }
 
-/* График 5: берём из dataConversionsPercent (traffic_current_graph_percent) */
-function updateLeads5() {
-  const built = buildChart5Data();
-  const last = pickLastRow(built.data2);
-  renderLeadsTable(leadsBody5, last);
-}
+  function updateAllForBothCards() {
+    updateChart4();
+    updateChart5();
+    updateTable4();
+    updateTable5();
+    updateLeads4();
+    updateLeads5();
+  }
 
-/* первичная отрисовка */
-updateLeads4();
-updateLeads5();
+  let isSyncing = false;
 
-/* чтобы “Заявки” у графика 4 менялись вместе с месяцем/годом */
-function updateAllForBothCards() {
-  updateChart4();
-  updateChart5();
+  function syncFromTo(fromChart, toChart) {
+    if (isSyncing) return;
+    const dayKey = fromChart.getHoverDayKey?.();
+    if (!dayKey) return;
+
+    isSyncing = true;
+    toChart.setHoverByDayKey?.(dayKey);
+    isSyncing = false;
+  }
+
+  function clearOther(toChart) {
+    if (isSyncing) return;
+    isSyncing = true;
+    toChart.clearHover?.();
+    isSyncing = false;
+  }
+
+  function syncPillsToMultiChart() {
+    const actives = new Set(
+      Array.from(document.querySelectorAll(".pill.active"))
+        .map(p => p.textContent.trim())
+    );
+    multiChart.setActiveNames(actives);
+  }
+
+  function clampSidebarToEvents() {
+    const app = document.querySelector(".app");
+    const sidebarCol = document.querySelector(".sidebar-col");
+    const eventsCard = document.querySelector(".card--events");
+    if (!app || !sidebarCol || !eventsCard) return;
+
+    const appRect = app.getBoundingClientRect();
+    const eventsRect = eventsCard.getBoundingClientRect();
+    const stopAt = eventsRect.top - appRect.top;
+
+    sidebarCol.style.height = Math.max(0, stopAt) + "px";
+  }
+
+  const el4 = chartEls[2];
+  const el5 = chartEls[3];
+
+  el4.addEventListener("mousemove", () => syncFromTo(chart4, chart5));
+  el5.addEventListener("mousemove", () => syncFromTo(chart5, chart4));
+  el4.addEventListener("mouseleave", () => clearOther(chart5));
+  el5.addEventListener("mouseleave", () => clearOther(chart4));
+
+  yearSel?.addEventListener("change", updateAllForBothCards);
+  monthSel?.addEventListener("change", updateAllForBothCards);
+  curYearSel?.addEventListener("change", updateAllForBothCards);
+  curMonthSel?.addEventListener("change", updateAllForBothCards);
+
+  document.querySelectorAll(".pill").forEach(pill => {
+    pill.addEventListener("click", () => {
+      pill.classList.toggle("active");
+      syncPillsToMultiChart();
+    });
+  });
+
+  const brandStrip = document.getElementById("brandStrip");
+  brandStrip?.addEventListener("wheel", e => {
+    const absY = Math.abs(e.deltaY);
+    const absX = Math.abs(e.deltaX);
+    if (absX > absY) return;
+    e.preventDefault();
+    brandStrip.scrollLeft += e.deltaY * 1.15;
+  }, { passive: false });
+
+  window.addEventListener("load", clampSidebarToEvents);
+  window.addEventListener("resize", clampSidebarToEvents);
+  window.addEventListener("scroll", clampSidebarToEvents, { passive: true });
 
   updateTable4();
   updateTable5();
-
   updateLeads4();
   updateLeads5();
-}
-
-yearSel?.removeEventListener("change", updateChart4AndTable);
-monthSel?.removeEventListener("change", updateChart4AndTable);
-
-yearSel?.addEventListener("change", updateAllForBothCards);
-monthSel?.addEventListener("change", updateAllForBothCards);
-curYearSel?.addEventListener("change", updateAllForBothCards);
-curMonthSel?.addEventListener("change", updateAllForBothCards);
-
-
-function normalizeLabelToDayMonth(label) {
-  const s = String(label || "").toLowerCase();
-
-  // 1) день (1-2 цифры)
-  const mDay = s.match(/\b(\d{1,2})\b/);
-  const day = mDay ? mDay[1] : "";
-
-  // 2) месяц (ищем русское сокращение)
-  const months = ["янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"];
-  let mon = "";
-  for (const mm of months) {
-    if (s.includes(mm)) { mon = mm; break; }
-  }
-
-  // fallback: если вдруг label уже "15\nянв."
-  if (!mon) {
-    const mMon = s.match(/\b(янв\.?|фев\.?|мар\.?|апр\.?|мая?|июн\.?|июл\.?|авг\.?|сен\.?|окт\.?|ноя\.?|дек\.?)\b/);
-    mon = mMon ? mMon[1].replace(".", "") : "";
-  }
-
-  if (!day && !mon) return String(label || "");
-
-  return `${day} ${mon}`.trim();
-}
-
-function buildMarksFromData(data, maxMarks = 4) {
-  const n = data.length;
-  if (!n) return [];
-
-  // если точек мало — подписываем каждую
-  if (n <= maxMarks) {
-    return data.map((p, i) => ({
-      i,
-      text: normalizeLabelToDayMonth(p.label).replace(" ", "\n") // "15\nянв"
-    }));
-  }
-
-  // иначе 4 метки: 1/3/2/3/последняя
-  const i0 = 0;
-  const i1 = Math.round((n - 1) / 3);
-  const i2 = Math.round((2 * (n - 1)) / 3);
-  const i3 = n - 1;
-
-  const idxs = Array.from(new Set([i0, i1, i2, i3])).sort((a, b) => a - b);
-
-  return idxs.map(i => ({
-    i,
-    text: normalizeLabelToDayMonth(data[i].label).replace(" ", "\n")
-  }));
-}
+  syncPillsToMultiChart();
 </script>
 
 </body>
